@@ -1,0 +1,1 @@
+Thu Sep 07 2017 17:20:56 GMT-0500 (CDT):ERROR:{"request":{"returnRequest":false,"params":{},"requestId":"e3b5b788-aa1d-4232-8e19-6d364cebb72f"},"response":{"status":"error","statusDetail":{"messages":[{"message":"Permission Denied","messageType":"error","messageCode":"PD001"}]},"totalRecords":0}}

@@ -1,0 +1,44 @@
+{
+    "entityData": {
+        "name": "entity",
+        "typeInfo": "entityInfo",
+        "typeName": "entityType",
+        "collectionName": "entities",
+        "responseObjectName": "response"
+    },
+    "entityGovernData": {
+        "name": "entity",
+        "typeInfo": "entityGovernInfo",
+        "typeName": "entityGovernType",
+        "collectionName": "entities",
+        "responseObjectName": "response"
+    },
+    "entityModel": {
+        "name": "entityModel",
+        "typeInfo": "entityModelInfo",
+        "typeName": "entityModelType",
+        "collectionName": "entityModels",
+        "responseObjectName": "response"
+    },
+    "config": {
+        "name": "configObject",
+        "typeInfo": "configObjectInfo",
+        "typeName": "configObjectType",
+        "collectionName": "configObjects",
+        "responseObjectName": "response"
+    },
+    "binaryObject": {
+        "name": "binaryObject",
+        "typeInfo": "binaryObjectInfo",
+        "typeName": "binaryObjectType",
+        "collectionName": "binaryObjects",
+        "responseObjectName": "response"
+    },
+    "dataObject": {
+        "name": "dataObject",
+        "typeInfo": "dataObjectInfo",
+        "typeName": "entityjson",
+        "collectionName": "dataObjects",
+        "responseObjectName": "dataObjectOperationResponse"
+    }
+}

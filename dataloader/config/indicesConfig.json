@@ -1,0 +1,428 @@
+{
+    "entitywriteindex": {
+        "settings": {
+            "analysis": {
+                "analyzer": {
+                    "path_hierarchy-analyzer": {
+                        "type": "custom",
+                        "tokenizer": "path_token"
+                    }
+                },
+                "tokenizer": {
+                    "path_token": {
+                        "type": "path_hierarchy",
+                        "delimiter": "/"
+                    }
+                }
+            }
+        },
+        "mappings": {
+            "entity": {
+                "dynamic_templates": [
+                    {
+                        "nested_value_feature": {
+                            "path_match": "data.contexts.*values",
+                            "mapping": {
+                                "type": "nested"
+                            }
+                        }
+                    },
+                    {
+                        "nested_row_feature": {
+                            "path_match": "data.contexts.*group",
+                            "mapping": {
+                                "type": "nested"
+                            }
+                        }
+                    },
+                    {
+                        "ctx_path": {
+                            "path_match": "data.contexts.*ctxPath",
+                            "mapping": {
+                                "type": "text",
+                                "analyzer": "path_hierarchy-analyzer",
+                                "search_analyzer": "keyword"
+                            }
+                        }
+                    },
+                    {
+                        "nested_attribute_feature": {
+                            "path_match": "data.contexts.*attributes",
+                            "mapping": {
+                                "type": "nested"
+                            }
+                        }
+                    },
+                    {
+                        "nested_relationship_feature": {
+                            "path_match": "data.contexts.*relationships",
+                            "mapping": {
+                                "type": "nested"
+                            }
+                        }
+                    },
+                    {
+                        "attrValue": {
+                            "path_match": "data.contexts.*attributes*.value",
+                            "mapping": {
+                                "type": "text",
+                                "ignore_malformed": true,
+                                "fielddata": true
+                            }
+                        }
+                    },
+                    {
+                        "attrDateValue": {
+                            "path_match": "data.contexts.*attributes*.dateValue",
+                            "mapping": {
+                                "type": "date",
+                                "format": "yyyy-MM-dd"
+                            }
+                        }
+                    },
+                    {
+                        "attrDateTimeValue": {
+                            "path_match": "data.contexts.*attributes*.dateTimeValue",
+                            "mapping": {
+                                "type": "basic_date_time"
+                            }
+                        }
+                    },
+                    {
+                        "attrDecimalValue": {
+                            "path_match": "data.contexts.*attributes*.decValue",
+                            "mapping": {
+                                "type": "float"
+                            }
+                        }
+                    },
+                    {
+                        "attrIntegerValue": {
+                            "path_match": "data.contexts.*attributes*.intValue",
+                            "mapping": {
+                                "type": "long"
+                            }
+                        }
+                    },
+                    {
+                        "attrTimestampValue": {
+                            "path_match": "data.contexts.*attributes*.timestamp",
+                            "mapping": {
+                                "type": "date",
+                                "format": "epoch_millis"
+                            }
+                        }
+                    },
+                    {
+                        "attrBooleanValue": {
+                            "path_match": "data.contexts.*attributes*.boolValue",
+                            "mapping": {
+                                "type": "boolean"
+                            }
+                        }
+                    },
+                    {
+                        "attrInvalidValue": {
+                            "path_match": "data.contexts.*attributes*.invalidValue",
+                            "mapping": {
+                                "type": "text"
+                            }
+                        }
+                    },
+                    {
+                        "propValue": {
+                            "path_match": "data.contexts.*propertyValue",
+                            "mapping": {
+                                "type": "text",
+                                "ignore_malformed": true
+                            }
+                        }
+                    },
+                    {
+                        "nestedProperty": {
+                            "path_match": "data.contexts.*properties",
+                            "mapping": {
+                                "type": "nested"
+                            }
+                        }
+                    }
+                ],
+                "properties": {
+                    "data.contexts": {
+                        "type": "nested"
+                    },
+                    "id": {
+                        "type": "string",
+                        "index": "not_analyzed"
+                    }
+                }
+            }
+        }
+    },
+    "entitymanagemodelwriteindex": {
+        "settings": {
+            "analysis": {
+                "analyzer": {
+                    "path_hierarchy-analyzer": {
+                        "type": "custom",
+                        "tokenizer": "path_token"
+                    }
+                },
+                "tokenizer": {
+                    "path_token": {
+                        "type": "path_hierarchy",
+                        "delimiter": "/"
+                    }
+                }
+            }
+        },
+        "mappings": {
+            "entityModel": {
+                "dynamic_templates": [
+                    {
+                        "nested_value_feature": {
+                            "path_match": "data.contexts.*values",
+                            "mapping": {
+                                "type": "nested"
+                            }
+                        }
+                    },
+                    {
+                        "ctx_path": {
+                            "path_match": "data.contexts.*ctxPath",
+                            "mapping": {
+                                "type": "text",
+                                "analyzer": "path_hierarchy-analyzer",
+                                "search_analyzer": "keyword"
+                            }
+                        }
+                    },
+                    {
+                        "nested_row_feature": {
+                            "path_match": "data.contexts.*group",
+                            "mapping": {
+                                "type": "nested"
+                            }
+                        }
+                    },
+                    {
+                        "nested_attribute_feature": {
+                            "path_match": "data.contexts.*attributes",
+                            "mapping": {
+                                "type": "nested"
+                            }
+                        }
+                    },
+                    {
+                        "nested_relationship_feature": {
+                            "path_match": "data.contexts.*relationships",
+                            "mapping": {
+                                "type": "nested"
+                            }
+                        }
+                    },
+                    {
+                        "attrValue": {
+                            "path_match": "data.contexts.*attributes*.value",
+                            "mapping": {
+                                "type": "text",
+                                "ignore_malformed": true
+                            }
+                        }
+                    },
+                    {
+                        "propValue": {
+                            "path_match": "data.contexts.*propertyValue",
+                            "mapping": {
+                                "type": "text",
+                                "ignore_malformed": true
+                            }
+                        }
+                    },
+                    {
+                        "nestedProperty": {
+                            "path_match": "data.contexts.*properties",
+                            "mapping": {
+                                "type": "nested"
+                            }
+                        }
+                    }
+                ],
+                "properties": {
+                    "data.contexts": {
+                        "type": "nested"
+                    }
+                }
+            }
+        }
+    },
+    "configurationwriteindex": {
+        "settings": {
+            "analysis": {
+                "analyzer": {
+                    "path_hierarchy-analyzer": {
+                        "type": "custom",
+                        "tokenizer": "path_token"
+                    }
+                },
+                "tokenizer": {
+                    "path_token": {
+                        "type": "path_hierarchy",
+                        "delimiter": "/"
+                    }
+                }
+            }
+        },
+        "mappings": {
+            "configObject": {
+                "dynamic_templates": [
+                    {
+                        "jsonData": {
+                            "path_match": "data.*jsonData",
+                            "mapping": {
+                                "type": "object",
+                                "enabled": false
+                            }
+                        }
+                    },
+                    {
+                        "nested_value_feature": {
+                            "path_match": "data.contexts.*values",
+                            "mapping": {
+                                "type": "nested"
+                            }
+                        }
+                    },
+                    {
+                        "nested_row_feature": {
+                            "path_match": "data.contexts.*group",
+                            "mapping": {
+                                "type": "nested"
+                            }
+                        }
+                    },
+                    {
+                        "ctx_path": {
+                            "path_match": "data.contexts.*ctxPath",
+                            "mapping": {
+                                "type": "text",
+                                "analyzer": "path_hierarchy-analyzer",
+                                "search_analyzer": "keyword"
+                            }
+                        }
+                    },
+                    {
+                        "nested_attribute_feature": {
+                            "path_match": "data.contexts.*attributes",
+                            "mapping": {
+                                "type": "nested"
+                            }
+                        }
+                    },
+                    {
+                        "nested_relationship_feature": {
+                            "path_match": "data.contexts.*relationships",
+                            "mapping": {
+                                "type": "nested"
+                            }
+                        }
+                    },
+                    {
+                        "attrValue": {
+                            "path_match": "data.contexts.*attributes*.value",
+                            "mapping": {
+                                "type": "text",
+                                "ignore_malformed": true,
+                                "fielddata": true
+                            }
+                        }
+                    },
+                    {
+                        "attrDateValue": {
+                            "path_match": "data.contexts.*attributes*.dateValue",
+                            "mapping": {
+                                "type": "date",
+                                "format": "yyyy-MM-dd"
+                            }
+                        }
+                    },
+                    {
+                        "attrDateTimeValue": {
+                            "path_match": "data.contexts.*attributes*.dateTimeValue",
+                            "mapping": {
+                                "type": "basic_date_time"
+                            }
+                        }
+                    },
+                    {
+                        "attrDecimalValue": {
+                            "path_match": "data.contexts.*attributes*.decValue",
+                            "mapping": {
+                                "type": "float"
+                            }
+                        }
+                    },
+                    {
+                        "attrIntegerValue": {
+                            "path_match": "data.contexts.*attributes*.intValue",
+                            "mapping": {
+                                "type": "long"
+                            }
+                        }
+                    },
+                    {
+                        "attrTimestampValue": {
+                            "path_match": "data.contexts.*attributes*.timestamp",
+                            "mapping": {
+                                "type": "date",
+                                "format": "epoch_millis"
+                            }
+                        }
+                    },
+                    {
+                        "attrBooleanValue": {
+                            "path_match": "data.contexts.*attributes*.boolValue",
+                            "mapping": {
+                                "type": "boolean"
+                            }
+                        }
+                    },
+                    {
+                        "attrInvalidValue": {
+                            "path_match": "data.contexts.*attributes*.invalidValue",
+                            "mapping": {
+                                "type": "text"
+                            }
+                        }
+                    },
+                    {
+                        "propValue": {
+                            "path_match": "data.contexts.*propertyValue",
+                            "mapping": {
+                                "type": "text",
+                                "ignore_malformed": true
+                            }
+                        }
+                    },
+                    {
+                        "nestedProperty": {
+                            "path_match": "data.contexts.*properties",
+                            "mapping": {
+                                "type": "nested"
+                            }
+                        }
+                    }
+                ],
+                "properties": {
+                    "data.contexts": {
+                        "type": "nested"
+                    },
+                    "id": {
+                        "type": "string",
+                        "index": "not_analyzed"
+                    }
+                }
+            }
+        }
+    }
+}
