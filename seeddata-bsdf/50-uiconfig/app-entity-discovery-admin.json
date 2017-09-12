@@ -186,30 +186,11 @@
 												"isMetaDataColumn": true
 											},
 											{
-												"header": "Display Name",
+												"header": "Identifier",
 												"name": "aidentifier",
 												"sortable": true,
 												"filterable": false,
 												"linkTemplate": "entity-manage?id={id}&type={type}"
-											},
-											{
-												"header": "Identifier",
-												"name": "aid",
-												"sortable": true,
-												"filterable": false
-											},
-											{
-												"header": "Lifecycle Stage",
-												"name": "lifecyclestage",
-												"sortable": true,
-												"filterable": false
-											},
-											{
-												"header": "Creation Date",
-												"name": "creationdate",
-												"sortable": true,
-												"filterable": false,
-												"displayType": "dateTime"
 											}
 										]
 									},
