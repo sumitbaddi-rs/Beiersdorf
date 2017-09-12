@@ -454,7 +454,7 @@
 								},
 								{
 									"id": "locale",
-									"title": "Locale",
+									"title": "Language",
 									"icon": "pebble-lg-icons:Language",
 									"visible": true,
 									"dataRequestType": "entity-model",
