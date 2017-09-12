@@ -1,0 +1,19 @@
+{
+    "metaInfo": {
+        "dataIndex": "entityModel",
+        "collectionName": "entityModels",
+        "responseObjectName": "entityModelOperationResponse"
+    },
+    "entityModels": [
+        {
+            "id": "en-US_locale",
+            "name": "en-US",
+            "domain": "generic",
+            "type": "en-US",
+            "properties": {
+                "externalName": "English - United States",
+                "culture": "en-US"
+            }
+        }
+    ]
+}

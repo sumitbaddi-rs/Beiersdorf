@@ -1,0 +1,1 @@
+{"metaInfo":{"dataIndex":"entityModel","collectionName":"entityModels","responseObjectName":"response"},"entityModels":[{"id":"healthcheck_entityType","name":"healthcheck","type":"entityType","domain":"generic","properties":{"externalName":"Healthcheck","description":""}}]}

@@ -1,0 +1,468 @@
+{
+    "metaInfo": {
+        "dataIndex": "entityModel",
+        "collectionName": "entityModels",
+        "responseObjectName": "response"
+    },
+    "entityModels": [
+        {
+            "id": "newNartSetup_workflowDefinition",
+            "name": "newNartSetup",
+            "type": "workflowDefinition",
+            "data": {
+                "attributes": {
+                    "workflowName": {
+                        "values": [
+                            {
+                                "value": "New Product Setup"
+                            }
+                        ]
+                    },
+                    "workflowVersion": {
+                        "values": [
+                            {
+                                "value": "v1.0"
+                            }
+                        ]
+                    },
+                    "published": {
+                        "values": [
+                            {
+                                "value": true
+                            }
+                        ]
+                    },
+                    "activities": {
+                        "group": [
+                            {
+                                "activityGuid": {
+                                    "values": [
+                                        {
+                                            "value": "239136b4-b1ef-4ea2-a4f5-a90328ed972c"
+                                        }
+                                    ]
+                                },
+                                "activityName": {
+                                    "values": [
+                                        {
+                                            "value": "gbuApproval"
+                                        }
+                                    ]
+                                },
+                                "externalName": {
+                                    "values": [
+                                        {
+                                            "value": "Approve new Narts and PVs"
+                                        }
+                                    ]
+                                },
+                                "sequence": {
+                                    "values": [
+                                        {
+                                            "value": "1"
+                                        }
+                                    ]
+                                },
+                                "assignmentType": {
+                                    "values": [
+                                        {
+                                            "value": "Queue"
+                                        }
+                                    ]
+                                },
+                                "allowedRoles": {
+                                    "values": [
+                                        {
+                                            "value": "admin"
+                                        }
+                                    ]
+                                },
+                                "allowedUsers": {
+                                    "values": [
+                                        {
+                                            "value": ""
+                                        }
+                                    ]
+                                },
+                                "actions": {
+                                    "group": [
+                                        {
+                                            "actionName": {
+                                                "values": [
+                                                    {
+                                                        "value": "Done"
+                                                    }
+                                                ]
+                                            },
+                                            "actionText": {
+                                                "values": [
+                                                    {
+                                                        "value": "Submit"
+                                                    }
+                                                ]
+                                            },
+                                            "actionIcon": {
+                                                "values": [
+                                                    {
+                                                        "value": "Submit.png"
+                                                    }
+                                                ]
+                                            },
+                                            "commentsMode": {
+                                                "values": [
+                                                    {
+                                                        "value": "Optional"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "activityGuid": {
+                                    "values": [
+                                        {
+                                            "value": "cd685d18-c7cf-41ad-9f3d-436362dd6357"
+                                        }
+                                    ]
+                                },
+                                "activityName": {
+                                    "values": [
+                                        {
+                                            "value": "assignGBUMediaAssets"
+                                        }
+                                    ]
+                                },
+                                "externalName": {
+                                    "values": [
+                                        {
+                                            "value": "Assign GBU Media Assets"
+                                        }
+                                    ]
+                                },
+                                "sequence": {
+                                    "values": [
+                                        {
+                                            "value": "2"
+                                        }
+                                    ]
+                                },
+                                "assignmentType": {
+                                    "values": [
+                                        {
+                                            "value": "Queue"
+                                        }
+                                    ]
+                                },
+                                "allowedRoles": {
+                                    "values": [
+                                        {
+                                            "value": "admin"
+                                        }
+                                    ]
+                                },
+                                "allowedUsers": {
+                                    "values": [
+                                        {
+                                            "value": ""
+                                        }
+                                    ]
+                                },
+                                "actions": {
+                                    "group": [
+                                        {
+                                            "actionName": {
+                                                "values": [
+                                                    {
+                                                        "value": "Done"
+                                                    }
+                                                ]
+                                            },
+                                            "actionText": {
+                                                "values": [
+                                                    {
+                                                        "value": "Submit"
+                                                    }
+                                                ]
+                                            },
+                                            "actionIcon": {
+                                                "values": [
+                                                    {
+                                                        "value": "Submit.png"
+                                                    }
+                                                ]
+                                            },
+                                            "commentsMode": {
+                                                "values": [
+                                                    {
+                                                        "value": "Optional"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "activityGuid": {
+                                    "values": [
+                                        {
+                                            "value": "1c7687e7-35ac-4ec4-916e-ae8c9c0098ec"
+                                        }
+                                    ]
+                                },
+                                "activityName": {
+                                    "values": [
+                                        {
+                                            "value": "lbuApproval"
+                                        }
+                                    ]
+                                },
+                                "externalName": {
+                                    "values": [
+                                        {
+                                            "value": "Enrich Local Data for Narts and PVs"
+                                        }
+                                    ]
+                                },
+                                "sequence": {
+                                    "values": [
+                                        {
+                                            "value": "3"
+                                        }
+                                    ]
+                                },
+                                "assignmentType": {
+                                    "values": [
+                                        {
+                                            "value": "Queue"
+                                        }
+                                    ]
+                                },
+                                "allowedRoles": {
+                                    "values": [
+                                        {
+                                            "value": "admin"
+                                        }
+                                    ]
+                                },
+                                "allowedUsers": {
+                                    "values": [
+                                        {
+                                            "value": ""
+                                        }
+                                    ]
+                                },
+                                "actions": {
+                                    "group": [
+                                        {
+                                            "actionName": {
+                                                "values": [
+                                                    {
+                                                        "value": "Done"
+                                                    }
+                                                ]
+                                            },
+                                            "actionText": {
+                                                "values": [
+                                                    {
+                                                        "value": "Submit"
+                                                    }
+                                                ]
+                                            },
+                                            "actionIcon": {
+                                                "values": [
+                                                    {
+                                                        "value": "Submit.png"
+                                                    }
+                                                ]
+                                            },
+                                            "commentsMode": {
+                                                "values": [
+                                                    {
+                                                        "value": "Optional"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "activityGuid": {
+                                    "values": [
+                                        {
+                                            "value": "c22aae27-2c3a-4479-bce3-7c6763638360"
+                                        }
+                                    ]
+                                },
+                                "activityName": {
+                                    "values": [
+                                        {
+                                            "value": "assignLBUMediaAssets"
+                                        }
+                                    ]
+                                },
+                                "externalName": {
+                                    "values": [
+                                        {
+                                            "value": "Assign LBU Media Assets"
+                                        }
+                                    ]
+                                },
+                                "sequence": {
+                                    "values": [
+                                        {
+                                            "value": "4"
+                                        }
+                                    ]
+                                },
+                                "assignmentType": {
+                                    "values": [
+                                        {
+                                            "value": "Queue"
+                                        }
+                                    ]
+                                },
+                                "allowedRoles": {
+                                    "values": [
+                                        {
+                                            "value": "admin"
+                                        }
+                                    ]
+                                },
+                                "allowedUsers": {
+                                    "values": [
+                                        {
+                                            "value": ""
+                                        }
+                                    ]
+                                },
+                                "actions": {
+                                    "group": [
+                                        {
+                                            "actionName": {
+                                                "values": [
+                                                    {
+                                                        "value": "Done"
+                                                    }
+                                                ]
+                                            },
+                                            "actionText": {
+                                                "values": [
+                                                    {
+                                                        "value": "Submit"
+                                                    }
+                                                ]
+                                            },
+                                            "actionIcon": {
+                                                "values": [
+                                                    {
+                                                        "value": "Submit.png"
+                                                    }
+                                                ]
+                                            },
+                                            "commentsMode": {
+                                                "values": [
+                                                    {
+                                                        "value": "Optional"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "activityGuid": {
+                                    "values": [
+                                        {
+                                            "value": "f85bac31-d464-45ae-98fc-7ac02fd799b8"
+                                        }
+                                    ]
+                                },
+                                "activityName": {
+                                    "values": [
+                                        {
+                                            "value": "publish"
+                                        }
+                                    ]
+                                },
+                                "externalName": {
+                                    "values": [
+                                        {
+                                            "value": "Publish"
+                                        }
+                                    ]
+                                },
+                                "sequence": {
+                                    "values": [
+                                        {
+                                            "value": "5"
+                                        }
+                                    ]
+                                },
+                                "assignmentType": {
+                                    "values": [
+                                        {
+                                            "value": "Queue"
+                                        }
+                                    ]
+                                },
+                                "allowedRoles": {
+                                    "values": [
+                                        {
+                                            "value": "admin"
+                                        }
+                                    ]
+                                },
+                                "allowedUsers": {
+                                    "values": [
+                                        {
+                                            "value": ""
+                                        }
+                                    ]
+                                },
+                                "actions": {
+                                    "group": [
+                                        {
+                                            "actionName": {
+                                                "values": [
+                                                    {
+                                                        "value": "Done"
+                                                    }
+                                                ]
+                                            },
+                                            "actionText": {
+                                                "values": [
+                                                    {
+                                                        "value": "Submit"
+                                                    }
+                                                ]
+                                            },
+                                            "actionIcon": {
+                                                "values": [
+                                                    {
+                                                        "value": "Submit.png"
+                                                    }
+                                                ]
+                                            },
+                                            "commentsMode": {
+                                                "values": [
+                                                    {
+                                                        "value": "Optional"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    ]
+}

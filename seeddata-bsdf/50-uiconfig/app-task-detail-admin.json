@@ -1,0 +1,1437 @@
+{
+  "metaInfo": {
+    "dataIndex": "config",
+    "collectionName": "configObjects",
+    "responseObjectName": "response"
+  },
+  "configObjects": [
+    {
+      "id": "app-task-detail_components-list_admin_uiConfig",
+      "name": "app-task-detail_components-list",
+      "version": "1.0",
+      "type": "uiConfig",
+      "properties": {
+        "createdByService": "entityservice",
+        "createdBy": "user"
+      },
+      "data": {
+        "contexts": [
+          {
+            "context": {
+              "app": "app-task-detail",
+              "service": "_ALL",
+              "component": "components-list",
+              "subComponent": "_ALL",
+              "role": "admin"
+            },
+            "jsonData": {
+              "config": {
+                "components": [
+                  "rock-entity-search-discovery",
+                  "rock-task-error-grid",
+                  "rock-dimension-selector",
+                  "rock-saved-searches",
+                  "rock-search-filter",
+                  "rock-saved-searches-tags",
+                  "pebble-actions",
+                  "rock-entity-search-grid",
+                  "rock-entity-quick-manage",
+                  "rock-entity-download",
+                  "rock-scope-manage"
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "app-task-detail_rock-entity-search-discovery_admin_uiConfig",
+      "name": "app-task-detail_rock-entity-search-discovery",
+      "version": "1.0",
+      "type": "uiConfig",
+      "properties": {
+        "createdByService": "entityservice",
+        "createdBy": "user"
+      },
+      "data": {
+        "contexts": [
+          {
+            "context": {
+              "app": "app-task-detail",
+              "service": "_ALL",
+              "component": "rock-entity-search-discovery",
+              "subComponent": "_ALL",
+              "role": "admin"
+            },
+            "jsonData": {
+              "config": {
+                "componentsVisibility": [
+                  {
+                    "name": "rock-search-bar",
+                    "visible": true
+                  },
+                  {
+                    "name": "rock-saved-searches",
+                    "visible": false
+                  },
+                  {
+                    "name": "rock-entity-type-model-lov",
+                    "visible": true
+                  },
+                  {
+                    "name": "rock-entity-search-filter",
+                    "visible": true
+                  },
+                  {
+                    "name": "pebble-actions",
+                    "visible": false
+                  },
+                  {
+                    "name": "rock-entity-search-grid",
+                    "visible": true
+                  },
+                  {
+                    "name": "rock-entity-quick-manage",
+                    "visible": false
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "app-task-detail_rock-task-error-grid_admin_uiConfig",
+      "name": "app-task-detail_rock-task-error-grid",
+      "version": "1.0",
+      "type": "uiConfig",
+      "properties": {
+        "createdByService": "entityservice",
+        "createdBy": "user"
+      },
+      "data": {
+        "contexts": [
+          {
+            "context": {
+              "app": "app-task-detail",
+              "service": "_ALL",
+              "component": "rock-task-error-grid",
+              "subComponent": "_ALL",
+              "role": "admin"
+            },
+            "jsonData": {
+              "config": {
+                "viewMode": "Tabular",
+                "title": "Simple Data Table",
+                "readOnly": true,
+                "header": {
+                  "displayTitle": false,
+                  "defaultValue": "Simple Data Table"
+                },
+                "dataRequest": {
+                  "attributes": [
+                    "rowNo",
+                    "entityType",
+                    "entityId",
+                    "entityAction",
+                    "message"
+                  ]
+                },
+                "tabular": {
+                  "settings": {
+                    "isMultiSelect": true,
+                    "actions": []
+                  },
+                  "columns": [
+                    {
+                      "header": "Row No.",
+                      "name": "rowNo",
+                      "sortable": false,
+                      "filterable": false,
+                      "width": 5
+                    },
+                    {
+                      "header": "Type of Entity",
+                      "name": "entityType",
+                      "sortable": false,
+                      "filterable": false,
+                      "width": 10
+                    },
+                    {
+                      "header": "Unique Identifier",
+                      "name": "entityId",
+                      "sortable": false,
+                      "linkTemplate": "entity-manage?id={entityId}&type={entityType}",
+                      "width": 30
+                    },
+                    {
+                      "header": "Action Performed",
+                      "name": "entityAction",
+                      "sortable": false,
+                      "width": 10
+                    },
+                    {
+                      "header": "Error Message",
+                      "name": "message",
+                      "sortable": false,
+                      "filterable": false,
+                      "width": 45
+                    }
+                  ]
+                },
+                "toolbarConfig": {
+                  "buttonItems": [
+                    {
+                      "buttons": [
+                        {
+                          "name": "pageRange",
+                          "icon": "",
+                          "text": "0 - 0 / 0",
+                          "visible": true,
+                          "tooltip": "Page Range"
+                        },
+                        {
+                          "name": "refresh",
+                          "icon": "pebble-md-icons:ToolbarRefresh",
+                          "text": "",
+                          "visible": true,
+                          "tooltip": "Refresh"
+                        },
+                        {
+                          "name": "download",
+                          "icon": "pebble-md-icons:Import",
+                          "text": "",
+                          "visible": false,
+                          "tooltip": "Download"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "app-task-detail_rock-dimension-selector_admin_uiConfig",
+      "name": "app-task-detail_rock-dimension-selector",
+      "version": "1.0",
+      "type": "uiConfig",
+      "properties": {
+        "createdByService": "entityservice",
+        "createdBy": "user"
+      },
+      "data": {
+        "contexts": [
+          {
+            "context": {
+              "app": "app-task-detail",
+              "service": "_ALL",
+              "component": "rock-dimension-selector",
+              "subComponent": "_ALL",
+              "role": "admin"
+            },
+            "jsonData": {
+              "config": [
+                {
+                  "id": "channel",
+                  "title": "Channel",
+                  "icon": "pebble-lg-icons:Master",
+                  "visible": false,
+                  "dataRequestType": "entity",
+                  "dataRequest": {
+                    "params": {
+                      "query": {
+                        "filters": {
+                          "typesCriterion": [
+                            "channel"
+                          ]
+                        }
+                      }
+                    }
+                  },
+                  "dataMappings": {
+                    "id": "name",
+                    "title": "name",
+                    "subtitle": "",
+                    "image": "",
+                    "icon": "",
+                    "type": [
+                      "channel"
+                    ]
+                  },
+                  "selectedItem": {},
+                  "default": ""
+                },
+                {
+                  "id": "source",
+                  "title": "Source",
+                  "icon": "pebble-lg-icons:Source",
+                  "visible": false,
+                  "dataRequestType": "entity-model",
+                  "dataRequest": {
+                    "params": {
+                      "query": {
+                        "filters": {
+                          "typesCriterion": [
+                            "source"
+                          ]
+                        }
+                      }
+                    }
+                  },
+                  "dataMappings": {
+                    "id": "name",
+                    "title": "name",
+                    "subtitle": "",
+                    "image": "",
+                    "icon": "",
+                    "type": [
+                      "source"
+                    ]
+                  },
+                  "selectedItem": {
+                    "id": "internal",
+                    "type": "source"
+                  },
+                  "default": ""
+                },
+                {
+                  "id": "locale",
+                  "title": "Locale",
+                  "icon": "pebble-lg-icons:Language",
+                  "visible": false,
+                  "dataRequestType": "entity-model",
+                  "dataRequest": {
+                    "params": {
+                      "query": {
+                        "filters": {
+                          "typesCriterion": [
+                            "locale"
+                          ]
+                        }
+                      }
+                    }
+                  },
+                  "dataMappings": {
+                    "id": "name",
+                    "title": "name",
+                    "subtitle": "",
+                    "image": "",
+                    "icon": "",
+                    "type": [
+                      "locale"
+                    ]
+                  },
+                  "selectedItem": {
+                    "id": "en-US",
+                    "type": "locale"
+                  },
+                  "default": ""
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "app-task-detail_rock-saved-searches_admin_uiConfig",
+      "name": "app-task-detail_rock-saved-searches",
+      "version": "1.0",
+      "type": "uiConfig",
+      "properties": {
+        "createdByService": "entityservice",
+        "createdBy": "user"
+      },
+      "data": {
+        "contexts": [
+          {
+            "context": {
+              "app": "app-task-detail",
+              "service": "_ALL",
+              "component": "rock-saved-searches",
+              "subComponent": "_ALL",
+              "role": "admin"
+            },
+            "jsonData": {
+              "config": {
+                "workflowSavedSearch": [
+                  {
+                    "id": 1,
+                    "accesstype": "self",
+                    "name": "New SKUs to Submit",
+                    "workflowSearchCriterion": {
+                      "dataRequest": {
+                        "params": {
+                          "query": {
+                            "contexts": [
+                              {
+                                "workflow": "newProductSetup"
+                              }
+                            ],
+                            "filters": {
+                              "attributesCriterion": [
+                                {
+                                  "activities/activityName": {
+                                    "eq": "New SKUs to Submit"
+                                  }
+                                }
+                              ],
+                              "typesCriterion": []
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "id": 2,
+                    "accesstype": "self",
+                    "name": "Provide Additional Info",
+                    "workflowSearchCriterion": {
+                      "dataRequest": {
+                        "params": {
+                          "query": {
+                            "contexts": [
+                              {
+                                "workflow": "newProductSetup"
+                              }
+                            ],
+                            "filters": {
+                              "attributesCriterion": [
+                                {
+                                  "activities/activityName": {
+                                    "eq": "Provide Additional Info"
+                                  }
+                                }
+                              ],
+                              "typesCriterion": []
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "id": 3,
+                    "accesstype": "self",
+                    "name": "Rejected SKUs",
+                    "workflowSearchCriterion": {
+                      "dataRequest": {
+                        "params": {
+                          "query": {
+                            "contexts": [
+                              {
+                                "workflow": "newProductSetup"
+                              }
+                            ],
+                            "filters": {
+                              "attributesCriterion": [
+                                {
+                                  "activities/activityName": {
+                                    "eq": "Rejected SKUs"
+                                  }
+                                }
+                              ],
+                              "typesCriterion": []
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "id": 4,
+                    "accesstype": "self",
+                    "name": "Review Assortment",
+                    "workflowSearchCriterion": {
+                      "dataRequest": {
+                        "params": {
+                          "query": {
+                            "contexts": [
+                              {
+                                "workflow": "newProductSetup"
+                              }
+                            ],
+                            "filters": {
+                              "attributesCriterion": [
+                                {
+                                  "activities/activityName": {
+                                    "eq": "Review Assortment"
+                                  }
+                                }
+                              ],
+                              "typesCriterion": []
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "id": 5,
+                    "accesstype": "self",
+                    "name": "Assign Internal Information",
+                    "workflowSearchCriterion": {
+                      "dataRequest": {
+                        "params": {
+                          "query": {
+                            "contexts": [
+                              {
+                                "workflow": "newProductSetup"
+                              }
+                            ],
+                            "filters": {
+                              "attributesCriterion": [
+                                {
+                                  "activities/activityName": {
+                                    "eq": "Assign Internal Information"
+                                  }
+                                }
+                              ],
+                              "typesCriterion": []
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "id": 6,
+                    "accesstype": "self",
+                    "name": "Enrich Copy",
+                    "workflowSearchCriterion": {
+                      "dataRequest": {
+                        "params": {
+                          "query": {
+                            "contexts": [
+                              {
+                                "workflow": "newProductSetup"
+                              }
+                            ],
+                            "filters": {
+                              "attributesCriterion": [
+                                {
+                                  "activities/activityName": {
+                                    "eq": "Enrich Copy"
+                                  }
+                                }
+                              ],
+                              "typesCriterion": []
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "id": 7,
+                    "accesstype": "self",
+                    "name": "Enrich with Digital Assets",
+                    "workflowSearchCriterion": {
+                      "dataRequest": {
+                        "params": {
+                          "query": {
+                            "contexts": [
+                              {
+                                "workflow": "newProductSetup"
+                              }
+                            ],
+                            "filters": {
+                              "attributesCriterion": [
+                                {
+                                  "activities/activityName": {
+                                    "eq": "Enrich with Digital Assets"
+                                  }
+                                }
+                              ],
+                              "typesCriterion": []
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "favourites": [
+                  {
+                    "id": 8,
+                    "accesstype": "self",
+                    "name": "Womens Shoes",
+                    "icon": "pebble-icons:SavedSearch",
+                    "dimensions": {
+                      "catalog": "productMaster",
+                      "Source": "internal",
+                      "Locale": "en-US",
+                      "TimeSlice": "Now"
+                    },
+                    "searchQuery": "",
+                    "searchTags": [
+                      {
+                        "name": "description",
+                        "longName": "Description",
+                        "options": {
+                          "displayType": "textArea"
+                        },
+                        "value": {
+                          "eq": "Womens"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "my-searches": [
+                  {
+                    "id": 9,
+                    "accesstype": "self",
+                    "name": "Mens Shoes",
+                    "icon": "pebble-icons:SavedSearch",
+                    "shared": false,
+                    "dimensions": {
+                      "catalog": "productMaster",
+                      "Source": "internal",
+                      "Locale": "en-US",
+                      "TimeSlice": "Now"
+                    },
+                    "searchQuery": "",
+                    "searchTags": [
+                      {
+                        "name": "description",
+                        "longName": "Description",
+                        "options": {
+                          "displayType": "textArea"
+                        },
+                        "value": {
+                          "eq": "Mens"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "shared-searches": [
+                  {
+                    "id": 10,
+                    "accesstype": "self",
+                    "name": "Women's Sport Wear & Dresses",
+                    "icon": "pebble-icons:SavedSearch",
+                    "shared": true,
+                    "dimensions": {
+                      "catalog": "productMaster",
+                      "Source": "internal",
+                      "Locale": "en-US",
+                      "TimeSlice": "Now"
+                    },
+                    "searchQuery": "dresses",
+                    "searchTags": [
+                      {
+                        "name": "description",
+                        "longName": "Description",
+                        "options": {
+                          "displayType": "textArea"
+                        },
+                        "value": {
+                          "eq": "dresses"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "app-task-detail_rock-search-filter_admin_uiConfig",
+      "name": "app-task-detail_rock-search-filter",
+      "version": "1.0",
+      "type": "uiConfig",
+      "properties": {
+        "createdByService": "entityservice",
+        "createdBy": "user"
+      },
+      "data": {
+        "contexts": [
+          {
+            "context": {
+              "app": "app-task-detail",
+              "service": "_ALL",
+              "component": "rock-search-filter",
+              "subComponent": "_ALL",
+              "role": "admin"
+            },
+            "jsonData": {
+              "config": [
+                {
+                  "name": "displayName",
+                  "longName": "Display Name",
+                  "displayType": "textBox"
+                },
+                {
+                  "name": "skuNumber",
+                  "longName": "Sku Number",
+                  "value": "",
+                  "displayType": "textBox"
+                },
+                {
+                  "name": "description",
+                  "longName": "Description",
+                  "value": "",
+                  "displayType": "textArea"
+                },
+                {
+                  "name": "creationDate",
+                  "longName": "Creation Date",
+                  "value": "",
+                  "displayType": "dateTime"
+                },
+                {
+                  "name": "startDate",
+                  "longName": "Start Date",
+                  "value": "",
+                  "displayType": "dateTime"
+                },
+                {
+                  "name": "endDate",
+                  "longName": "End Date",
+                  "value": "",
+                  "displayType": "dateTime"
+                },
+                {
+                  "name": "size",
+                  "longName": "Size",
+                  "displayType": "dropDown"
+                },
+                {
+                  "name": "orin",
+                  "longName": "ORIN",
+                  "displayType": "numeric"
+                },
+                {
+                  "name": "width",
+                  "longName": "Width",
+                  "displayType": "dropDown"
+                },
+                {
+                  "name": "skuQuantity",
+                  "longName": "Quantity",
+                  "displayType": "numeric"
+                },
+                {
+                  "name": "status",
+                  "longName": "Status",
+                  "displayType": "textBox"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "app-task-detail_rock-saved-searches-tags_admin_uiConfig",
+      "name": "app-task-detail_rock-saved-searches-tags",
+      "version": "1.0",
+      "type": "uiConfig",
+      "properties": {
+        "createdByService": "entityservice",
+        "createdBy": "user"
+      },
+      "data": {
+        "contexts": [
+          {
+            "context": {
+              "app": "app-task-detail",
+              "service": "_ALL",
+              "component": "rock-saved-searches-tags",
+              "subComponent": "_ALL",
+              "role": "admin"
+            },
+            "jsonData": {
+              "config": {
+                "favourites": [
+                  {
+                    "name": "favourites",
+                    "icon": "pebble-icons:Star",
+                    "text": "",
+                    "visible": true,
+                    "eventName": "favourite-saved-search"
+                  },
+                  {
+                    "name": "delete",
+                    "icon": "pebble-icons:Delete",
+                    "text": "",
+                    "visible": true,
+                    "eventName": "delete-saved-search"
+                  }
+                ],
+                "my-searches": [
+                  {
+                    "name": "favourites",
+                    "icon": "star-border",
+                    "text": "",
+                    "visible": true,
+                    "eventName": "favourite-saved-search"
+                  },
+                  {
+                    "name": "delete",
+                    "icon": "pebble-icons:Delete",
+                    "text": "",
+                    "visible": true,
+                    "eventName": "delete-saved-search"
+                  }
+                ],
+                "shared-searches": [
+                  {
+                    "name": "favourites",
+                    "icon": "pebble-icons:Star",
+                    "text": "",
+                    "visible": true,
+                    "eventName": "favourite-saved-search"
+                  },
+                  {
+                    "name": "delete",
+                    "icon": "pebble-icons:Delete",
+                    "text": "",
+                    "visible": true,
+                    "eventName": "delete-saved-search"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "app-task-detail_pebble-actions_admin_uiConfig",
+      "name": "app-task-detail_pebble-actions",
+      "version": "1.0",
+      "type": "uiConfig",
+      "properties": {
+        "createdByService": "entityservice",
+        "createdBy": "user"
+      },
+      "data": {
+        "contexts": [
+          {
+            "context": {
+              "app": "app-task-detail",
+              "service": "_ALL",
+              "component": "pebble-actions",
+              "subComponent": "_ALL",
+              "role": "admin"
+            },
+            "jsonData": {
+              "config": [
+                {
+                  "actions": [
+                    {
+                      "name": "groupEnsemble",
+                      "icon": "pebble-xl-icons:Variants",
+                      "text": "Group to Ensemble",
+                      "visible": true,
+                      "eventName": "action-rollup",
+                      "componentName": "rock-roll-up",
+                      "componentConfigName": "roll-up-ensemble"
+                    },
+                    {
+                      "name": "groupProductPresentation",
+                      "icon": "pebble-xl-icons:Brand",
+                      "text": "Group to Product Presentation",
+                      "visible": true,
+                      "eventName": "action-rollup",
+                      "componentName": "rock-roll-up",
+                      "componentConfigName": "roll-up-productpresentation"
+                    },
+                    {
+                      "name": "groupLot",
+                      "icon": "pebble-xl-icons:Channel",
+                      "text": "Group to Lot",
+                      "visible": true,
+                      "eventName": "action-rollup",
+                      "componentName": "rock-roll-up",
+                      "componentConfigName": "roll-up-lot"
+                    },
+                    {
+                      "name": "rePublish",
+                      "icon": "pebble-xl-icons:RePublish",
+                      "text": "Publish",
+                      "visible": true,
+                      "eventName": "action-re-publish",
+                      "componentName": "rock-re-publish"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "app-task-detail_rock-entity-search-grid_admin_uiConfig",
+      "name": "app-task-detail_rock-entity-search-grid",
+      "version": "1.0",
+      "type": "uiConfig",
+      "properties": {
+        "createdByService": "entityservice",
+        "createdBy": "user"
+      },
+      "data": {
+        "contexts": [
+          {
+            "context": {
+              "app": "app-task-detail",
+              "service": "_ALL",
+              "component": "rock-entity-search-grid",
+              "subComponent": "_ALL",
+              "role": "admin"
+            },
+            "jsonData": {
+              "config": {
+                "governDataConfig": {
+                  "showGovernDataToggle": false,
+                  "entityNameAttribute": "producttitle"
+                },
+                "gridConfig": {
+                  "viewMode": "Tabular",
+                  "title": "Search Results",
+                  "mode": "Read",
+                  "readOnly": true,
+                  "schemaType": "attribute",
+                  "advanceSelectionEnabled": true,
+                  "advanceSelectionOptions": [
+                    {
+                      "itemCount": "20",
+                      "mode": "count",
+                      "label": "Select first20",
+                      "checked": false
+                    },
+                    {
+                      "itemCount": "50",
+                      "mode": "count",
+                      "label": "Select first50",
+                      "checked": false
+                    },
+                    {
+                      "mode": "query",
+                      "label": "Select all search criteria",
+                      "checked": false
+                    }
+                  ],
+                  "titleTemplates": {
+                    "contextTemplate": "for the channel: {channel} ",
+                    "workflowTemplate": "in workflow: {workflow}, workflow Status: {workflowStatus}"
+                  },
+                  "dataRequest": {
+                    "typesCriterion": [
+                      "sku"
+                    ],
+                    "attributes": [
+                      "aid",
+                      "aidentifier",
+                      "lifecyclestage",
+                      "creationdate"
+                    ]
+                  },
+                  "tabular": {
+                    "settings": {
+                      "isMultiSelect": true
+                    },
+                    "columns": [
+                      {
+                        "header": "Entity Type",
+                        "name": "type",
+                        "sortable": false,
+                        "filterable": false,
+                        "isMetaDataColumn": true
+                      },
+                      {
+                        "header": "Identifier",
+                        "name": "aid",
+                        "sortable": true,
+                        "filterable": false,
+                        "linkTemplate": "entity-manage?id={id}&type={type}"
+                      },
+                      {
+                        "header": "Display Name",
+                        "name": "aidentifer",
+                        "sortable": true,
+                        "filterable": false
+                      },
+                      {
+                        "header": "Lifecycle Stage",
+                        "name": "lifecyclestage",
+                        "sortable": true,
+                        "filterable": false
+                      },
+                      {
+                        "header": "Creation Date",
+                        "name": "creationdate",
+                        "sortable": true,
+                        "filterable": false,
+                        "displayType": "dateTime"
+                      }
+                    ]
+                  },
+                  "list": {
+                    "settings": {
+                      "isMultiSelect": true,
+                      "actions": [
+                        {
+                          "name": "delete",
+                          "icon": "pebble-icons:Delete",
+                          "eventName": "delete-item"
+                        },
+                        {
+                          "name": "edit",
+                          "icon": "pebble-md-icons:Edit",
+                          "eventName": "edit-item"
+                        }
+                      ]
+                    },
+                    "listItems": {
+                      "image": "productImageUrl",
+                      "title": "displayName",
+                      "id": "id",
+                      "fields": [
+                        {
+                          "name": "description",
+                          "label": "Description",
+                          "noTrim": false
+                        },
+                        {
+                          "name": "status",
+                          "label": "Status",
+                          "noTrim": true
+                        }
+                      ]
+                    }
+                  },
+                  "tile": {
+                    "settings": {
+                      "isMultiSelect": true,
+                      "actions": [
+                        {
+                          "name": "delete",
+                          "icon": "pebble-icons:Delete",
+                          "eventName": "delete-item"
+                        },
+                        {
+                          "name": "edit",
+                          "icon": "pebble-md-icons:Edit",
+                          "eventName": "edit-item"
+                        }
+                      ]
+                    },
+                    "tileItems": {
+                      "image": "productImageUrl",
+                      "title": "displayName",
+                      "id": "id",
+                      "fields": [
+                        {
+                          "name": "description",
+                          "label": "Description",
+                          "noTrim": false
+                        },
+                        {
+                          "name": "status",
+                          "label": "Status",
+                          "noTrim": true
+                        }
+                      ]
+                    }
+                  },
+                  "toolbarConfig": {
+                    "buttonItems": [
+                      {
+                        "buttons": [
+                          {
+                            "name": "pageRange",
+                            "icon": "",
+                            "text": "0 - 0 / 0",
+                            "visible": true,
+                            "tooltip": "Page Range"
+                          },
+                          {
+                            "name": "refresh",
+                            "icon": "pebble-md-icons:ToolbarRefresh",
+                            "text": "",
+                            "visible": true,
+                            "tooltip": "Refresh"
+                          },
+                          {
+                            "name": "edit",
+                            "icon": "pebble-md-icons:Edit",
+                            "text": "",
+                            "visible": true,
+                            "tooltip": "Edit"
+                          },
+                          {
+                            "name": "addrow",
+                            "icon": "pebble-sm-icons:Add",
+                            "text": "",
+                            "visible": true,
+                            "tooltip": "Add"
+                          },
+                          {
+                            "name": "download",
+                            "icon": "pebble-md-icons:Import",
+                            "text": "",
+                            "visible": true,
+                            "tooltip": "Download"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "app-task-detail_rock-entity-quick-manage_admin_uiConfig",
+      "name": "app-task-detail_rock-entity-quick-manage",
+      "version": "1.0",
+      "type": "uiConfig",
+      "properties": {
+        "createdByService": "entityservice",
+        "createdBy": "user"
+      },
+      "data": {
+        "contexts": [
+          {
+            "context": {
+              "app": "app-task-detail",
+              "service": "_ALL",
+              "component": "rock-entity-quick-manage",
+              "subComponent": "_ALL",
+              "role": "admin"
+            },
+            "jsonData": {
+              "config": {
+                "rock-tabs": {
+                  "scrollable": true,
+                  "fitContainer": false,
+                  "tabItems": [
+                    {
+                      "name": "attributes",
+                      "title": "Attributes",
+                      "enableDropdownMenu": true,
+                      "selected": true,
+                      "component": {
+                        "name": "rock-attribute-manage",
+                        "path": "/src/elements/rock-attribute-manage/rock-attribute-manage.html",
+                        "properties": {
+                          "allow-save-on-error": true,
+                          "do-sync-validation": true,
+                          "functional-mode": "quickManage",
+                          "message-code-mapping": {
+                            "Req001": "Required",
+                            "MinLen001": "MIN_LENGTH",
+                            "MaxLen001": "MAX_LENGTH",
+                            "AlVal001": "ALLOWED_VALUES",
+                            "Prec001": "Precision",
+                            "Range001": "RANGE_FROM_INCLUSIVE",
+                            "Range002": "RANGE_TO_INCLUSIVE",
+                            "Range003": "RANGE_FROM_EXCLUSIVE",
+                            "Range004": "RANGE_TO_EXCLUSIVE",
+                            "Range005": "RANGE_TO_INCLUSIVE_FROM_EXCLUSIVE",
+                            "Range006": "RANGE_TO_INCLUSIVE_FROM_INCLUSIVE",
+                            "Range007": "RANGE_TO_EXCLUSIVE_FROM_EXCLUSIVE",
+                            "Range008": "RANGE_TO_EXCLUSIVE_FROM_INCLUSIVE",
+                            "133311": "Length should be greater than Width",
+                            "133312": "Width should be less than Length"
+                          },
+                          "config-context": {
+                            "attributeNames": [
+                              "aid",
+                              "aidentifier",
+                              "lifecylcestage",
+                              "creationdate"
+                            ]
+                          }
+                        }
+                      },
+                      "menuItems": [
+                        {
+                          "name": "advanced",
+                          "icon": "icons:add-box",
+                          "title": "Advanced",
+                          "component": {
+                            "name": "rock-attribute-manage",
+                            "path": "/src/elements/rock-attribute-manage/rock-attribute-manage.html",
+                            "properties": {
+                              "mode": "view",
+                              "no-of-columns": 2,
+                              "do-sync-validation": true,
+                              "message-code-mapping": {
+                                "Req001": "Required",
+                                "MinLen001": "MIN_LENGTH",
+                                "MaxLen001": "MAX_LENGTH",
+                                "AlVal001": "ALLOWED_VALUES",
+                                "Prec001": "Precision",
+                                "Range001": "RANGE_FROM_INCLUSIVE",
+                                "Range002": "RANGE_TO_INCLUSIVE",
+                                "Range003": "RANGE_FROM_EXCLUSIVE",
+                                "Range004": "RANGE_TO_EXCLUSIVE",
+                                "Range005": "RANGE_TO_INCLUSIVE_FROM_EXCLUSIVE",
+                                "Range006": "RANGE_TO_INCLUSIVE_FROM_INCLUSIVE",
+                                "Range007": "RANGE_TO_EXCLUSIVE_FROM_EXCLUSIVE",
+                                "Range008": "RANGE_TO_EXCLUSIVE_FROM_INCLUSIVE",
+                                "133311": "Length should be greater than Width",
+                                "133312": "Width should be less than Length"
+                              },
+                              "config-context": {
+                                "groupName": "Advanced",
+                                "attributeNames": [
+                                  "featureHeaderText",
+                                  "featureQuoteText",
+                                  "isBopisEligible",
+                                  "isNewClearanceTimestamp",
+                                  "isNewToClearance",
+                                  "isSampleEnsemble",
+                                  "ppSkuSwatchesRolledUpCount",
+                                  "productReviewQuoteText",
+                                  "sourceFeedId",
+                                  "isFurniture",
+                                  "isSephora",
+                                  "mailableIndicator",
+                                  "questionableOrderQuantity",
+                                  "recycleFeeIndicator",
+                                  "sabrixCommodityCode",
+                                  "specialIndicator",
+                                  "unusualDemandQuantity",
+                                  "vData"
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "pebble-toolbar": {
+                  "buttonItems": [
+                    {
+                      "buttons": [
+                        {
+                          "name": "refresh",
+                          "icon": "pebble-md-icons:ToolbarRefresh",
+                          "text": "",
+                          "visible": true,
+                          "tooltip": "Refresh"
+                        },
+                        {
+                          "name": "moreActions",
+                          "icon": "pebble-md-icons:ToolbarMore",
+                          "text": "",
+                          "buttons": [
+                            {
+                              "name": "add",
+                              "icon": "pebble-sm-icons:Add",
+                              "text": "",
+                              "visible": true,
+                              "tooltip": "Add"
+                            },
+                            {
+                              "name": "delete",
+                              "icon": "pebble-md-icons:Delete",
+                              "text": "",
+                              "visible": true,
+                              "tooltip": "Delete"
+                            },
+                            {
+                              "name": "cut",
+                              "icon": "pebble-md-icons:Cut",
+                              "text": "",
+                              "visible": true,
+                              "tooltip": "Cut"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "rock-entity-tofix": {
+                  "completionPercentage": 65,
+                  "tofixes": [
+                    {
+                      "data": {
+                        "name": "brandext",
+                        "type": "error",
+                        "label": "Images not associated",
+                        "eventName": "tofixtap"
+                      }
+                    },
+                    {
+                      "data": {
+                        "name": "priceissue",
+                        "type": "error",
+                        "label": "Required Attributes not provided",
+                        "eventName": "tofixtap"
+                      }
+                    },
+                    {
+                      "data": {
+                        "name": "msrpissue",
+                        "type": "error",
+                        "label": "Incorrect MSRP",
+                        "eventName": "tofixtap"
+                      }
+                    },
+                    {
+                      "data": {
+                        "name": "missingvideos",
+                        "type": "warning",
+                        "label": "Missing videos",
+                        "eventName": "tofixtap"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "app-task-detail_rock-entity-download_admin_uiConfig",
+      "name": "app-task-detail_rock-entity-download",
+      "version": "1.0",
+      "type": "uiConfig",
+      "properties": {
+        "createdByService": "entityservice",
+        "createdBy": "user"
+      },
+      "data": {
+        "contexts": [
+          {
+            "context": {
+              "app": "app-task-detail",
+              "service": "_ALL",
+              "component": "rock-entity-download",
+              "subComponent": "_ALL",
+              "role": "admin"
+            },
+            "jsonData": {
+              "config": {
+                "name": "rock-entity-download",
+                "label": "Download bulk entities",
+                "steps": [
+                  {
+                    "name": "step-1-rock-entity-download",
+                    "label": "Select attributes of entity to be downloaded",
+                    "component": {
+                      "name": "rock-scope-manage",
+                      "path": "/../../src/elements/rock-scope-manage/rock-scope-manage.html",
+                      "properties": {}
+                    },
+                    "sharedProperties": {
+                      "business-function-data": "businessFunctionData",
+                      "selected-attributes": "selectedItems"
+                    },
+                    "nextEvent": "onNext",
+                    "cancelEvent": "onCancel"
+                  },
+                  {
+                    "name": "step-2-rock-entity-download",
+                    "label": "Download the excel file",
+                    "component": {
+                      "name": "rock-entity-download",
+                      "path": "/../../src/elements/rock-entity-download/rock-entity-download.html",
+                      "properties": {
+                        "sync-threshold": 200
+                      }
+                    },
+                    "sharedProperties": {
+                      "business-function-data": "businessFunctionData"
+                    },
+                    "nextEvent": "onDownload"
+                  },
+                  {
+                    "name": "step-3-rock-entity-download",
+                    "label": "Entities download finish",
+                    "component": {
+                      "name": "rock-business-function-finish",
+                      "path": "/../../src/elements/rock-business-function-finish/rock-business-function-finish.html",
+                      "properties": {
+                        "business-function-data": {}
+                      }
+                    },
+                    "nextEvent": "onNext"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "app-task-detail_rock-scope-manage_admin_uiConfig",
+      "name": "app-task-detail_rock-scope-manage",
+      "version": "1.0",
+      "type": "uiConfig",
+      "properties": {
+        "createdByService": "entityservice",
+        "createdBy": "user"
+      },
+      "data": {
+        "contexts": [
+          {
+            "context": {
+              "app": "app-task-detail",
+              "service": "_ALL",
+              "component": "rock-scope-manage",
+              "subComponent": "_ALL",
+              "role": "admin"
+            },
+            "jsonData": {
+              "config": {
+                "splitListConfig": {
+                  "viewMode": "Tabular",
+                  "tabular": {
+                    "settings": {
+                      "isMultiSelect": true,
+                      "idField": "name"
+                    },
+                    "columns": [
+                      {
+                        "header": "External Name",
+                        "name": "externalName",
+                        "sortable": true,
+                        "filterable": true,
+                        "readFrom": "properties"
+                      },
+                      {
+                        "header": "Group",
+                        "name": "groupName",
+                        "sortable": true,
+                        "filterable": true,
+                        "readFrom": "properties"
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

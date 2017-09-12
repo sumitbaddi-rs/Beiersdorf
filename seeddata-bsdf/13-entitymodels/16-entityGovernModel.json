@@ -1,0 +1,194 @@
+{
+	"metaInfo": {
+		"dataIndex": "entityModel",
+		"collectionName": "entityModels",
+		"responseObjectName": "response"
+	},
+	"entityModels": [
+		{
+			"id": "classification_entityGovernModel",
+			"name": "classification",
+			"type": "entityGovernModel",
+			"domain": "entityModel",
+			"data": {
+				"attributes": {
+					"businessConditions": {
+						"group": [
+							{
+								"businessConditionName": {
+									"properties": {
+										"attributeType": "string",
+										"externalName": "Business Condition Name",
+										"isReusable": "false",
+										"isAttributeIdentifier": "true"
+									}
+								},
+								"businessConditionStatus": {
+									"properties": {
+										"attributeType": "boolean",
+										"externalName": "Business Condition Status",
+										"isReusable": "false"
+									}
+								}
+							}
+						],
+						"properties": {
+							"attributeType": "group",
+							"externalName": "Business Conditions",
+							"isReusable": "false",
+							"isCollection": "true"
+						}
+					}
+				}
+			}
+		},
+		{
+			"id": "image_entityGovernModel",
+			"name": "image",
+			"type": "entityGovernModel",
+			"domain": "entityModel",
+			"data": {
+				"attributes": {
+					"businessConditions": {
+						"group": [
+							{
+								"businessConditionName": {
+									"properties": {
+										"attributeType": "string",
+										"externalName": "Business Condition Name",
+										"isReusable": "false",
+										"isAttributeIdentifier": "true"
+									}
+								},
+								"businessConditionStatus": {
+									"properties": {
+										"attributeType": "boolean",
+										"externalName": "Business Condition Status",
+										"isReusable": "false"
+									}
+								}
+							}
+						],
+						"properties": {
+							"attributeType": "group",
+							"externalName": "Business Conditions",
+							"isReusable": "false",
+							"isCollection": "true"
+						}
+					}
+				}
+			}
+		},
+		{
+			"id": "enart_entityGovernModel",
+			"name": "enart",
+			"type": "entityGovernModel",
+			"domain": "entityModel",
+			"data": {
+				"attributes": {
+					"businessConditions": {
+						"group": [
+							{
+								"businessConditionName": {
+									"properties": {
+										"attributeType": "string",
+										"externalName": "Business Condition Name",
+										"isReusable": "false",
+										"isAttributeIdentifier": "true"
+									}
+								},
+								"businessConditionStatus": {
+									"properties": {
+										"attributeType": "boolean",
+										"externalName": "Business Condition Status",
+										"isReusable": "false"
+									}
+								}
+							}
+						],
+						"properties": {
+							"attributeType": "group",
+							"externalName": "Business Conditions",
+							"isReusable": "false",
+							"isCollection": "true"
+						}
+					}
+				}
+			}
+		},
+		{
+			"id": "emasterproduct_entityGovernModel",
+			"name": "emasterproduct",
+			"type": "entityGovernModel",
+			"domain": "entityModel",
+			"data": {
+				"attributes": {
+					"businessConditions": {
+						"group": [
+							{
+								"businessConditionName": {
+									"properties": {
+										"attributeType": "string",
+										"externalName": "Business Condition Name",
+										"isReusable": "false",
+										"isAttributeIdentifier": "true"
+									}
+								},
+								"businessConditionStatus": {
+									"properties": {
+										"attributeType": "boolean",
+										"externalName": "Business Condition Status",
+										"isReusable": "false"
+									}
+								}
+							}
+						],
+						"properties": {
+							"attributeType": "group",
+							"externalName": "Business Conditions",
+							"isReusable": "false",
+							"isCollection": "true"
+						}
+					}
+				}
+			}
+		},
+		{
+			"id": "eproductversion_entityGovernModel",
+			"name": "eproductversion",
+			"type": "entityGovernModel",
+			"domain": "entityModel",
+			"data": {
+				"attributes": {
+					"businessConditions": {
+						"group": [
+							{
+								"businessConditionName": {
+									"properties": {
+										"attributeType": "string",
+										"externalName": "Business Condition Name",
+										"isReusable": "false",
+										"isAttributeIdentifier": "true"
+									}
+								},
+								"businessConditionStatus": {
+									"properties": {
+										"attributeType": "boolean",
+										"externalName": "Business Condition Status",
+										"isReusable": "false"
+									}
+								}
+							}
+						],
+						"properties": {
+							"attributeType": "group",
+							"externalName": "Business Conditions",
+							"isReusable": "false",
+							"isCollection": "true"
+						}
+					}
+				}
+			}
+		}
+	]
+}

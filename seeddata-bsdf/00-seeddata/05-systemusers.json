@@ -1,0 +1,37 @@
+{
+   "metaInfo": {
+      "dataIndex": "entityModel",
+      "collectionName": "entityModels",
+      "responseObjectName": "response"
+   },
+   "entityModels": [
+      {
+         "id": "system_user",
+         "name": "system",
+         "type": "user",
+         "properties": {
+            "firstName": "System",
+            "lastName": "",
+            "login": "system",
+            "email": "system@rdp.com",
+            "roles": [
+               "admin"
+            ]
+         }
+      },
+      {
+         "id": "datareader_user",
+         "name": "datareader",
+         "type": "user",
+         "properties": {
+            "firstName": "Data Reader",
+            "lastName": "",
+            "login": "datareader",
+            "email": "datareader@rdp.com",
+            "roles": [
+               "dataReader"
+            ]
+         }
+      }
+   ]
+}

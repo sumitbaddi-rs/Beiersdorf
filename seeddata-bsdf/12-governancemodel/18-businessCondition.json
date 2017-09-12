@@ -1,0 +1,337 @@
+{
+    "metaInfo": {
+        "dataIndex": "entityModel",
+        "collectionName": "entityModels",
+        "responseObjectName": "response"
+    },
+    "entityModels": [
+        {
+            "id": "validateRequiredAttributes_businessCondition",
+            "name": "Validate Required Attributes",
+            "type": "businessCondition",
+            "data": {
+                "attributes": {
+                    "ruleType": {
+                        "values": [
+                            {
+                                "value": "businessCondition"
+                            }
+                        ]
+                    },
+                    "isDraft": {
+                        "values": [
+                            {
+                                "value": false
+                            }
+                        ]
+                    },
+                    "isDeleted": {
+                        "values": [
+                            {
+                                "value": false
+                            }
+                        ]
+                    },
+                    "name": {
+                        "values": [
+                            {
+                                "value": "Business Required attributes need to be completed"
+                            }
+                        ]
+                    },
+                    "description": {
+                        "values": [
+                            {
+                                "value": "Business Required attributes need to be completed"
+                            }
+                        ]
+                    },
+                    "executionMode": {
+                        "values": [
+                            {
+                                "value": "any"
+                            }
+                        ]
+                    },
+                    "enabled": {
+                        "values": [
+                            {
+                                "value": true
+                            }
+                        ]
+                    },
+                    "isSystemRule": {
+                        "values": [
+                            {
+                                "value": false
+                            }
+                        ]
+                    },
+                    "impactedRoles": {
+                        "values": [
+                            {
+                                "value": "admin"
+                            }
+                        ]
+                    },
+                    "impactedAttributes": {
+                        "values": [
+                            {
+                                "value": "aid"
+                            },
+                            {
+                                "value": "aidentifier"
+                            },
+                            {
+                                "value": "adescription"
+                            }
+                        ]
+                    }
+                },
+                "relationships": {
+                    "hasBusinessRules": [
+                        {
+                            "relTo": {
+                                "id": "validateRequiredAttributes_businessRule",
+                                "type": "businessRule"
+                            },
+                            "relationshipType": "association",
+                            "attributes": {
+                                "isDeleted": {
+                                    "values": [
+                                        {
+                                            "value": false
+                                        }
+                                    ]
+                                },
+                                "executionOrder": {
+                                    "values": [
+                                        {
+                                            "value": 1
+                                        }
+                                    ]
+                                }
+                            },
+                            "id": "hasBusinessRules_validateRequiredAttributes_businessRule",
+                            "direction": "both"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "validateEnityPresentInCreateWorkflow_businessCondition",
+            "name": "NART is in create workflow",
+            "type": "businessCondition",
+            "data": {
+                "attributes": {
+                    "name": {
+                        "values": [
+                            {
+                                "value": "NART is in create workflow"
+                            }
+                        ]
+                    },
+                    "ruleType": {
+                        "values": [
+                            {
+                                "value": "businessCondition"
+                            }
+                        ]
+                    },
+                    "isDraft": {
+                        "values": [
+                            {
+                                "value": "false"
+                            }
+                        ]
+                    },
+                    "isDeleted": {
+                        "values": [
+                            {
+                                "value": "false"
+                            }
+                        ]
+                    },
+                    "impactedRoles": {
+                        "values": [
+                            {
+                                "value": "admin"
+                            }
+                        ]
+                    },
+                    "impactedAttributes": {
+                        "values": [
+                            {
+                                "value": ""
+                            }
+                        ]
+                    },
+                    "description": {
+                        "values": [
+                            {
+                                "value": "NART is in create workflow"
+                            }
+                        ]
+                    },
+                    "executionMode": {
+                        "values": [
+                            {
+                                "value": "any"
+                            }
+                        ]
+                    },
+                    "isSystemRule": {
+                        "values": [
+                            {
+                                "value": false
+                            }
+                        ]
+                    }
+                },
+                "relationships": {
+                    "hasBusinessRules": [
+                        {
+                            "direction": "both",
+                            "relationshipType": "association",
+                            "id": "hasBusinessRules_validateEnityPresentInCreateWorkflowValidationRule_businessRule",
+                            "relTo": {
+                                "id": "validateEnityPresentInCreateWorkflowValidationRule_businessRule",
+                                "type": "businessRule"
+                            },
+                            "attributes": {
+                                "isDeleted": {
+                                    "values": [
+                                        {
+                                            "value": "false"
+                                        }
+                                    ]
+                                },
+                                "executionOrder": {
+                                    "values": [
+                                        {
+                                            "value": "1"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "validateAssets_businessCondition",
+            "name": "Validate Asset Properties",
+            "type": "businessCondition",
+            "data": {
+                "attributes": {
+                    "name": {
+                        "values": [
+                            {
+                                "value": "Validate Asset Properties"
+                            }
+                        ]
+                    },
+                    "ruleType": {
+                        "values": [
+                            {
+                                "value": "businessCondition"
+                            }
+                        ]
+                    },
+                    "isDraft": {
+                        "values": [
+                            {
+                                "value": "false"
+                            }
+                        ]
+                    },
+                    "isDeleted": {
+                        "values": [
+                            {
+                                "value": "false"
+                            }
+                        ]
+                    },
+                    "impactedRoles": {
+                        "values": [
+                            {
+                                "value": "filetypeextension"
+                            },
+                            {
+                                "value": "imagewidth"
+                            },
+                            {
+                                "value": "imageheight"
+                            },
+                            {
+                                "value": "imageresolution"
+                            },
+                            {
+                                "value": "iimagetype"
+                            }
+                        ]
+                    },
+                    "impactedAttributes": {
+                        "values": [
+                            {
+                                "value": ""
+                            }
+                        ]
+                    },
+                    "description": {
+                        "values": [
+                            {
+                                "value": "Business Required attributes need to be completed"
+                            }
+                        ]
+                    },
+                    "executionMode": {
+                        "values": [
+                            {
+                                "value": "any"
+                            }
+                        ]
+                    },
+                    "isSystemRule": {
+                        "values": [
+                            {
+                                "value": false
+                            }
+                        ]
+                    }
+                },
+                "relationships": {
+                    "hasBusinessRules": [
+                        {
+                            "direction": "both",
+                            "relationshipType": "association",
+                            "id": "hasBusinessRules_validationRuleForAsset_businessRule",
+                            "relTo": {
+                                "id": "validationRuleForAsset_businessRule",
+                                "type": "businessRule"
+                            },
+                            "attributes": {
+                                "isDeleted": {
+                                    "values": [
+                                        {
+                                            "value": "false"
+                                        }
+                                    ]
+                                },
+                                "executionOrder": {
+                                    "values": [
+                                        {
+                                            "value": "1"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

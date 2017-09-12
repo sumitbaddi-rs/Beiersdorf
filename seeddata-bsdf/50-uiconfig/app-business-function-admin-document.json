@@ -1,0 +1,566 @@
+{
+	"metaInfo": {
+		"dataIndex": "config",
+		"collectionName": "configObjects",
+		"responseObjectName": "response"
+	},
+	"configObjects": [
+		{
+			"id": "app-business-function_components-list_document_admin_uiConfig",
+			"name": "app-business-function_components-list",
+			"version": "1.0",
+			"type": "uiConfig",
+			"properties": {
+				"createdByService": "entityservice",
+				"createdBy": "user"
+			},
+			"data": {
+				"contexts": [
+					{
+						"context": {
+							"app": "app-business-function",
+							"service": "_ALL",
+							"component": "components-list",
+							"subComponent": "_ALL",
+							"entityType": "document",
+							"role": "admin"
+						},
+						"jsonData": {
+							"config": {
+								"components": [
+									"create-entity",
+									"rock-variants-create-grid",
+									"extension-manage",
+									"upload-model",
+									"upload-assets",
+									"upload-excel"
+								]
+							}
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": "app-business-function_create-entity_document_admin_uiConfig",
+			"name": "app-business-function_create-entity",
+			"version": "1.0",
+			"type": "uiConfig",
+			"properties": {
+				"createdByService": "entityservice",
+				"createdBy": "user"
+			},
+			"data": {
+				"contexts": [
+					{
+						"context": {
+							"app": "app-business-function",
+							"service": "_ALL",
+							"component": "create-entity",
+							"subComponent": "_ALL",
+							"entityType": "document",
+							"role": "admin"
+						},
+						"jsonData": {
+							"config": {
+								"name": "create-entity",
+								"label": "Create",
+								"steps": [
+									{
+										"name": "step-1-fill-initial-data",
+										"label": "Fill Data for New Entity",
+										"component": {
+											"name": "rock-entity-create",
+											"path": "/../../src/elements/rock-entity-create/rock-entity-create.html",
+											"properties": {
+												"import-profile-name": "document_Folder_Excel_Import_Transform",
+												"process-profile-name": "document_Folder_Excel_Import_Process",
+												"message-code-mapping": {
+													"Req001": "Required",
+													"MinLen001": "MIN_LENGTH",
+													"MaxLen001": "MAX_LENGTH",
+													"AlVal001": "ALLOWED_VALUES",
+													"Prec001": "Precision",
+													"Range001": "RANGE_FROM_INCLUSIVE",
+													"Range002": "RANGE_TO_INCLUSIVE",
+													"Range003": "RANGE_FROM_EXCLUSIVE",
+													"Range004": "RANGE_TO_EXCLUSIVE",
+													"Range005": "RANGE_TO_INCLUSIVE_FROM_EXCLUSIVE",
+													"Range006": "RANGE_TO_INCLUSIVE_FROM_INCLUSIVE",
+													"Range007": "RANGE_TO_EXCLUSIVE_FROM_EXCLUSIVE",
+													"Range008": "RANGE_TO_EXCLUSIVE_FROM_INCLUSIVE",
+													"133311": "Length should be greater than Width",
+													"133312": "Width should be less than Length"
+												},
+												"attribute-names": [
+													"id",
+													"about",
+													"description",
+													"comment",
+													"headline",
+													"creator",
+													"artist",
+													"datecreated",
+													"encodingprocess",
+													"filetype",
+													"filenameextension",
+													"filesource",
+													"filesize",
+													"suppliernumbername",
+													"thumbnail",
+													"thumbnailid"
+												],
+												"taxonomy": "Product Setup Taxonomy",
+												"manual-create-actions": [{
+													"title": "Create",
+													"actions": [{
+															"name": "createSingleProduct",
+															"icon": "pebble-xl-icons:SingleProduct",
+															"text": "Single Product",
+															"visible": true
+													}]
+												}],
+												"allowed-file-types": [
+													"xlsx",
+													"xlsm"
+												]
+											}
+										},
+										"sharedProperties": {
+											"context-data": "contextData",
+											"business-function-data": "businessFunctionData"
+										},
+										"nextEvent": "onSave",
+										"cancelEvent": "onCancel"
+									},
+									{
+										"name": "step-2-rock-extension-manage",
+										"label": "Manage extension for a New Entity",
+										"component": {
+											"name": "rock-extension-manage",
+											"path": "/../../src/elements/rock-extension-manage/rock-extension-manage.html",
+											"properties": {
+												"taxonomy": "Product Setup Taxonomy",
+												"leaf-node-only": true,
+												"business-function-data": {}
+											}
+										},
+										"sharedProperties": {
+											"business-function-data": "businessFunctionData"
+										},
+										"nextEvent": "onSave",
+										"skipEvent": "onSkip"
+									},
+									{
+										"name": "Entities successfully created",
+										"label": "Entities created successfully.",
+										"component": {
+											"name": "rock-business-function-finish",
+											"path": "../../src/elements/rock-business-function-finish/rock-business-function-finish.html",
+											"properties": {
+												"business-function-data": {}
+											}
+										},
+										"nextEvent": "onNext"
+									}
+								]
+							}
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": "app-business-function_rock-variants-create-grid_document_admin_uiConfig",
+			"name": "app-business-function_rock-variants-create-grid",
+			"version": "1.0",
+			"type": "uiConfig",
+			"properties": {
+				"createdByService": "entityservice",
+				"createdBy": "user"
+			},
+			"data": {
+				"contexts": [
+					{
+						"context": {
+							"app": "app-business-function",
+							"service": "_ALL",
+							"component": "rock-variants-create-grid",
+							"subComponent": "_ALL",
+							"entityType": "document",
+							"role": "admin"
+						},
+						"jsonData": {
+							"config": {
+								"createVariantsGridConfig": {
+									"viewMode": "Tabular",
+									"title": "Variant Data Table",
+									"mode": "Read",
+									"schemaType": "simple",
+									"tabular": {
+										"settings": {
+											"isMultiSelect": true,
+											"actions": [
+												{
+													"name": "delete",
+													"icon": "pebble-icons:Delete",
+													"eventName": "delete-item"
+												}
+											]
+										},
+										"columns": [
+											{
+												"header": "Entity",
+												"name": "Entity",
+												"sortable": false,
+												"filterable": false
+											},
+											{
+												"header": "Existing",
+												"name": "existing",
+												"sortable": false,
+												"filterable": false
+											},
+											{
+												"header": "Colors",
+												"name": "colors",
+												"sortable": false,
+												"filterable": false
+											},
+											{
+												"header": "Materials",
+												"name": "materials",
+												"sortable": false,
+												"filterable": false
+											},
+											{
+												"header": "Primary Sizes",
+												"name": "primarySizes",
+												"sortable": false,
+												"filterable": false
+											},
+											{
+												"header": "Secondary Sizes",
+												"name": "secondarySizes",
+												"sortable": false,
+												"filterable": false
+											}
+										]
+									}
+								},
+								"variantDefinitionExternal": {
+									"levels": [
+										{
+											"entityType": "choice",
+											"index": 1,
+											"dimensions": [
+												{
+													"sourceAttribute": "colors",
+													"targetAttribute": "choiceColor",
+													"optional": false
+												},
+												{
+													"sourceAttribute": "materials",
+													"targetAttribute": "choiceMaterial",
+													"optional": false
+												}
+											]
+										},
+										{
+											"entityType": "document",
+											"index": 2,
+											"dimensions": [
+												{
+													"sourceAttribute": "primarySizes",
+													"targetAttribute": "documentSize1",
+													"optional": false
+												},
+												{
+													"sourceAttribute": "secondarySizes",
+													"targetAttribute": "documentSize2",
+													"optional": false
+												}
+											]
+										}
+									]
+								},
+								"businessFunctionVariantsCreate": {
+									"stepperConfig": [
+										{
+											"index": "1",
+											"title": "Option Selection",
+											"status": "inprogress"
+										},
+										{
+											"index": "2",
+											"title": "Create Variants",
+											"status": ""
+										}
+									],
+									"name": "create-variants",
+									"label": "Create Variants",
+									"steps": [
+										{
+											"name": "step-1-selection-option",
+											"label": "Select Options to create documents",
+											"component": {
+												"name": "rock-variants-option-select",
+												"path": "/../../src/elements/rock-variants-option-select/rock-variants-option-select.html",
+												"properties": {}
+											},
+											"nextEvent": "onSave",
+											"backEvent": "onBack"
+										},
+										{
+											"name": "step-2-create-variants",
+											"label": "Create variants for a given entity",
+											"component": {
+												"name": "rock-variants-create-grid",
+												"path": "/../../src/elements/rock-variants-create-grid/rock-variants-create-grid.html",
+												"properties": {}
+											},
+											"nextEvent": "onComplete",
+											"backEvent": "onBack"
+										}
+									]
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": "app-business-function_extension-manage_document_admin_uiConfig",
+			"name": "app-business-function_extension-manage",
+			"version": "1.0",
+			"type": "uiConfig",
+			"properties": {
+				"createdByService": "entityservice",
+				"createdBy": "user"
+			},
+			"data": {
+				"contexts": [
+					{
+						"context": {
+							"app": "app-business-function",
+							"service": "_ALL",
+							"component": "extension-manage",
+							"subComponent": "_ALL",
+							"entityType": "document",
+							"role": "admin"
+						},
+						"jsonData": {
+							"config": {
+								"name": "extension-manage",
+								"label": "Manage Extensions",
+								"steps": [
+									{
+										"name": "step-1-rock-extension-manage",
+										"label": "Manage extension for a New Entity",
+										"component": {
+											"name": "rock-extension-manage",
+											"path": "/../../src/elements/rock-extension-manage/rock-extension-manage.html",
+											"properties": {}
+										},
+										"nextEvent": "onSave",
+										"skipEvent": "onCancel"
+									}
+								]
+							}
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": "app-business-function_upload-model_document_admin_uiConfig",
+			"name": "app-business-function_upload-model",
+			"version": "1.0",
+			"type": "uiConfig",
+			"properties": {
+				"createdByService": "entityservice",
+				"createdBy": "user"
+			},
+			"data": {
+				"contexts": [
+					{
+						"context": {
+							"app": "app-business-function",
+							"service": "_ALL",
+							"component": "upload-model",
+							"subComponent": "_ALL",
+							"entityType": "document",
+							"role": "admin"
+						},
+						"jsonData": {
+							"config": {
+								"name": "upload-model",
+								"label": "Upload Data Model",
+								"steps": [
+									{
+										"name": "rock-model-import",
+										"label": "Upload Data Model",
+										"component": {
+											"name": "rock-model-import",
+											"path": "/../../src/elements/rock-model-import/rock-model-import.html",
+											"properties": {
+												"import-profile-name": "datamodel_Profile_01",
+												"allowed-file-types": [
+													"xlsx",
+													"xlsm"
+												]
+											}
+										},
+										"sharedProperties": {
+											"business-function-data": "businessFunctionData"
+										},
+										"nextEvent": "onNext"
+									},
+									{
+										"name": "Data Model Uploaded",
+										"label": "Data Model Uploaded",
+										"component": {
+											"name": "rock-business-function-finish",
+											"path": "../../src/elements/rock-business-function-finish/rock-business-function-finish.html",
+											"properties": {
+												"business-function-data": {}
+											}
+										},
+										"nextEvent": "onNext"
+									}
+								]
+							}
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": "app-business-function_upload-assets_document_admin_uiConfig",
+			"name": "app-business-function_upload-assets",
+			"version": "1.0",
+			"type": "uiConfig",
+			"properties": {
+				"createdByService": "entityservice",
+				"createdBy": "user"
+			},
+			"data": {
+				"contexts": [
+					{
+						"context": {
+							"app": "app-business-function",
+							"service": "_ALL",
+							"component": "upload-assets",
+							"subComponent": "_ALL",
+							"entityType": "document",
+							"role": "admin"
+						},
+						"jsonData": {
+							"config": {
+								"name": "upload-assets",
+								"label": "Upload Assets",
+								"steps": [
+									{
+										"name": "step-1-fill-initial-data",
+										"label": "Upload Assets",
+										"component": {
+											"name": "rock-upload-s3",
+											"path": "/../../src/elements/rock-upload-s3/rock-upload-s3.html",
+											"properties": {
+												
+											}
+										},
+										"sharedProperties": {
+											"context-data": "contextData",
+											"business-function-data": "businessFunctionData"
+										},
+										"nextEvent": "onSave",
+										"cancelEvent": "onCancel"
+									},
+									{
+										"name": "Assets uploaded successfully.",
+										"label": "Assets uploaded successfully.",
+										"component": {
+											"name": "rock-business-function-finish",
+											"path": "../../src/elements/rock-business-function-finish/rock-business-function-finish.html",
+											"properties": {
+												"business-function-data": {}
+											}
+										},
+										"nextEvent": "onNext"
+									}
+								]
+							}
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": "app-business-function_upload-excel_document_admin_uiConfig",
+			"name": "app-business-function_upload-excel",
+			"version": "1.0",
+			"type": "uiConfig",
+			"properties": {
+				"createdByService": "entityservice",
+				"createdBy": "user"
+			},
+			"data": {
+				"contexts": [
+					{
+						"context": {
+							"app": "app-business-function",
+							"service": "_ALL",
+							"component": "upload-excel",
+							"subComponent": "_ALL",
+							"entityType": "document",
+							"role": "admin"
+						},
+						"jsonData": {
+							"config": {
+								"name": "upload-entities",
+								"label": "Upload Entities",
+								"steps": [
+									{
+										"name": "step-1-upload-excel-file",
+										"label": "Upload Entities",
+										"component": {
+											"name": "rock-entity-upload",
+											"path": "/../../src/elements/rock-entity-upload/rock-entity-upload.html",
+											"properties": {
+												"taxonomy": "Product Setup Taxonomy",
+												"base-profile-id": "Excel_Import_Process_Dynamic",
+												"base-transform-profile-id": "Excel_Import_Transform_Dynamic",
+												"allowed-file-types": [
+													"xlsx",
+													"xlsm"
+												]
+											}
+										},
+										"sharedProperties": {
+											"business-function-data": "businessFunctionData"
+										},
+										"nextEvent": "onNext"
+									},
+									{
+										"name": "Entities uploaded successfully.",
+										"label": "Entities uploaded successfully.",
+										"component": {
+											"name": "rock-business-function-finish",
+											"path": "../../src/elements/rock-business-function-finish/rock-business-function-finish.html",
+											"properties": {
+												"business-function-data": {}
+											}
+										},
+										"nextEvent": "onNext"
+									}
+								]
+							}
+						}
+					}
+				]
+			}
+		}
+	]
+}

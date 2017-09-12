@@ -1,0 +1,25 @@
+{
+   "metaInfo": {
+      "dataIndex": "entityModel",
+      "collectionName": "entityModels",
+      "responseObjectName": "response"
+   },
+   "entityModels": [
+      {
+         "id": "admin_role",
+         "name": "admin",
+         "type": "role",
+         "properties": {
+            "description": "the system administrator with complete authorization of the system"
+         }
+      },
+      {
+         "id": "dataReader_role",
+         "name": "dataReader",
+         "type": "role",
+         "properties": {
+            "description": "system defined user role with read only permissions on data"
+         }
+      }
+   ]
+}

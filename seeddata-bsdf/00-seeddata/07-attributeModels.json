@@ -1,0 +1,114 @@
+{
+    "metaInfo": {
+        "dataIndex": "entityModel",
+        "collectionName": "entityModels",
+        "responseObjectName": "entityModelOperationResponse"
+    },
+    "entityModels": [
+        {
+            "id": "thingdomainattributemodels",
+            "name": "thingdomainattributemodels",
+            "domain": "generic",
+            "type": "list",
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "thing_domain",
+                                "type": "domain"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "partydomainattributemodels",
+            "name": "partydomainattributemodels",
+            "domain": "generic",
+            "type": "list",
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "party_domain",
+                                "type": "domain"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "locationdomainattributemodels",
+            "name": "locationdomainattributemodels",
+            "domain": "generic",
+            "type": "list",
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "location_domain",
+                                "type": "domain"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "referencedatadomainattributemodels",
+            "name": "referencedatadomainattributemodels",
+            "domain": "generic",
+            "type": "list",
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData_domain",
+                                "type": "domain"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "genericdomainattributemodels",
+            "name": "genericdomainattributemodels",
+            "domain": "generic",
+            "type": "list",
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "generic_domain",
+                                "type": "domain"
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

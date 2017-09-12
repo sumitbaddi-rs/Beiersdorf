@@ -1,0 +1,110 @@
+{
+  "metaInfo": {
+    "dataIndex": "config",
+    "collectionName": "configObjects",
+    "responseObjectName": "response"
+  },
+  "configObjects": [
+    {
+      "id": "downloadDataExcel",
+      "name": "downloadDataExcel",
+      "type": "COPProfile",
+      "data": {
+        "contexts": [
+          {
+            "context": {
+              "app": "RSConnect",
+              "service": "excelExportPublishService",
+              "list": "self"
+            },
+            "jsonData": {
+              "id": "downloadDataExcel",
+              "name": "downloadDataExcel",
+              "type": "ENTITY_EXPORT",
+              "integrationType": "User",
+              "isEnabled": "true",
+              "collect": {
+                "isDataPersistent": "false",
+                "channel": [
+                  {
+                    "type": "rdpConnector",
+                    "settings": {
+                      "version": "1.1"
+                    }
+                  }
+                ],
+                "format": {
+                  "type": "RSJSON",
+                  "version": "1.1",
+                  "batchSize": 1,
+                  "settings": {
+                    "includeParent": "false",
+                    "includeChildren": "false",
+                    "includeSiblings": "false",
+                    "includeRelatedEntityExternalIds": "true",
+                    "supportsCollection": "true",
+                    "additionalSettings": {
+                      "encoding": "utf8"
+                    }
+                  }
+                },
+                "filter": {
+                  "include": ["upcbarcode", "rmsskuid", "orin", "rmsitemid", "identifier", "upcbarcode", "promocontenttitle", "property_originalfilename", "property_objectkey"],
+                  "exclude": []
+                }
+              },
+              "publish": {
+                "isDataPersistent": "true",
+                "channel": [
+                  {
+                    "type": "folderConnector",
+                    "settings": {
+                      "sourceFolder": "",
+                      "pattern": ""
+                    }
+                  }
+                ],
+                "format": {
+                  "type": "SMARTEXCEL",
+                  "version": "1.1",
+                  "settings": {
+                    "encoding": "utf8"
+                  }
+                },
+                "filter": {}
+              },
+              "transform": {
+                "settings": {
+                  "entityType": "@field(type)",
+                  "enableDynamicMapping": "true",
+                  "source": "rms",
+                  "allowNullValues": "true",
+                  "clearMissingAttributes": "false",
+                  "strategies": [
+                    {
+                      "useExternalName": "true",
+                      "caseFormat": "NONE",
+                      "removeSpecialCharacters": "false",
+                      "removeWhitespace": "false",
+                      "trimLeadingNumbers": "false",
+                      "trimTrailingNumbers": "false",
+                      "isDefault": "false"
+                    }
+                  ]
+                },
+                "contexts": [
+                  {
+                    "context": {
+                      "classification": "@fieldExternalName(classification)",
+                      "taxonomy": "@fieldExternalName(taxonomy)"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

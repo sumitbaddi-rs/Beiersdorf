@@ -1,0 +1,97 @@
+{
+    "metaInfo": {
+        "dataIndex": "entityModel",
+        "collectionName": "entityModels",
+        "responseObjectName": "response"
+    },
+    "entityModels": [
+        {
+            "id": "image_entityDefaultValuesModel",
+            "name": "image",
+            "type": "entityDefaultValuesModel",
+            "domain": "generic",
+            "data": {
+                "attributes": {
+                    "lifecyclestage": {
+                        "properties": {
+                            "defaultValues": "draft"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "document_entityDefaultValuesModel",
+            "name": "document",
+            "type": "entityDefaultValuesModel",
+            "domain": "generic",
+            "data": {
+                "attributes": {
+                    "lifecyclestage": {
+                        "properties": {
+                            "defaultValues": "draft"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "enart_entityDefaultValuesModel",
+            "name": "enart",
+            "type": "entityDefaultValuesModel",
+            "domain": "generic",
+            "data": {}
+        },
+        {
+            "id": "emasterproduct_entityDefaultValuesModel",
+            "name": "emasterproduct",
+            "type": "entityDefaultValuesModel",
+            "domain": "generic",
+            "data": {}
+        },
+        {
+            "id": "audio_entityDefaultValuesModel",
+            "name": "audio",
+            "type": "entityDefaultValuesModel",
+            "domain": "generic",
+            "data": {
+                "attributes": {
+                    "lifecyclestage": {
+                        "properties": {
+                            "defaultValues": "draft"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "video_entityDefaultValuesModel",
+            "name": "video",
+            "type": "entityDefaultValuesModel",
+            "domain": "generic",
+            "data": {
+                "attributes": {
+                    "lifecyclestage": {
+                        "properties": {
+                            "defaultValues": "draft"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "sku_entityDefaultValuesModel",
+            "name": "sku",
+            "type": "entityDefaultValuesModel",
+            "domain": "generic",
+            "data": {}
+        },
+        {
+            "id": "eproductversion_entityDefaultValuesModel",
+            "name": "eproductversion",
+            "type": "entityDefaultValuesModel",
+            "domain": "generic",
+            "data": {}
+        }
+    ]
+}

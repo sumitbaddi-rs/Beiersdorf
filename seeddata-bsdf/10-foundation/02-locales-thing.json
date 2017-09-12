@@ -1,0 +1,211 @@
+{
+    "metaInfo": {
+        "dataIndex": "entityModel",
+        "collectionName": "entityModels",
+        "responseObjectName": "entityModelOperationResponse"
+    },
+    "entityModels": [
+{
+            "id": "de-CH_locale",
+            "name": "de-CH",
+            "domain": "generic",
+            "type": "locale",
+            "properties": {
+                "externalName": "German - Schweiz",
+                "description": "",
+                "culture": "de-CH",
+                "fallbackLocale": ""
+            }
+        },
+{
+            "id": "de-DE_locale",
+            "name": "de-DE",
+            "domain": "generic",
+            "type": "locale",
+            "properties": {
+                "externalName": "German - Deutchland",
+                "description": "",
+                "culture": "de-DE",
+                "fallbackLocale": ""
+            }
+        },
+{
+            "id": "en-AU_locale",
+            "name": "en-AU",
+            "domain": "generic",
+            "type": "locale",
+            "properties": {
+                "externalName": "English - Australia",
+                "description": "",
+                "culture": "en-AU",
+                "fallbackLocale": ""
+            }
+        },
+{
+            "id": "en-CA_locale",
+            "name": "en-CA",
+            "domain": "generic",
+            "type": "locale",
+            "properties": {
+                "externalName": "English - Canada",
+                "description": "",
+                "culture": "en-CA",
+                "fallbackLocale": ""
+            }
+        },
+{
+            "id": "en-GB_locale",
+            "name": "en-GB",
+            "domain": "generic",
+            "type": "locale",
+            "properties": {
+                "externalName": "English - British",
+                "description": "",
+                "culture": "en-GB",
+                "fallbackLocale": ""
+            }
+        },
+{
+            "id": "en-IN_locale",
+            "name": "en-IN",
+            "domain": "generic",
+            "type": "locale",
+            "properties": {
+                "externalName": "English - India",
+                "description": "",
+                "culture": "en-IN",
+                "fallbackLocale": ""
+            }
+        },
+{
+            "id": "en-NZ_locale",
+            "name": "en-NZ",
+            "domain": "generic",
+            "type": "locale",
+            "properties": {
+                "externalName": "English - New Zealand",
+                "description": "",
+                "culture": "en-NZ",
+                "fallbackLocale": ""
+            }
+        },
+{
+            "id": "en-US_locale",
+            "name": "en-US",
+            "domain": "generic",
+            "type": "locale",
+            "properties": {
+                "externalName": "English - United States",
+                "description": "",
+                "culture": "en-US",
+                "fallbackLocale": ""
+            }
+        },
+{
+            "id": "es-ES_locale",
+            "name": "es-ES",
+            "domain": "generic",
+            "type": "locale",
+            "properties": {
+                "externalName": "Spanish - Spain",
+                "description": "",
+                "culture": "es-ES",
+                "fallbackLocale": ""
+            }
+        },
+{
+            "id": "fr-BE_locale",
+            "name": "fr-BE",
+            "domain": "generic",
+            "type": "locale",
+            "properties": {
+                "externalName": "French - Belgique",
+                "description": "",
+                "culture": "fr-BE",
+                "fallbackLocale": ""
+            }
+        },
+{
+            "id": "fr-CA_locale",
+            "name": "fr-CA",
+            "domain": "generic",
+            "type": "locale",
+            "properties": {
+                "externalName": "French - Canada",
+                "description": "",
+                "culture": "fr-CA",
+                "fallbackLocale": ""
+            }
+        },
+{
+            "id": "fr-CH_locale",
+            "name": "fr-CH",
+            "domain": "generic",
+            "type": "locale",
+            "properties": {
+                "externalName": "French - Suisse",
+                "description": "",
+                "culture": "fr-CH",
+                "fallbackLocale": ""
+            }
+        },
+{
+            "id": "fr-FR_locale",
+            "name": "fr-FR",
+            "domain": "generic",
+            "type": "locale",
+            "properties": {
+                "externalName": "French - France",
+                "description": "",
+                "culture": "fr-FR",
+                "fallbackLocale": ""
+            }
+        },
+{
+            "id": "it-CH_locale",
+            "name": "it-CH",
+            "domain": "generic",
+            "type": "locale",
+            "properties": {
+                "externalName": "Italian - Svizzera",
+                "description": "",
+                "culture": "it-CH",
+                "fallbackLocale": ""
+            }
+        },
+{
+            "id": "it-IT_locale",
+            "name": "it-IT",
+            "domain": "generic",
+            "type": "locale",
+            "properties": {
+                "externalName": "Italian - Italia",
+                "description": "",
+                "culture": "it-IT",
+                "fallbackLocale": ""
+            }
+        },
+{
+            "id": "nl-BE_locale",
+            "name": "nl-BE",
+            "domain": "generic",
+            "type": "locale",
+            "properties": {
+                "externalName": "Dutch - België",
+                "description": "",
+                "culture": "nl-BE",
+                "fallbackLocale": ""
+            }
+        },
+{
+            "id": "nl-NL_locale",
+            "name": "nl-NL",
+            "domain": "generic",
+            "type": "locale",
+            "properties": {
+                "externalName": "Dutch - Nederland",
+                "description": "",
+                "culture": "nl-NL",
+                "fallbackLocale": ""
+            }
+        }]}

@@ -1,0 +1,154 @@
+{
+  "metaInfo": {
+    "dataIndex": "entityModel",
+    "collectionName": "entityModels",
+    "responseObjectName": "response"
+  },
+  "entityModels": [
+    {
+      "id": "enart_hasimages_image_graphProcessModel",
+      "name": "enart_hasimages_image",
+      "type": "graphProcessModel",
+      "domain": "generic",
+      "properties": {
+        "defaultValueSource": "internal",
+        "defaultValueLocale": "en-US",
+        "graphProcessPath": "enart_hasimages_image",
+        "matchRules": [
+          {
+            "seq": 1,
+            "matchType": "attributeBased",
+            "attributeMaps": [
+              {
+                "primaryimage": "property_originalfilename"
+              }
+            ],
+            "noMatchResult": [
+              {
+                "actions": [
+                  {
+                    "actionName": "DoNothing"
+                  }
+                ]
+              }
+            ],
+            "singleMatchResult": [
+              {
+                "actions": [
+                  {
+                    "actionName": "AddSourceRelationship"
+                  }
+                ]
+              }
+            ],
+            "multiMatchResult": [
+              {
+                "actions": [
+                  {
+                    "actionName": "Error"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "seq": 2,
+            "matchType": "attributeBased",
+            "attributeMaps": [
+              {
+                "alternateimages": "property_originalfilename"
+              }
+            ],
+            "noMatchResult": [
+              {
+                "actions": [
+                  {
+                    "actionName": "DoNothing"
+                  }
+                ]
+              }
+            ],
+            "singleMatchResult": [
+              {
+                "actions": [
+                  {
+                    "actionName": "AddSourceRelationship"
+                  }
+                ]
+              }
+            ],
+            "multiMatchResult": [
+              {
+                "actions": [
+                  {
+                    "actionName": "Error"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "data": {}
+    },
+    {
+      "id": "eproductversion_ischildof_enart_graphProcessModel",
+      "name": "eproductversion_ischildof_enart",
+      "type": "graphProcessModel",
+      "domain": "generic",
+      "properties": {
+        "defaultValueSource": "internal",
+        "defaultValueLocale": "en-US",
+        "graphProcessPath": "eproductversion_ischildof_enart",
+        "matchRules": [
+          {
+            "seq": 1,
+            "matchType": "whereUsedRelationshipBased",
+            "relationshipName": "rchildof",
+            "noMatchResult": [
+              {
+                "actions": [
+                  {
+                    "actionName": "DoNothing"
+                  }
+                ]
+              }
+            ],
+            "singleMatchResult": [
+              {
+                "actions": [
+                  {
+                    "actionName": "CopyData"
+                  }
+                ]
+              }
+            ],
+            "multiMatchResult": [
+              {
+                "actions": [
+                  {
+                    "actionName": "CopyData"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "data": {
+        "attributes": {
+          "acritical": {
+            "properties": {
+              "strategy": "copy"
+            }
+          },
+          "lifecyclestage": {
+            "properties": {
+              "strategy": "copy"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

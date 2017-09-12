@@ -1,0 +1,2175 @@
+{
+	"metaInfo": {
+		"dataIndex": "config",
+		"collectionName": "configObjects",
+		"responseObjectName": "response"
+	},
+	"configObjects": [
+		{
+			"id": "app-entity-manage_components-list_image_admin_uiConfig",
+			"name": "app-entity-manage_components-list_image_admin",
+			"version": "1.0",
+			"type": "uiConfig",
+			"properties": {
+				"createdByService": "entityservice",
+				"createdBy": "user"
+			},
+			"data": {
+				"contexts": [
+					{
+						"context": {
+							"app": "app-entity-manage",
+							"service": "_ALL",
+							"component": "components-list",
+							"subComponent": "_ALL",
+							"entityType": "image",
+							"role": "admin"
+						},
+						"jsonData": {
+							"config": {
+								"components": [
+									"rock-dimension-selector",
+									"rock-dimension-grid",
+									"rock-entity-header",
+									"rock-entity-summary",
+									"rock-tabs",
+									"rock-attribute-manage",
+									"rock-entity-variant",
+									"rock-relationship-manage",
+									"rock-entity-todo",
+									"rock-entity-tofix",
+									"rock-titlebar",
+									"extension-manage-productsetuptaxonomy",
+									"extension-manage-merchandisingtaxonomy",
+									"fix-attribute-errors",
+									"rock-entity-upload",
+									"rock-entity-download",
+									"rock-workflow-assignment",
+                                    "rock-workflow-transition",
+									"rock-scope-manage",
+									"rock-entity-bulk-edit"
+								]
+							}
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": "app-entity-manage_rock-dimension-selector_image_admin_uiConfig",
+			"name": "app-entity-manage_rock-dimension-selector",
+			"version": "1.0",
+			"type": "uiConfig",
+			"properties": {
+				"createdByService": "entityservice",
+				"createdBy": "user"
+			},
+			"data": {
+				"contexts": [
+					{
+						"context": {
+							"app": "app-entity-manage",
+							"service": "_ALL",
+							"component": "rock-dimension-selector",
+							"subComponent": "_ALL",
+							"entityType": "image",
+							"role": "admin"
+						},
+						"jsonData": {
+							"config": [
+								{
+									"id": "taxonomy",
+									"title": "Taxonomy",
+									"icon": "pebble-lg-icons:Master",
+									"visible": true,
+									"dataRequestType": "entity-context",
+									"dataMappings": {
+										"id": "name",
+										"title": "name",
+										"subtitle": "",
+										"image": "",
+										"icon": "",
+										"type": [
+											"taxonomy"
+										]
+									},
+									"selectedItem": {
+										"id": "Product Setup Taxonomy",
+										"type": "taxonomy"
+									},
+									"default": ""
+								},
+								{
+									"id": "classification",
+									"title": "Classification",
+									"icon": "pebble-lg-icons:Master",
+									"visible": true,
+									"dataRequestType": "entity-context",
+									"dataMappings": {
+										"id": "name",
+										"title": "name",
+										"subtitle": "",
+										"image": "",
+										"icon": "",
+										"type": [
+											"classification"
+										]
+									},
+									"selectedItem": {},
+									"selectedItemInfo": {
+										"taxonomy": "Product Setup Taxonomy"
+									},
+									"default": ""
+								},
+								{
+									"id": "source",
+									"title": "Source",
+									"icon": "pebble-lg-icons:Source",
+									"visible": false,
+									"dataRequestType": "entity-model",
+									"dataRequest": {
+										"params": {
+											"query": {
+												"filters": {
+													"typesCriterion": [
+														"source"
+													]
+												}
+											}
+										}
+									},
+									"dataMappings": {
+										"id": "name",
+										"title": "name",
+										"subtitle": "",
+										"image": "",
+										"icon": "",
+										"type": [
+											"source"
+										]
+									},
+									"selectedItem": {
+										"id": "internal",
+										"type": "source"
+									},
+									"default": ""
+								},
+								{
+									"id": "locale",
+									"title": "Locale",
+									"icon": "pebble-lg-icons:Language",
+									"visible": false,
+									"dataRequestType": "entity-model",
+									"dataRequest": {
+										"params": {
+											"query": {
+												"filters": {
+													"typesCriterion": [
+														"locale"
+													]
+												}
+											}
+										}
+									},
+									"dataMappings": {
+										"id": "name",
+										"title": "name",
+										"subtitle": "",
+										"image": "",
+										"icon": "",
+										"type": [
+											"locale"
+										]
+									},
+									"selectedItem": {
+										"id": "en-US",
+										"type": "locale"
+									},
+									"default": ""
+								}
+							]
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": "app-entity-manage_rock-dimension-grid_image_admin_uiConfig",
+			"name": "app-entity-manage_rock-dimension-grid",
+			"version": "1.0",
+			"type": "uiConfig",
+			"properties": {
+				"createdByService": "entityservice",
+				"createdBy": "user"
+			},
+			"data": {
+				"contexts": [
+					{
+						"context": {
+							"app": "app-entity-manage",
+							"service": "_ALL",
+							"component": "rock-dimension-grid",
+							"subComponent": "_ALL",
+							"entityType": "image",
+							"role": "admin"
+						},
+						"jsonData": {
+							"config": {
+								"dimension-gridConfig": {
+									"viewMode": "Tabular",
+									"title": "",
+									"schemaType": "colModel",
+									"mode": "Read",
+									"header": {
+										"displayTitle": false,
+										"defaultValue": ""
+									},
+									"tabular": {
+										"settings": {
+											"isMultiSelect": false
+										},
+										"columns": [
+											{
+												"header": "Value",
+												"name": "Value",
+												"sortable": true,
+												"filterable": false,
+												"editType": "textbox"
+											},
+											{
+												"header": "Channel",
+												"name": "Channel",
+												"sortable": false,
+												"filterable": false
+											},
+											{
+												"header": "Locale",
+												"name": "Locale",
+												"sortable": true,
+												"filterable": false
+											},
+											{
+												"header": "Source",
+												"name": "Source",
+												"sortable": true,
+												"filterable": false
+											},
+											{
+												"header": "Time",
+												"name": "Time",
+												"sortable": false,
+												"filterable": false
+											}
+										]
+									}
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": "app-entity-manage_rock-entity-header_image_admin_uiConfig",
+			"name": "app-entity-manage_rock-entity-header",
+			"version": "1.0",
+			"type": "uiConfig",
+			"properties": {
+				"createdByService": "entityservice",
+				"createdBy": "user"
+			},
+			"data": {
+				"contexts": [
+					{
+						"context": {
+							"app": "app-entity-manage",
+							"service": "_ALL",
+							"component": "rock-entity-header",
+							"subComponent": "_ALL",
+							"entityType": "image",
+							"role": "admin"
+						},
+						"jsonData": {
+							"config": {
+								"headerConfig": [
+									{
+										"attributeName": "about",
+										"label": "About",
+										"noTrim": false
+									},
+									{
+										"attributeName": "description",
+										"label": "Description",
+										"noTrim": false
+									},
+									{
+										"attributeName": "creator",
+										"label": "Creator",
+										"noTrim": false
+									},
+									{
+										"attributeName": "filesize",
+										"label": "File Size",
+										"noTrim": false
+									},
+									{
+										"attributeName": "imagesize",
+										"label": "Image Size",
+										"noTrim": false
+									}
+								],
+								"toolbarConfig": {
+									"buttonItems": [
+										{
+											"buttons": [
+												{
+													"name": "addContext",
+													"icon": "pebble-lg-icons:Master",
+													"text": "",
+													"tooltip": "Add Context",
+													"visible": true,
+													"buttons": [
+														{
+															"name": "merchandisingtaxonomy",
+															"text": "Merchandising Taxonomy",
+															"visible": true,
+															"tooltip": "Merchandising Taxonomy"
+														},
+														{
+															"name": "productsetuptaxonomy",
+															"text": "Product Setup Taxonomy",
+															"visible": true,
+															"tooltip": "Product Setup Taxonomy"
+														}
+													]
+												},
+												{
+													"name": "refresh",
+													"icon": "pebble-md-icons:ToolbarRefresh",
+													"text": "",
+													"visible": true,
+													"tooltip": "Refresh"
+												},
+												{
+													"name": "download",
+													"icon": "pebble-md-icons:Import",
+													"text": "",
+													"visible": true,
+													"tooltip": "Download"
+												},
+												{
+													"name": "upload",
+													"icon": "pebble-md-icons:Upload",
+													"text": "",
+													"visible": true,
+													"tooltip": "Upload"
+												}
+											]
+										}
+									]
+								},
+								"summaryToFix": {
+									"completionPercentage": "",
+									"tofixes": []
+								},
+								"assignmentActionsConfig": [
+									{
+										"title": "",
+										"messageAttribute": "producttitle",
+										"actions": [
+											{
+												"name": "takeTask",
+												"icon": "pebble-xl-icons:taketask",
+												"text": "Take Task",
+												"visible": true,
+												"eventName": "action-takeTask"
+											},
+											{
+												"name": "releaseTask",
+												"icon": "pebble-xl-icons:releasetask",
+												"text": "Release Task",
+												"visible": true,
+												"eventName": "action-releaseTask"
+											}
+										]
+									}
+								],
+								"thumbnailConfig": {
+									"thumbnailIdentifier": "thumbnailid"
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": "app-entity-manage_rock-entity-summary_image_admin_uiConfig",
+			"name": "app-entity-manage_rock-entity-summary",
+			"version": "1.0",
+			"type": "uiConfig",
+			"properties": {
+				"createdByService": "entityservice",
+				"createdBy": "user"
+			},
+			"data": {
+				"contexts": [
+					{
+						"context": {
+							"app": "app-entity-manage",
+							"service": "_ALL",
+							"component": "rock-entity-summary",
+							"subComponent": "_ALL",
+							"entityType": "image",
+							"role": "admin"
+						},
+						"jsonData": {
+							"config": {
+								"widgets": [
+									{
+										"name": "rock-entity-todo",
+										"nonClosable": true,
+										"nonMaximizable": true,
+										"nonDraggable": true,
+										"config": {
+											"heading": "Things I can do",
+											"headerIcon": "",
+											"position-x":0,
+											"position-y":0,
+											"width":4,
+											"height":3,
+											"iconButtons": [{
+                                                "name": "settings",
+                                                "label": "Settings",
+                                                "icon": "icons:setting",
+                                                "showInMoreActions": true
+                                            }, {
+                                                "name": "help",
+                                                "label": "Help",
+                                                "icon": "icons:help",
+                                                "showInMoreActions": true
+                                            }],
+											"component": {
+												"name": "rock-entity-todo",
+												"path": "/src/elements/rock-entity-todo/rock-entity-todo.html"
+											}
+										}
+									},
+									{
+										"name": "rock-entity-tofix",
+										"nonClosable": true,
+										"nonMaximizable": true,
+										"nonDraggable": true,
+										"config": {
+											"heading": "Things I need to fix",
+											"headerIcon": "",
+											"position-x":4,
+											"position-y":0,
+											"width":4,
+											"height":4,
+											"iconButtons": [{
+                                                "name": "refreshIcon",
+                                                "label": "Refresh",
+                                                "icon": "pebble-md-icons:ToolbarRefresh",
+                                                "showInMoreActions": false
+                                            }],
+											"component": {
+												"name": "rock-entity-tofix",
+												"path": "/src/elements/rock-entity-tofix/rock-entity-tofix.html",
+												"properties": {
+													"view-mode": true
+												}
+											}
+										}
+									}
+								]
+							}
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": "app-entity-manage_rock-tabs_image_admin_uiConfig",
+			"name": "app-entity-manage_rock-tabs",
+			"version": "1.0",
+			"type": "uiConfig",
+			"properties": {
+				"createdByService": "entityservice",
+				"createdBy": "user"
+			},
+			"data": {
+				"contexts": [
+					{
+						"context": {
+							"app": "app-entity-manage",
+							"service": "_ALL",
+							"component": "rock-tabs",
+							"subComponent": "_ALL",
+							"entityType": "image",
+							"role": "admin"
+						},
+						"jsonData": {
+							"config": {
+								"scrollable": true,
+								"fitContainer": false,
+								"tabItems": [
+									{
+										"name": "summary",
+										"title": "Summary",
+										"selected": true,
+										"enableDropdownMenu": false,
+										"component": {
+											"name": "rock-entity-summary",
+											"path": "/src/elements/rock-entity-summary/rock-entity-summary.html",
+											"properties": {}
+										}
+									},
+									{
+										"name": "attributes",
+										"title": "Attributes",
+										"enableDropdownMenu": true,
+										"menuProviderComponent": {
+											"name": "attribute-tab-menu-provider",
+											"path": "/src/elements/rock-attribute-split-screen/attribute-tab-menu-provider.html",
+											"properties": {}
+										},
+										"component": {
+											"name": "rock-attribute-split-screen",
+											"path": "/src/elements/rock-attribute-split-screen/rock-attribute-split-screen.html",
+											"properties": {
+												"mode": "view",
+												"no-of-columns": 2,
+												"allow-save-on-error": true,
+												"do-sync-validation": true,
+												"config-context": {
+													"attributeNames": [
+														"id",
+														"about",
+														"description",
+														"headline",
+														"colorspace",
+														"creator",
+														"artist",
+														"datecreated",
+														"resolutionunit",
+														"xresolution",
+														"yresolution",
+														"digitalzoomratio",
+														"encodingprocess",
+														"filetype",
+														"filenameextension",
+														"filesource",
+														"filesize",
+														"imagesize",
+														"imageheight",
+														"imagewidth",
+														"imagedescription",
+														"suppliernumbername"
+													]
+												}
+											}
+										}
+									},
+									{
+										"name": "relationships",
+										"title": "Relationships",
+										"enableDropdownMenu": true,
+										"menuProviderComponent": {
+											"name": "relationships-tab-menu-provider",
+											"path": "/src/elements/rock-relationship-split-screen/relationships-tab-menu-provider.html",
+											"properties": {
+												"domain": "thing"
+											}
+										},
+										"menuItems": [
+											{
+												"name": "hasimages",
+												"title": "Has Images",
+												"selected": false,
+												"component": {
+													"name": "rock-relationship-split-screen",
+													"path": "/src/elements/rock-relationship-split-screen/rock-relationship-split-screen.html",
+													"properties": {
+														"mode": "view",
+														"no-of-columns": 2,
+														"do-sync-validation": true,
+														"config-context": {
+															"relationshipTitle": "Has Images",
+															"relationshipTypeName": "hasimages"															
+														}
+													}
+												},
+												"properties": {}
+											}
+										],
+										"component": {
+											"name": "rock-relationship-split-screen",
+											"path": "/src/elements/rock-relationship-split-screen/rock-relationship-split-screen.html",
+											"properties": {
+												"mode": "view",
+												"no-of-columns": 2,
+												"do-sync-validation": true,
+												"config-context": {
+													"relationshipType": "Relationships"
+												}
+											}
+										}
+									},
+									{
+										"name": "assets",
+										"title": "Assets",
+										"enableDropdownMenu": false,
+										"component": {
+											"name": "app-entity-discovery",
+											"path": "/src/elements/app-entity-discovery/app-entity-discovery.html",
+											"properties": {}
+										}
+									}
+								]
+							}
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": "app-entity-manage_rock-attribute-manage_image_admin_uiConfig",
+			"name": "app-entity-manage_rock-attribute-manage",
+			"version": "1.0",
+			"type": "uiConfig",
+			"properties": {
+				"createdByService": "entityservice",
+				"createdBy": "user"
+			},
+			"data": {
+				"contexts": [
+					{
+						"context": {
+							"app": "app-entity-manage",
+							"service": "_ALL",
+							"component": "rock-attribute-manage",
+							"subComponent": "_ALL",
+							"entityType": "image",
+							"role": "admin"
+						},
+						"jsonData": {
+							"config": {
+								"messageCodeMapping": {
+									"Req001": "Required",
+									"MinLen001": "MIN_LENGTH",
+									"MaxLen001": "MAX_LENGTH",
+									"AlVal001": "ALLOWED_VALUES",
+									"Prec001": "Precision",
+									"Range001": "RANGE_FROM_INCLUSIVE",
+									"Range002": "RANGE_TO_INCLUSIVE",
+									"Range003": "RANGE_FROM_EXCLUSIVE",
+									"Range004": "RANGE_TO_EXCLUSIVE",
+									"Range005": "RANGE_TO_INCLUSIVE_FROM_EXCLUSIVE",
+									"Range006": "RANGE_TO_INCLUSIVE_FROM_INCLUSIVE",
+									"Range007": "RANGE_TO_EXCLUSIVE_FROM_EXCLUSIVE",
+									"Range008": "RANGE_TO_EXCLUSIVE_FROM_INCLUSIVE",
+									"133311": "Length should be greater than Width",
+									"133312": "Width should be less than Length"
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": "app-entity-manage_rock-entity-variant_image_admin_uiConfig",
+			"name": "app-entity-manage_rock-entity-variant",
+			"version": "1.0",
+			"type": "uiConfig",
+			"properties": {
+				"createdByService": "entityservice",
+				"createdBy": "user"
+			},
+			"data": {
+				"contexts": [
+					{
+						"context": {
+							"app": "app-entity-manage",
+							"service": "_ALL",
+							"component": "rock-entity-variant",
+							"subComponent": "_ALL",
+							"entityType": "image",
+							"role": "admin"
+						},
+						"jsonData": {
+							"config": {
+								"variantGridConfig": {
+									"viewMode": "Tabular",
+									"title": "Variant Data Table",
+									"mode": "Read",
+									"schemaType": "attribute",
+									"dataRequest": {
+										"attributes": [
+											"description",
+											"imageId",
+											"startDate",
+											"status"
+										]
+									},
+									"tabular": {
+										"settings": {
+											"isMultiSelect": true,
+											"actions": [
+												{
+													"name": "delete",
+													"icon": "pebble-icons:Delete",
+													"eventName": "delete-item"
+												},
+												{
+													"name": "edit"
+												}
+											]
+										},
+										"columns": [
+											{
+												"header": "Description",
+												"name": "description",
+												"sortable": false,
+												"filterable": false
+											},
+											{
+												"header": "Color",
+												"name": "color",
+												"sortable": false,
+												"filterable": false
+											},
+											{
+												"header": "Start Date",
+												"name": "startDate",
+												"sortable": false,
+												"filterable": false
+											},
+											{
+												"header": "Status",
+												"name": "status",
+												"sortable": false,
+												"filterable": false
+											},
+											{
+												"header": "image Id",
+												"name": "id",
+												"sortable": false,
+												"filterable": false
+											}
+										]
+									},
+									"list": {
+										"settings": {
+											"isMultiSelect": true,
+											"actions": [
+												{
+													"name": "delete",
+													"icon": "pebble-icons:Delete",
+													"eventName": "delete-item"
+												},
+												{
+													"name": "edit",
+													"icon": "pebble-md-icons:Edit",
+													"eventName": "edit-item"
+												}
+											]
+										},
+										"listItems": {
+											"image": "productImage",
+											"title": "longName",
+											"id": "id",
+											"fields": [
+												{
+													"name": "productType",
+													"label": "Product Type"
+												},
+												{
+													"name": "description",
+													"label": "Description",
+													"noTrim": true
+												}
+											]
+										}
+									},
+									"tile": {
+										"settings": {
+											"isMultiSelect": true,
+											"actions": [
+												{
+													"name": "delete",
+													"icon": "pebble-icons:Delete",
+													"eventName": "delete-item"
+												},
+												{
+													"name": "edit",
+													"icon": "pebble-md-icons:Edit",
+													"eventName": "edit-item"
+												}
+											]
+										},
+										"tileItems": {
+											"image": "productImage",
+											"title": "longName",
+											"id": "id",
+											"fields": [
+												{
+													"name": "productType",
+													"label": "Product Type"
+												},
+												{
+													"name": "description",
+													"label": "Description"
+												}
+											]
+										}
+									}
+								},
+								"variantDefinitionUI": {
+									"name": "ehd1",
+									"levels": [
+										{
+											"entityType": "image",
+											"index": 1,
+											"optional": false,
+											"dimensionAttributes": [
+												{
+													"sourceAttribute": "color",
+													"targetAttribute": "color",
+													"optional": false
+												},
+												{
+													"sourceAttribute": "size",
+													"targetAttribute": "size",
+													"optional": true
+												}
+											]
+										}
+									]
+								},
+								"businessFunctionVariantsCreate": {
+									"stepperConfig": [
+										{
+											"index": "1",
+											"title": "Option Selection",
+											"status": "inprogress"
+										},
+										{
+											"index": "2",
+											"title": "Create Variants",
+											"status": ""
+										}
+									],
+									"name": "create-variants",
+									"label": "Create Variants",
+									"steps": [
+										{
+											"name": "step-1-selection-option",
+											"label": "Select Options to create images",
+											"component": {
+												"name": "rock-variants-option-select",
+												"path": "/../../src/elements/rock-variants-option-select/rock-variants-option-select.html",
+												"properties": {}
+											},
+											"nextEvent": "onSave",
+											"skipEvent": "onCancel"
+										},
+										{
+											"name": "step-2-create-variants",
+											"label": "Create variants for a given entity",
+											"component": {
+												"name": "rock-variants-create-grid",
+												"path": "/../../src/elements/rock-variants-create-grid/rock-variants-create-grid.html",
+												"properties": {}
+											},
+											"nextEvent": "onComplete",
+											"skipEvent": "onCancel"
+										}
+									]
+								},
+								"rock-variants-create-grid": {
+									"config": {
+										"createVariantsGridConfig": {
+											"viewMode": "Tabular",
+											"title": "Variant Data Table",
+											"mode": "Read",
+											"schemaType": "simple",
+											"tabular": {
+												"settings": {
+													"isMultiSelect": false,
+													"actions": [
+														{
+															"name": "delete",
+															"icon": "pebble-icons:Delete",
+															"eventName": "delete-item"
+														}
+													]
+												},
+												"columns": [
+													{
+														"header": "Existing",
+														"name": "existing",
+														"sortable": false,
+														"filterable": false
+													}
+												]
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": "app-entity-manage_rock-relationship-manage_image_admin_uiConfig",
+			"name": "app-entity-manage_rock-relationship-manage",
+			"version": "1.0",
+			"type": "uiConfig",
+			"properties": {
+				"createdByService": "entityservice",
+				"createdBy": "user"
+			},
+			"data": {
+				"contexts": [
+					{
+						"context": {
+							"app": "app-entity-manage",
+							"service": "_ALL",
+							"component": "rock-relationship-manage",
+							"subComponent": "_ALL",
+							"entityType": "image",
+							"role": "admin"
+						},
+						"jsonData": {
+							"config": {
+								"relationshipGridConfig": {
+									"productPresentationToLot": {
+										"gridConfig": {
+											"viewMode": "Tabular",
+											"mode": "Read",
+											"title": "Product Presentation To Lot",
+											"schemaType": "colModel",
+											"statusEnabled": true,
+											"tabular": {
+												"settings": {
+													"isMultiSelect": true,
+													"actions": [
+														{
+															"name": "delete",
+															"icon": "pebble-icons:Delete",
+															"eventName": "delete-item"
+														}
+													]
+												},
+												"columns": [
+													{
+														"header": "Related Entity",
+														"name": "Related Entity",
+														"sortable": true,
+														"filterable": false,
+														"editType": "",
+														"readOnly": true,
+														"isRelatedEntityAttribute": false,
+														"linkTemplate": "entity-manage?id={id}&type={type}"
+													},
+													{
+														"header": "Link Description",
+														"name": "linkDescription",
+														"sortable": true,
+														"filterable": false,
+														"editType": "",
+														"isRelatedEntityAttribute": false
+													},
+													{
+														"header": "Status",
+														"name": "status",
+														"sortable": true,
+														"filterable": false,
+														"editType": "",
+														"isRelatedEntityAttribute": false
+													},
+													{
+														"header": "Enabled",
+														"name": "enabled",
+														"sortable": true,
+														"filterable": false,
+														"editType": "",
+														"isRelatedEntityAttribute": false
+													},
+													{
+														"header": "Display Name",
+														"name": "displayName",
+														"sortable": true,
+														"filterable": false,
+														"editType": "",
+														"readOnly": true,
+														"isRelatedEntityAttribute": true
+													},
+													{
+														"header": "Description",
+														"name": "description",
+														"sortable": true,
+														"filterable": false,
+														"editType": "",
+														"readOnly": true,
+														"isRelatedEntityAttribute": true
+													}
+												]
+											},
+											"toolbarConfig": {
+												"buttonItems": [
+													{
+														"buttons": [
+															{
+																"name": "pageRange",
+																"icon": "",
+																"text": "0 - 0 / 0",
+																"visible": true,
+																"tooltip": "Page Range"
+															},
+															{
+																"name": "refresh",
+																"icon": "pebble-md-icons:ToolbarRefresh",
+																"text": "",
+																"visible": true,
+																"tooltip": "Refresh"
+															},
+															{
+																"name": "edit",
+																"icon": "pebble-md-icons:Edit",
+																"text": "",
+																"visible": true,
+																"tooltip": "Edit"
+															},
+															{
+																"name": "bulkedit",
+																"icon": "pebble-md-icons:Bulk-Edit",
+																"text": "",
+																"visible": true,
+																"tooltip": "Bulk Edit"
+															},
+															{
+																"name": "download",
+																"icon": "pebble-md-icons:Import",
+																"text": "",
+																"visible": true,
+																"tooltip": "Download"
+															},
+															{
+																"name": "upload",
+																"icon": "pebble-md-icons:Upload",
+																"text": "",
+																"visible": true,
+																"tooltip": "Upload"
+															}
+														]
+													}
+												]
+											}
+										},
+										"addRelLovConfig": {
+											"idField": "id",
+											"titlePattern": "{entity.attributes.producttitle}"
+										}
+									},
+									"hasimages": {
+										"gridConfig": {
+											"viewMode": "Tabular",
+											"mode": "Read",
+											"title": "Has Images",
+											"schemaType": "colModel",
+											"statusEnabled": true,
+											"tabular": {
+												"settings": {
+													"isMultiSelect": true,
+													"actions": [
+														{
+															"name": "delete",
+															"icon": "pebble-icons:Delete",
+															"eventName": "delete-item"
+														}
+													]
+												},
+												"columns": [
+													{
+														"header": "From Entity",
+														"name": "From Entity",
+														"sortable": true,
+														"filterable": false,
+														"editType": "",
+														"readOnly": true,
+														"isFromEntityAttribute": false,
+														"linkTemplate": "entity-manage?id={id}&type={type}"
+													},
+													{
+														"header": "Entity Type",
+														"name": "Entity Type",
+														"sortable": true,
+														"filterable": false,
+														"editType": "",
+														"readOnly": true,
+														"isFromEntityAttribute": false
+													},
+													{
+														"header": "Status",
+														"name": "status",
+														"sortable": true,
+														"filterable": false,
+														"editType": "",
+														"isFromEntityAttribute": false
+													},
+													{
+														"header": "SKU Number",
+														"name": "skunumber",
+														"sortable": true,
+														"filterable": false,
+														"editType": "",
+														"readOnly": true,
+														"isFromEntityAttribute": true
+													},
+													{
+														"header": "Display Name",
+														"name": "displayname",
+														"sortable": true,
+														"filterable": false,
+														"editType": "",
+														"readOnly": true,
+														"isFromEntityAttribute": true
+													}
+												]
+											},
+											"toolbarConfig": {
+												"buttonItems": [
+													{
+														"buttons": [
+															{
+																"name": "pageRange",
+																"icon": "",
+																"text": "0 - 0 / 0",
+																"visible": true,
+																"tooltip": "Page Range"
+															},
+															{
+																"name": "refresh",
+																"icon": "pebble-md-icons:ToolbarRefresh",
+																"text": "",
+																"visible": true,
+																"tooltip": "Refresh"
+															},
+															{
+																"name": "edit",
+																"icon": "pebble-md-icons:Edit",
+																"text": "",
+																"visible": true,
+																"tooltip": "Edit"
+															},
+															{
+																"name": "bulkedit",
+																"icon": "pebble-md-icons:Bulk-Edit",
+																"text": "",
+																"visible": true,
+																"tooltip": "Bulk Edit"
+															},
+															{
+																"name": "download",
+																"icon": "pebble-md-icons:Import",
+																"text": "",
+																"visible": true,
+																"tooltip": "Download"
+															},
+															{
+																"name": "upload",
+																"icon": "pebble-md-icons:Upload",
+																"text": "",
+																"visible": true,
+																"tooltip": "Upload"
+															}
+														]
+													}
+												]
+											}
+										},
+										"direction": "up",
+										"fromEntityTypes": [
+											"sku",
+											"lot"
+										],
+										"addRelLovConfig": {
+											"idField": "id",
+											"titlePattern": "{entity.attributes.producttitle}"
+										},
+										"governDataConfig": {
+											"showGovernDataToggle": true,
+											"entityNameAttribute": "producttitle"
+										}
+									},
+									"imageToImage": {
+										"gridConfig": {
+											"viewMode": "Tabular",
+											"mode": "Read",
+											"title": "Images",
+											"schemaType": "colModel",
+											"statusEnabled": true,
+											"tabular": {
+												"settings": {
+													"isMultiSelect": true,
+													"actions": [
+														{
+															"name": "delete",
+															"icon": "pebble-icons:Delete",
+															"eventName": "delete-item"
+														}
+													]
+												},
+												"columns": [
+													{
+														"header": "Image",
+														"name": "Related Entity",
+														"sortable": true,
+														"filterable": false,
+														"editType": "",
+														"readOnly": true,
+														"isRelatedEntityAttribute": false,
+														"linkTemplate": "entity-manage?id={id}&type={type}"
+													},
+													{
+														"header": "Link Description",
+														"name": "linkDescription",
+														"sortable": true,
+														"filterable": false,
+														"editType": "",
+														"isRelatedEntityAttribute": false
+													},
+													{
+														"header": "Status",
+														"name": "status",
+														"sortable": true,
+														"filterable": false,
+														"editType": "",
+														"isRelatedEntityAttribute": false
+													},
+													{
+														"header": "Enabled",
+														"name": "enabled",
+														"sortable": true,
+														"filterable": false,
+														"editType": "",
+														"isRelatedEntityAttribute": false
+													},
+													{
+														"header": "Display Name",
+														"name": "displayname",
+														"sortable": true,
+														"filterable": false,
+														"editType": "",
+														"readOnly": true,
+														"isRelatedEntityAttribute": true
+													}
+												]
+											},
+											"toolbarConfig": {
+												"buttonItems": [
+													{
+														"buttons": [
+															{
+																"name": "pageRange",
+																"icon": "",
+																"text": "0 - 0 / 0",
+																"visible": true,
+																"tooltip": "Page Range"
+															},
+															{
+																"name": "refresh",
+																"icon": "pebble-md-icons:ToolbarRefresh",
+																"text": "",
+																"visible": true,
+																"tooltip": "Refresh"
+															},
+															{
+																"name": "edit",
+																"icon": "pebble-md-icons:Edit",
+																"text": "",
+																"visible": true,
+																"tooltip": "Edit"
+															},
+															{
+																"name": "bulkedit",
+																"icon": "pebble-md-icons:Bulk-Edit",
+																"text": "",
+																"visible": true,
+																"tooltip": "Bulk Edit"
+															},
+															{
+																"name": "download",
+																"icon": "pebble-md-icons:Import",
+																"text": "",
+																"visible": true,
+																"tooltip": "Download"
+															},
+															{
+																"name": "upload",
+																"icon": "pebble-md-icons:Upload",
+																"text": "",
+																"visible": true,
+																"tooltip": "Upload"
+															}
+														]
+													}
+												]
+											}
+										},
+										"addRelLovConfig": {
+											"idField": "id",
+											"titlePattern": "{entity.attributes.producttitle}"
+										}
+									},
+									"productPresentationToImage": {
+										"gridConfig": {
+											"viewMode": "Tabular",
+											"mode": "Read",
+											"title": "Product Presentation To Image",
+											"schemaType": "colModel",
+											"statusEnabled": true,
+											"tabular": {
+												"settings": {
+													"isMultiSelect": true,
+													"actions": [
+														{
+															"name": "delete",
+															"icon": "pebble-icons:Delete",
+															"eventName": "delete-item"
+														}
+													]
+												},
+												"columns": [
+													{
+														"header": "Related Entity",
+														"name": "Related Entity",
+														"sortable": true,
+														"filterable": false,
+														"editType": "",
+														"readOnly": true,
+														"isRelatedEntityAttribute": false,
+														"linkTemplate": "entity-manage?id={id}&type={type}"
+													},
+													{
+														"header": "Status",
+														"name": "status",
+														"sortable": true,
+														"filterable": false,
+														"editType": "",
+														"isRelatedEntityAttribute": false
+													},
+													{
+														"header": "Descriptioin",
+														"name": "discription",
+														"sortable": true,
+														"filterable": false,
+														"editType": "",
+														"readOnly": true,
+														"isRelatedEntityAttribute": true
+													}
+												]
+											},
+											"toolbarConfig": {
+												"buttonItems": [
+													{
+														"buttons": [
+															{
+																"name": "pageRange",
+																"icon": "",
+																"text": "0 - 0 / 0",
+																"visible": true,
+																"tooltip": "Page Range"
+															},
+															{
+																"name": "refresh",
+																"icon": "pebble-md-icons:ToolbarRefresh",
+																"text": "",
+																"visible": true,
+																"tooltip": "Refresh"
+															},
+															{
+																"name": "edit",
+																"icon": "pebble-md-icons:Edit",
+																"text": "",
+																"visible": true,
+																"tooltip": "Edit"
+															},
+															{
+																"name": "bulkedit",
+																"icon": "pebble-md-icons:Bulk-Edit",
+																"text": "",
+																"visible": true,
+																"tooltip": "Bulk Edit"
+															},
+															{
+																"name": "download",
+																"icon": "pebble-md-icons:Import",
+																"text": "",
+																"visible": true,
+																"tooltip": "Download"
+															},
+															{
+																"name": "upload",
+																"icon": "pebble-md-icons:Upload",
+																"text": "",
+																"visible": true,
+																"tooltip": "Upload"
+															}
+														]
+													}
+												]
+											}
+										},
+										"addRelLovConfig": {
+											"idField": "id",
+											"titlePattern": "{entity.attributes.producttitle}"
+										}
+									}
+								},
+								"messageCodeMapping": {
+									"Req001": "Required",
+									"MinLen001": "MIN_LENGTH",
+									"MaxLen001": "MAX_LENGTH",
+									"AlVal001": "ALLOWED_VALUES",
+									"Prec001": "Precision",
+									"Range001": "RANGE_FROM_INCLUSIVE",
+									"Range002": "RANGE_TO_INCLUSIVE",
+									"Range003": "RANGE_FROM_EXCLUSIVE",
+									"Range004": "RANGE_TO_EXCLUSIVE",
+									"Range005": "RANGE_TO_INCLUSIVE_FROM_EXCLUSIVE",
+									"Range006": "RANGE_TO_INCLUSIVE_FROM_INCLUSIVE",
+									"Range007": "RANGE_TO_EXCLUSIVE_FROM_EXCLUSIVE",
+									"Range008": "RANGE_TO_EXCLUSIVE_FROM_INCLUSIVE",
+									"133311": "Length should be greater than Width",
+									"133312": "Width should be less than Length"
+								},
+                                "workflowActions": {
+                                    "title": "Workflow Actions",
+                                    "icon": "pebble-md-icons:assignedactions",
+                                    "actionsData": [
+                                        {
+                                            "title": "Assignments",
+                                            "actions": [
+                                                {
+                                                    "name": "takeTask",
+                                                    "icon": "pebble-xl-icons:taketask",
+                                                    "text": "Take Task",
+                                                    "visible": true,
+                                                    "eventName": "action-takeTask",
+                                                    "componentName": "rock-workflow-assignment"
+                                                },
+                                                {
+                                                    "name": "releaseTask",
+                                                    "icon": "pebble-xl-icons:releasetask",
+                                                    "text": "Release Task",
+                                                    "visible": true,
+                                                    "eventName": "action-releaseTask",
+                                                    "componentName": "rock-workflow-assignment"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "title": "Transitions",
+                                            "actions": [
+                                                {
+                                                    "group": "Transitions",
+                                                    "name": "wfTransitions",
+                                                    "icon": "pebble-xl-icons:taketask",
+                                                    "text": "Workflow Transitions",
+                                                    "visible": true,
+                                                    "eventName": "action-wfTransitions",
+                                                    "componentName": "rock-workflow-transition"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+							}
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": "app-entity-manage_rock-entity-todo_image_admin_uiConfig",
+			"name": "app-entity-manage_rock-entity-todo",
+			"version": "1.0",
+			"type": "uiConfig",
+			"properties": {
+				"createdByService": "entityservice",
+				"createdBy": "user"
+			},
+			"data": {
+				"contexts": [
+					{
+						"context": {
+							"app": "app-entity-manage",
+							"service": "_ALL",
+							"component": "rock-entity-todo",
+							"subComponent": "_ALL",
+							"entityType": "image",
+							"role": "admin"
+						},
+						"jsonData": {
+							"config": {
+								"todos": [
+									{
+										"icon": {
+											"name": "pebble-xl-icons:Brand"
+										},
+										"data": {
+											"name": "assignPrimaryImage",
+											"label": "Assign Primary Image",
+											"eventName": "todotap"
+										}
+									},
+									{
+										"icon": {
+											"name": "pebble-xl-icons:Channel"
+										},
+										"data": {
+											"name": "newChannel",
+											"label": "Introduce to new channel",
+											"eventName": "todotap"
+										}
+									},
+									{
+										"icon": {
+											"name": "pebble-xl-icons:Crosssell"
+										},
+										"data": {
+											"name": "addnewvpn",
+											"label": "Assign Supplier Number",
+											"eventName": "todotap"
+										}
+									}
+								]
+							}
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": "app-entity-manage_rock-entity-tofix_image_admin_uiConfig",
+			"name": "app-entity-manage_rock-entity-tofix",
+			"version": "1.0",
+			"type": "uiConfig",
+			"properties": {
+				"createdByService": "entityservice",
+				"createdBy": "user"
+			},
+			"data": {
+				"contexts": [
+					{
+						"context": {
+							"app": "app-entity-manage",
+							"service": "_ALL",
+							"component": "rock-entity-tofix",
+							"subComponent": "_ALL",
+							"entityType": "image",
+							"role": "admin"
+						},
+						"jsonData": {
+							"config": {
+								"completionPercentage": "",
+								"tofixes": []
+							}
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": "app-entity-manage_rock-titlebar_image_admin_uiConfig",
+			"name": "app-entity-manage_rock-titlebar",
+			"version": "1.0",
+			"type": "uiConfig",
+			"properties": {
+				"createdByService": "entityservice",
+				"createdBy": "user"
+			},
+			"data": {
+				"contexts": [
+					{
+						"context": {
+							"app": "app-entity-manage",
+							"service": "_ALL",
+							"component": "rock-titlebar",
+							"subComponent": "_ALL",
+							"entityType": "image",
+							"role": "admin"
+						},
+						"jsonData": {
+							"config": {
+								"image": "",
+								"titleAttribute": "property_originalfilename",
+								"subtitleAttribute": ""
+							}
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": "app-entity-manage_extension-manage-productsetuptaxonomy_image_admin_uiConfig",
+			"name": "app-entity-manage_extension-manage-productsetuptaxonomy",
+			"version": "1.0",
+			"type": "uiConfig",
+			"properties": {
+				"createdByService": "entityservice",
+				"createdBy": "user"
+			},
+			"data": {
+				"contexts": [
+					{
+						"context": {
+							"app": "app-entity-manage",
+							"service": "_ALL",
+							"component": "extension-manage-productsetuptaxonomy",
+							"subComponent": "_ALL",
+							"entityType": "image",
+							"role": "admin"
+						},
+						"jsonData": {
+							"config": {
+								"name": "extension-manage-productsetuptaxonomy",
+								"label": "Manage Extensions",
+								"steps": [
+									{
+										"name": "step-1-rock-extension-manage",
+										"label": "Manage extension for a New Entity",
+										"component": {
+											"name": "rock-extension-manage",
+											"path": "/../../src/elements/rock-extension-manage/rock-extension-manage.html",
+											"properties": {
+												"taxonomy": "Product Setup Taxonomy",
+												"leaf-node-only": true
+											}
+										},
+										"nextEvent": "onSave",
+										"skipEvent": "onSkip"
+									}
+								]
+							}
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": "app-entity-manage_extension-manage-merchandisingtaxonomy_image_admin_uiConfig",
+			"name": "app-entity-manage_extension-manage-merchandisingtaxonomy",
+			"version": "1.0",
+			"type": "uiConfig",
+			"properties": {
+				"createdByService": "entityservice",
+				"createdBy": "user"
+			},
+			"data": {
+				"contexts": [
+					{
+						"context": {
+							"app": "app-entity-manage",
+							"service": "_ALL",
+							"component": "extension-manage-merchandisingtaxonomy",
+							"subComponent": "_ALL",
+							"entityType": "image",
+							"role": "admin"
+						},
+						"jsonData": {
+							"config": {
+								"name": "extension-manage-merchandisingtaxonomy",
+								"label": "Manage Extensions",
+								"steps": [
+									{
+										"name": "step-1-rock-extension-manage",
+										"label": "Manage extension for a New Entity",
+										"component": {
+											"name": "rock-extension-manage",
+											"path": "/../../src/elements/rock-extension-manage/rock-extension-manage.html",
+											"properties": {
+												"taxonomy": "Merchandising Taxonomy",
+												"leaf-node-only": true
+											}
+										},
+										"nextEvent": "onSave",
+										"skipEvent": "onSkip"
+									}
+								]
+							}
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": "app-entity-manage_fix-attribute-errors_image_admin_uiConfig",
+			"name": "app-entity-manage_fix-attribute-errors",
+			"version": "1.0",
+			"type": "uiConfig",
+			"properties": {
+				"createdByService": "entityservice",
+				"createdBy": "user"
+			},
+			"data": {
+				"contexts": [
+					{
+						"context": {
+							"app": "app-entity-manage",
+							"service": "_ALL",
+							"component": "fix-attribute-errors",
+							"subComponent": "_ALL",
+							"entityType": "image",
+							"role": "admin"
+						},
+						"jsonData": {
+							"config": {
+								"name": "fix-attribute-errors",
+								"label": "Fix attribute errors",
+								"stepProviderComponent": {
+									"name": "rock-business-condition-step-provider",
+									"path": "/src/elements/rock-business-condition-step-provider/rock-business-condition-step-provider.html",
+									"properties": {}
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": "app-entity-manage_rock-entity-upload_image_admin_uiConfig",
+			"name": "app-entity-manage_rock-entity-upload",
+			"version": "1.0",
+			"type": "uiConfig",
+			"properties": {
+				"createdByService": "entityservice",
+				"createdBy": "user"
+			},
+			"data": {
+				"contexts": [
+					{
+						"context": {
+							"app": "app-entity-manage",
+							"service": "_ALL",
+							"component": "rock-entity-upload",
+							"subComponent": "_ALL",
+							"entityType": "image",
+							"role": "admin"
+						},
+						"jsonData": {
+							"config": {
+								"name": "rock-entity-upload",
+								"label": "Upload entity",
+								"steps": [
+									{
+										"name": "step-1-rock-entity-upload",
+										"label": "Upload the excel file",
+										"component": {
+											"name": "rock-entity-upload",
+											"path": "/../../src/elements/rock-entity-upload/rock-entity-upload.html",
+											"properties": {
+												"taxonomy": "Product Setup Taxonomy",
+												"base-profile-id": "Excel_Import_Process_Dynamic",
+												"base-transform-profile-id": "Excel_Import_Transform_Dynamic",
+												"allowed-file-types": [
+													"xlsx",
+													"xlsm"
+												]
+											}
+										},
+										"sharedProperties": {
+											"business-function-data": "businessFunctionData"
+										},
+										"nextEvent": "onNext"
+									},
+									{
+										"name": "step-2-rock-entity-upload",
+										"label": "Entities upload finish",
+										"component": {
+											"name": "rock-business-function-finish",
+											"path": "/../../src/elements/rock-business-function-finish/rock-business-function-finish.html",
+											"properties": {
+												"business-function-data": {}
+											}
+										},
+										"nextEvent": "onNext"
+									}
+								]
+							}
+						}
+					}
+				]
+			}
+		},
+		{
+            "id": "app-entity-manage_rock-entity-download_image_admin_uiConfig",
+            "name": "app-entity-manage_rock-entity-download",
+            "version": "1.0",
+            "type": "uiConfig",
+            "properties": {
+                "createdByService": "entityservice",
+                "createdBy": "user"
+            },
+            "data": {
+                "contexts": [
+                    {
+                        "context": {
+                            "app": "app-entity-manage",
+                            "service": "_ALL",
+                            "component": "rock-entity-download",
+                            "subComponent": "_ALL",
+							"entityType": "image",
+                            "role": "admin"
+                        },
+                        "jsonData": {
+                            "config": {
+                                "name": "rock-entity-download",
+                                "label": "Download bulk entities",
+                                "steps": [
+									{
+										"name": "step-1-rock-entity-download",
+										"label": "Select attributes of entity to be downloaded",
+										"component": {
+											"name": "rock-scope-manage",
+											"path": "/../../src/elements/rock-scope-manage/rock-scope-manage.html",
+											"properties": {
+											}
+										},
+										"sharedProperties":{"business-function-data": "businessFunctionData","selected-attributes":"selectedItems"},
+										"nextEvent": "onNext",
+										"cancelEvent": "onCancel"
+									},
+                                    {
+                                        "name": "step-2-rock-entity-download",
+                                        "label": "Download the excel file",
+                                        "component": {
+                                            "name": "rock-entity-download",
+                                            "path": "/../../src/elements/rock-entity-download/rock-entity-download.html",
+                                            "properties": {
+                                                "sync-threshold": 20
+                                            }
+                                        },
+                                        "sharedProperties": {
+                                            "business-function-data": "businessFunctionData"
+                                        },
+                                        "nextEvent": "onDownload"
+                                    },
+                                    {
+                                        "name": "step-3-rock-entity-download",
+                                        "label": "Entities download finish",
+                                        "component": {
+                                            "name": "rock-business-function-finish",
+                                            "path": "/../../src/elements/rock-business-function-finish/rock-business-function-finish.html",
+                                            "properties": {
+                                                "business-function-data": {}
+                                            }
+                                        },
+										"nextEvent": "onNext"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+		{
+			"id": "app-entity-manage_rock-workflow-assignment_image_admin_uiConfig",
+			"name": "app-entity-manage_rock-workflow-assignment",
+			"version": "1.0",
+			"type": "uiConfig",
+			"properties": {
+				"createdByService": "entityservice",
+				"createdBy": "user"
+			},
+			"data": {
+				"contexts": [
+					{
+						"context": {
+							"app": "app-entity-manage",
+							"service": "_ALL",
+							"component": "rock-workflow-assignment",
+							"subComponent": "_ALL",
+                            "entityType": "image",
+							"role": "admin"
+						},
+						"jsonData": {
+							"config": {
+									"name": "rock-workflow-assignment",
+									"label": "Manage bulk assignments",
+									"steps": [
+										{
+											"name": "step-1-rock-workflow-assignment",
+											"label": "Manage bulk assignments",
+											"component": {
+												"name": "rock-workflow-assignment",
+												"path": "/../../src/elements/rock-workflow-assignment/rock-workflow-assignment.html",
+											"properties": {
+													"sync-threshold": "20"
+												}
+											},
+											"sharedProperties":{"business-function-data": "businessFunctionData"},
+											"nextEvent": "onComplete",
+											"backEvent": "onCancel"
+										},
+										{
+											"name": "step-2-rock-workflow-assignment",
+											"label": "Workflow assignment finish",
+											"component": {
+												"name": "rock-bulk-action-result",
+												"path": "/../../src/elements/rock-bulk-action-result/rock-bulk-action-result.html",
+												"properties": {
+													"result-attributes": [
+														{
+															"name": "producttitle",
+															"externalName": "Product Title"
+														}
+													],
+													"business-function-data": {}
+												}
+											},
+											"nextEvent": "onNext"
+										}
+									]
+								}
+						}
+					}
+				]
+			}
+		},
+		{
+            "id": "app-entity-manage_rock-workflow-transition_image_admin_uiConfig",
+            "name": "app-entity-manage_rock-workflow-transition",
+            "version": "1.0",
+            "type": "uiConfig",
+            "properties": {
+                "createdByService": "entityservice",
+                "createdBy": "user"
+            },
+            "data": {
+                "contexts": [
+                    {
+                        "context": {
+                            "app": "app-entity-manage",
+                            "service": "_ALL",
+                            "component": "rock-workflow-transition",
+                            "subComponent": "_ALL",
+                            "entityType": "image",
+                            "role": "admin"
+                        },
+                        "jsonData": {
+                            "config": {
+                                "name": "rock-workflow-transition",
+                                "label": "Manage bulk transitions",
+                                "steps": [
+                                    {
+                                        "name": "step-1-rock-workflow-transition",
+                                        "label": "Manage bulk transitions",
+                                        "component": {
+                                            "name": "rock-workflow-transition",
+                                            "path": "/../../src/elements/rock-workflow-transition/rock-workflow-transition.html",
+                                            "properties": {
+                                                "sync-threshold": "20"
+                                            }
+                                        },
+                                        "sharedProperties": {
+                                            "business-function-data": "businessFunctionData"
+                                        },
+                                        "nextEvent": "onComplete",
+                                        "backEvent": "onCancel"
+                                    },
+                                    {
+                                        "name": "step-2-rock-workflow-transition",
+                                        "label": "Workflow transitions finish",
+                                        "component": {
+                                            "name": "rock-bulk-action-result",
+                                            "path": "/../../src/elements/rock-bulk-action-result/rock-bulk-action-result.html",
+                                            "properties": {
+												"result-attributes": [
+													{
+														"name": "producttitle",
+														"externalName": "Product Title"
+													}
+												],
+                                                "business-function-data": {}
+                                            }
+                                        },
+										"nextEvent": "onNext"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+		{
+			"id": "app-entity-manage_rock-scope-manage_image_admin_uiConfig",
+			"name": "app-entity-manage_rock-scope-manage",
+			"version": "1.0",
+			"type": "uiConfig",
+			"properties": {
+				"createdByService": "entityservice",
+				"createdBy": "user"
+			},
+			"data": {
+				"contexts": [
+					{
+						"context": {
+							"app": "app-entity-manage",
+							"service": "_ALL",
+							"component": "rock-scope-manage",
+							"subComponent": "_ALL",
+							"entityType": "image",
+							"role": "admin"
+						},
+						"jsonData": {
+							"config": {
+								"splitListConfig":{
+									"viewMode": "Tabular",
+									"tabular": {
+										"settings": {
+											"isMultiSelect": true,
+											"idField":"name"
+										},
+										"columns": [
+											{
+												"header": "External Name",
+												"name": "externalName",
+												"sortable": true,
+												"filterable": true,
+												"readFrom": "properties"
+											},{
+												"header": "Group",
+												"name": "groupName",
+												"sortable": true,
+												"filterable": true,
+												"readFrom": "properties"
+											}
+										]
+									}
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		{
+            "id": "app-entity-manage_rock-entity-bulk-edit_image_admin_uiConfig",
+            "name": "app-entity-manage_rock-entity-bulk-edit",
+            "version": "1.0",
+            "type": "uiConfig",
+            "properties": {
+                "createdByService": "entityservice",
+                "createdBy": "user"
+            },
+            "data": {
+                "contexts": [
+                    {
+                        "context": {
+                            "app": "app-entity-manage",
+                            "service": "_ALL",
+                            "component": "rock-entity-bulk-edit",
+                            "subComponent": "_ALL",
+							"entityType": "image",
+                            "role": "admin"
+                        },
+                        "jsonData": {
+                            "config": {
+								"wizardConfig": {
+									"name": "rock-entity-edit",
+									"label": "Edit bulk entities",
+									"steps": [
+										{
+											"name": "step-1-rock-entity-edit",
+											"label": "Edit Entity Attributes",
+											"component": {
+												"name": "rock-entity-bulk-edit",
+												"path": "/../../src/elements/rock-entity-bulk-edit/rock-entity-bulk-edit.html",
+												"properties": {
+
+												}
+											},
+											"sharedProperties": {
+												"business-function-data": "businessFunctionData"
+											},
+											"nextEvent": "onComplete",
+											"backEvent": "onBack",
+											"cancelEvent": "onCancel"
+										},
+										{
+											"name": "step-2-rock-entity-edit",
+											"label": "Entities Process finish",
+											"component": {
+												"name": "rock-business-function-finish",
+												"path": "/../../src/elements/rock-business-function-finish/rock-business-function-finish.html",
+												"properties": {
+													"business-function-data": {}
+												}
+											},
+											"nextEvent": "onNext"
+										}
+									]
+								},
+								"gridConfig": {
+									"viewMode": "Tabular",
+									"readOnly": true,
+									"schemaType": "simple",
+									"tabular": {
+										"settings": {
+											"isMultiSelect": true,
+											"disableSelectAll": true
+										},
+										"columns": [
+											{
+												"header": "Attribute",
+												"name": "externalName",
+												"sortable": true,
+												"filterable": true,
+												"readFrom": "properties"
+											},
+											{
+												"header": "Group",
+												"name": "groupName",
+												"sortable": true,
+												"filterable": true,
+												"readFrom": "properties"
+											}
+										]
+									}
+								},
+								"requestData": {
+									"params": {
+	                                    "query": {
+	                                        "filters": {
+	                                            "typesCriterion": [
+	                                                "attributeModel"
+	                                            ]
+	                                        }
+	                                    },
+	                                    "fields": {
+	                                        "ctxTypes": [
+	                                            "properties"
+	                                        ],
+	                                        "attributes":[""]
+	                                    }
+	                                }
+								}
+							}
+                        }
+                    }
+                ]
+            }
+        }
+
+	]
+}

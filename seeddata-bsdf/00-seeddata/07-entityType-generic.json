@@ -1,0 +1,79 @@
+{
+   "metaInfo": {
+      "dataIndex": "entityModel",
+      "collectionName": "entityModels",
+      "responseObjectName": "response"
+   },
+   "entityModels": [
+      {
+         "id": "list_entityType",
+         "name": "list",
+         "type": "entityType",
+         "domain": "generic",
+         "properties": {
+            "externalName": "List",
+            "description": "List"
+         }
+      },
+      {
+         "id": "locale_entityType",
+         "name": "locale",
+         "type": "entityType",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Locale",
+            "description": "Locale"
+         }
+      },
+      {
+         "id": "source_entityType",
+         "name": "source",
+         "type": "entityType",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Source",
+            "description": "Source"
+         }
+      },
+      {
+         "id": "entityManageModel_entityType",
+         "name": "entityManageModel",
+         "type": "entityType",
+         "domain": "generic",
+         "properties": {
+            "externalName": "entityManageModel",
+            "description": ""
+         }
+      },
+      {
+         "id": "attributeModel_entityType",
+         "name": "attributeModel",
+         "type": "entityType",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Attribute Model",
+            "description": ""
+         }
+      },
+      {
+         "id": "relationshipModel_entityType",
+         "name": "relationshipModel",
+         "type": "entityType",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Relationship Model",
+            "description": ""
+         }
+      },
+      {
+         "id": "file_entityType",
+         "name": "file",
+         "type": "entityType",
+         "domain": "generic",
+         "properties": {
+            "externalName": "File",
+            "description": ""
+         }
+      }
+   ]
+}

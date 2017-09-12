@@ -1,0 +1,108 @@
+{
+  "metaInfo": {
+    "dataIndex": "config",
+    "collectionName": "configObjects",
+    "responseObjectName": "response"
+  },
+  "configObjects": [
+    {
+      "id": "entityModelDownload",
+      "name": "entityModelDownload",
+      "type": "COPProfile",
+      "data": {
+        "contexts": [
+          {
+            "context": {
+              "app": "RSConnect",
+              "service": "excelImportProcessService",
+              "list": "self"
+            },
+            "jsonData": {
+              "id": "entityModelDownload",
+              "name": "entityModelDownload",
+              "type": "MODEL_EXPORT",
+              "integrationType": "User",
+              "isEnabled": "true",
+              "collect": {
+                "isDataPersistent": "false",
+                "channel": [
+                  {
+                    "type": "rdpConnector",
+                    "settings": {
+                      "search": {
+                        "params": {
+                          "query": {
+                            "filters": {
+                              "typesCriterion": [
+                                "entityManageModel"
+                              ]
+                            },
+                            "id": "sku_entityManageModel"
+                          },
+                          "fields": {
+                            "attributes": [
+                              "_ALL"
+                            ],
+                            "relationships": [
+                              "_ALL"
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "format": {
+                  "type": "RSJSON",
+                  "version": "1.1",
+                  "batchSize": 1,
+                  "settings": {
+                    "additionalSettings": {
+                      "encoding": "utf8"
+                    }
+                  }
+                },
+                "filter": {
+                  "include": [],
+                  "exclude": []
+                }
+              },
+              "publish": {
+                "isDataPersistent": "false",
+                "channel": [
+                  {
+                    "type": "folderConnector",
+                    "settings": {
+                      "sourceFolder": "",
+                      "pattern": ""
+                    }
+                  }
+                ],
+                "format": {
+                  "type": "SMARTEXCEL",
+                  "version": "1.1",
+                  "batchSize": 1,
+                  "settings": {
+                    "additionalSettings": {
+                      "encoding": "utf8"                     
+                    }
+                  }
+                },
+                "filter": {
+                  "include": [],
+                  "exclude": []
+                }
+              },
+              "transform": {
+                "settings": {
+                  "entityType": "@field(TYPE)",
+                  "nullRecordTransformer": "true"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

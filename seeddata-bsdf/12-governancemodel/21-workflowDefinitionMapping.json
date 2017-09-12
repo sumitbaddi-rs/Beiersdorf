@@ -1,0 +1,29 @@
+{
+    "metaInfo": {
+        "dataIndex": "entityModel",
+        "collectionName": "entityModels",
+        "responseObjectName": "response"
+    },
+    "entityModels": [
+        {
+            "id": "enart_workflowDefinitionMapping",
+            "name": "enart",
+            "type": "workflowDefinitionMapping",
+            "data": {
+                "relationships": {
+                    "hasWorkflowsDefined": [
+                        {
+                            "id": "rel101",
+                            "direction": "both",
+                            "relationshipType": "association",
+                            "relTo": {
+                                "id": "newNartSetup_workflowDefinition",
+                                "type": "workflowDefinition"
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

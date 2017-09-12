@@ -1,0 +1,29 @@
+{
+   "metaInfo": {
+      "dataIndex": "entityModel",
+      "collectionName": "entityModels",
+      "responseObjectName": "entityModelOperationResponse"
+   },
+   "entityModels": [
+      {
+         "id": "classification_entityType",
+         "name": "classification",
+         "type": "entityType",
+         "domain": "thing",
+         "properties": {
+            "externalName": "Classification",
+            "description": "Classification"
+         }
+      },
+      {
+         "id": "taxonomy_entityType",
+         "name": "taxonomy",
+         "type": "entityType",
+         "domain": "thing",
+         "properties": {
+            "externalName": "Taxonomy",
+            "description": "Taxonomy"
+         }
+      }
+   ]
+}

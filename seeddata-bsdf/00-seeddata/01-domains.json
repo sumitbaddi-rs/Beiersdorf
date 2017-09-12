@@ -1,0 +1,69 @@
+{
+   "metaInfo": {
+      "dataIndex": "entityModel",
+      "collectionName": "entityModels",
+      "responseObjectName": "response"
+   },
+   "entityModels": [
+      {
+         "id": "party_domain",
+         "name": "party",
+         "domain": "generic",
+         "type": "domain",
+         "properties": {
+            "externalName": "Party",
+            "description": "Party domain manages the entirety of data related to parties such as customers, vendors and suppliers, and maintains a single, consistent version of this data"
+         }
+      },
+      {
+         "id": "thing_domain",
+         "name": "thing",
+         "domain": "generic",
+         "type": "domain",
+         "properties": {
+            "externalName": "Thing",
+            "description": "Thing domain manages the entirety of data related to products, and maintains a single, consistent version of this data"
+         }
+      },
+      {
+         "id": "referenceData_domain",
+         "name": "referenceData",
+         "domain": "generic",
+         "type": "domain",
+         "properties": {
+            "externalName": "Reference Data",
+            "description": "Reference data domain manages all the reference data maintained in the platform to support MDM functionality"
+         }
+      },
+      {
+         "id": "location_domain",
+         "name": "location",
+         "domain": "generic",
+         "type": "domain",
+         "properties": {
+            "externalName": "Location",
+            "description": "Location domain is a place holder for all locations data to support location Management features"
+         }
+      },
+      {
+         "id": "generic_domain",
+         "name": "generic",
+         "domain": "generic",
+         "type": "domain",
+         "properties": {
+            "externalName": "Generic",
+            "description": "Generic domain is a place holder for all domain agnostic data maintained in the platform to support MDM functionality"
+         }
+      },
+      {
+         "id": "digitalAsset_domain",
+         "name": "digitalAsset",
+         "domain": "generic",
+         "type": "domain",
+         "properties": {
+            "externalName": "Digital Asset",
+            "description": "Digital Asset domain is a place holder for all Digital Assets data to support Digital Asset Management features"
+         }
+      }
+   ]
+}

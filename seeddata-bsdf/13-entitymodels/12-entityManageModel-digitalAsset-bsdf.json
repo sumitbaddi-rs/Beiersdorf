@@ -1,0 +1,470 @@
+{
+    "metaInfo": {
+        "dataIndex": "entityModel",
+        "collectionName": "entityModels",
+        "responseObjectName": "response"
+    },
+    "entityModels": [
+        {
+            "id": "image_entityManageModel",
+            "name": "image",
+            "type": "entityManageModel",
+            "domain": "generic",
+            "data": {
+                "attributes": {
+                    "lastmodifieddate": {
+                        "properties": {
+                            "externalName": "Last Modified Date",
+                            "groupName": "Asset Information",
+                            "dataType": "datetime"
+                        }
+                    },
+                    "lifecyclestage": {
+                        "properties": {
+                            "externalName": "Lifecycle Stage",
+                            "groupName": "System",
+                            "dataType": "string",
+                            "isReferenceType": true,
+                            "referenceEntityInfo": [
+                                {
+                                    "refRelationshipName": "hasReferenceTo",
+                                    "refEntityType": "lifecyclestage"
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "document_entityManageModel",
+            "name": "document",
+            "type": "entityManageModel",
+            "domain": "generic",
+            "data": {
+                "attributes": {
+                    "lastmodifieddate": {
+                        "properties": {
+                            "externalName": "Last Modified Date",
+                            "groupName": "Asset Information",
+                            "dataType": "datetime"
+                        }
+                    },
+                    "lifecyclestage": {
+                        "properties": {
+                            "externalName": "Lifecycle Stage",
+                            "groupName": "System",
+                            "dataType": "string",
+                            "isReferenceType": true,
+                            "referenceEntityInfo": [
+                                {
+                                    "refRelationshipName": "hasReferenceTo",
+                                    "refEntityType": "lifecyclestage"
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "enart_entityManageModel",
+            "name": "enart",
+            "type": "entityManageModel",
+            "domain": "generic",
+            "data": {
+                "relationships": {
+                    "hasimages": [
+                        {
+                            "properties": {
+                                "externalName": "Images",
+                                "relationshipType": "association",
+                                "relatedEntityInfo": [
+                                    {
+                                        "relEntityType": "image"
+                                    }
+                                ]
+                            },
+                            "attributes": {
+                                "status": {
+                                    "properties": {
+                                        "externalName": "Status",
+                                        "groupName": "Basic",
+                                        "dataType": "string",
+                                        "isReferenceType": true,
+                                        "referenceEntityInfo": [
+                                            {
+                                                "refRelationshipName": "hasReferenceTo",
+                                                "refEntityType": "statusvalues"
+                                            }
+                                        ]
+                                    }
+                                },
+                                "isprimary": {
+                                    "properties": {
+                                        "externalName": "isPrimary",
+                                        "groupName": "Relationship Attributes",
+                                        "dataType": "boolean"
+                                    }
+                                },
+                                "order": {
+                                    "properties": {
+                                        "externalName": "order",
+                                        "dataType": "string"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "hasvideos": [
+                        {
+                            "properties": {
+                                "externalName": "Videos",
+                                "relationshipType": "association",
+                                "relatedEntityInfo": [
+                                    {
+                                        "relEntityType": "videos"
+                                    }
+                                ]
+                            },
+                            "attributes": {
+                                "status": {
+                                    "properties": {
+                                        "externalName": "Status",
+                                        "groupName": "Basic",
+                                        "dataType": "string",
+                                        "isReferenceType": true,
+                                        "referenceEntityInfo": [
+                                            {
+                                                "refRelationshipName": "hasReferenceTo",
+                                                "refEntityType": "statusvalues"
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "hasdocuments": [
+                        {
+                            "properties": {
+                                "externalName": "Documents",
+                                "relationshipType": "association",
+                                "relatedEntityInfo": [
+                                    {
+                                        "relEntityType": "document"
+                                    }
+                                ]
+                            },
+                            "attributes": {
+                                "status": {
+                                    "properties": {
+                                        "externalName": "Status",
+                                        "groupName": "Basic",
+                                        "dataType": "string",
+                                        "isReferenceType": true,
+                                        "referenceEntityInfo": [
+                                            {
+                                                "refRelationshipName": "hasReferenceTo",
+                                                "refEntityType": "statusvalues"
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "emasterproduct_entityManageModel",
+            "name": "emasterproduct",
+            "type": "entityManageModel",
+            "domain": "generic",
+            "data": {
+                "relationships": {
+                    "hasimages": [
+                        {
+                            "properties": {
+                                "externalName": "Images",
+                                "relationshipType": "association",
+                                "relatedEntityInfo": [
+                                    {
+                                        "relEntityType": "image"
+                                    }
+                                ]
+                            },
+                            "attributes": {
+                                "status": {
+                                    "properties": {
+                                        "externalName": "Status",
+                                        "groupName": "Basic",
+                                        "dataType": "string",
+                                        "isReferenceType": true,
+                                        "referenceEntityInfo": [
+                                            {
+                                                "refRelationshipName": "hasReferenceTo",
+                                                "refEntityType": "statusvalues"
+                                            }
+                                        ]
+                                    }
+                                },
+                                "isprimary": {
+                                    "properties": {
+                                        "externalName": "isPrimary",
+                                        "groupName": "Relationship Attributes",
+                                        "dataType": "boolean"
+                                    }
+                                },
+                                "order": {
+                                    "properties": {
+                                        "externalName": "order",
+                                        "dataType": "string"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "hasvideos": [
+                        {
+                            "properties": {
+                                "externalName": "Videos",
+                                "relationshipType": "association",
+                                "relatedEntityInfo": [
+                                    {
+                                        "relEntityType": "videos"
+                                    }
+                                ]
+                            },
+                            "attributes": {
+                                "status": {
+                                    "properties": {
+                                        "externalName": "Status",
+                                        "groupName": "Basic",
+                                        "dataType": "string",
+                                        "isReferenceType": true,
+                                        "referenceEntityInfo": [
+                                            {
+                                                "refRelationshipName": "hasReferenceTo",
+                                                "refEntityType": "statusvalues"
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "hasdocuments": [
+                        {
+                            "properties": {
+                                "externalName": "Documents",
+                                "relationshipType": "association",
+                                "relatedEntityInfo": [
+                                    {
+                                        "relEntityType": "document"
+                                    }
+                                ]
+                            },
+                            "attributes": {
+                                "status": {
+                                    "properties": {
+                                        "externalName": "Status",
+                                        "groupName": "Basic",
+                                        "dataType": "string",
+                                        "isReferenceType": true,
+                                        "referenceEntityInfo": [
+                                            {
+                                                "refRelationshipName": "hasReferenceTo",
+                                                "refEntityType": "statusvalues"
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "audio_entityManageModel",
+            "name": "audio",
+            "type": "entityManageModel",
+            "domain": "generic",
+            "data": {
+                "attributes": {
+                    "lastmodifieddate": {
+                        "properties": {
+                            "externalName": "Last Modified Date",
+                            "groupName": "Asset Information",
+                            "dataType": "datetime"
+                        }
+                    },
+                    "lifecyclestage": {
+                        "properties": {
+                            "externalName": "Lifecycle Stage",
+                            "groupName": "System",
+                            "dataType": "string",
+                            "isReferenceType": true,
+                            "referenceEntityInfo": [
+                                {
+                                    "refRelationshipName": "hasReferenceTo",
+                                    "refEntityType": "lifecyclestage"
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "video_entityManageModel",
+            "name": "video",
+            "type": "entityManageModel",
+            "domain": "generic",
+            "data": {
+                "attributes": {
+                    "lastmodifieddate": {
+                        "properties": {
+                            "externalName": "Last Modified Date",
+                            "groupName": "Asset Information",
+                            "dataType": "datetime"
+                        }
+                    },
+                    "lifecyclestage": {
+                        "properties": {
+                            "externalName": "Lifecycle Stage",
+                            "groupName": "System",
+                            "dataType": "string",
+                            "isReferenceType": true,
+                            "referenceEntityInfo": [
+                                {
+                                    "refRelationshipName": "hasReferenceTo",
+                                    "refEntityType": "lifecyclestage"
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "sku_entityManageModel",
+            "name": "sku",
+            "type": "entityManageModel",
+            "domain": "generic",
+            "data": {}
+        },
+        {
+            "id": "eproductversion_entityManageModel",
+            "name": "eproductversion",
+            "type": "entityManageModel",
+            "domain": "generic",
+            "data": {
+                "relationships": {
+                    "hasimages": [
+                        {
+                            "properties": {
+                                "externalName": "Images",
+                                "relationshipType": "association",
+                                "relatedEntityInfo": [
+                                    {
+                                        "relEntityType": "image"
+                                    }
+                                ]
+                            },
+                            "attributes": {
+                                "status": {
+                                    "properties": {
+                                        "externalName": "Status",
+                                        "groupName": "Basic",
+                                        "dataType": "string",
+                                        "isReferenceType": true,
+                                        "referenceEntityInfo": [
+                                            {
+                                                "refRelationshipName": "hasReferenceTo",
+                                                "refEntityType": "statusvalues"
+                                            }
+                                        ]
+                                    }
+                                },
+                                "isprimary": {
+                                    "properties": {
+                                        "externalName": "isPrimary",
+                                        "groupName": "Relationship Attributes",
+                                        "dataType": "boolean"
+                                    }
+                                },
+                                "order": {
+                                    "properties": {
+                                        "externalName": "order",
+                                        "dataType": "string"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "hasvideos": [
+                        {
+                            "properties": {
+                                "externalName": "Videos",
+                                "relationshipType": "association",
+                                "relatedEntityInfo": [
+                                    {
+                                        "relEntityType": "videos"
+                                    }
+                                ]
+                            },
+                            "attributes": {
+                                "status": {
+                                    "properties": {
+                                        "externalName": "Status",
+                                        "groupName": "Basic",
+                                        "dataType": "string",
+                                        "isReferenceType": true,
+                                        "referenceEntityInfo": [
+                                            {
+                                                "refRelationshipName": "hasReferenceTo",
+                                                "refEntityType": "statusvalues"
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "hasdocuments": [
+                        {
+                            "properties": {
+                                "externalName": "Documents",
+                                "relationshipType": "association",
+                                "relatedEntityInfo": [
+                                    {
+                                        "relEntityType": "document"
+                                    }
+                                ]
+                            },
+                            "attributes": {
+                                "status": {
+                                    "properties": {
+                                        "externalName": "Status",
+                                        "groupName": "Basic",
+                                        "dataType": "string",
+                                        "isReferenceType": true,
+                                        "referenceEntityInfo": [
+                                            {
+                                                "refRelationshipName": "hasReferenceTo",
+                                                "refEntityType": "statusvalues"
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

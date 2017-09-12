@@ -1,0 +1,447 @@
+{
+   "metaInfo": {
+      "dataIndex": "entityModel",
+      "collectionName": "entityModels",
+      "responseObjectName": "response"
+   },
+   "entityModels": [
+      {
+         "id": "party_authorizationModel_admin",
+         "name": "party_authorizationModel_admin",
+         "type": "authorizationModel",
+         "properties": {
+            "readPermission": true,
+            "writePermission": true,
+            "deletePermission": true,
+            "attributesPermission": [
+               {
+                  "writePermission": true,
+                  "readPermission": true
+               }
+            ],
+            "relationshipsPermission": [
+               {
+                  "writePermission": true,
+                  "readPermission": true
+               }
+            ],
+            "contextsPermission": [
+               {
+                  "writePermission": true,
+                  "readPermission": true
+               }
+            ],
+            "contextsAttributesPermission": [
+               {
+                  "writePermission": true,
+                  "readPermission": true
+               }
+            ],
+            "contextsRelationshipsPermission": [
+               {
+                  "writePermission": true,
+                  "readPermission": true
+               }
+            ]
+         }
+      },
+      {
+         "id": "referenceData_authorizationModel_admin",
+         "name": "referenceData_authorizationModel_admin",
+         "type": "authorizationModel",
+         "properties": {
+            "readPermission": true,
+            "writePermission": true,
+            "deletePermission": true,
+            "attributesPermission": [
+               {
+                  "writePermission": true,
+                  "readPermission": true
+               }
+            ],
+            "relationshipsPermission": [
+               {
+                  "writePermission": true,
+                  "readPermission": true
+               }
+            ],
+            "contextsPermission": [
+               {
+                  "writePermission": true,
+                  "readPermission": true
+               }
+            ],
+            "contextsAttributesPermission": [
+               {
+                  "writePermission": true,
+                  "readPermission": true
+               }
+            ],
+            "contextsRelationshipsPermission": [
+               {
+                  "writePermission": true,
+                  "readPermission": true
+               }
+            ]
+         }
+      },
+      {
+         "id": "digitalAsset_authorizationModel_admin",
+         "name": "digitalAsset_authorizationModel_admin",
+         "type": "authorizationModel",
+         "properties": {
+            "writePermission": true,
+            "readPermission": true,
+            "deletePermission": true,
+            "attributesPermission": [
+               {
+                  "writePermission": true,
+                  "readPermission": true
+               }
+            ],
+            "relationshipsPermission": [
+               {
+                  "writePermission": true,
+                  "readPermission": true
+               }
+            ]
+         }
+      },
+      {
+         "id": "generic_authorizationModel_admin",
+         "name": "generic_authorizationModel_admin",
+         "type": "authorizationModel",
+         "properties": {
+            "readPermission": true,
+            "writePermission": true,
+            "deletePermission": true,
+            "attributesPermission": [
+               {
+                  "writePermission": true,
+                  "readPermission": true
+               }
+            ],
+            "relationshipsPermission": [
+               {
+                  "writePermission": true,
+                  "readPermission": true
+               }
+            ],
+            "contextsPermission": [
+               {
+                  "writePermission": true,
+                  "readPermission": true
+               }
+            ],
+            "contextsAttributesPermission": [
+               {
+                  "writePermission": true,
+                  "readPermission": true
+               }
+            ],
+            "contextsRelationshipsPermission": [
+               {
+                  "writePermission": true,
+                  "readPermission": true
+               }
+            ]
+         }
+      },
+      {
+         "id": "thing_authorizationModel_admin",
+         "name": "thing_authorizationModel_admin",
+         "type": "authorizationModel",
+         "properties": {
+            "readPermission": true,
+            "writePermission": true,
+            "deletePermission": true,
+            "attributesPermission": [
+               {
+                  "writePermission": true,
+                  "readPermission": true
+               }
+            ],
+            "relationshipsPermission": [
+               {
+                  "writePermission": true,
+                  "readPermission": true
+               }
+            ],
+            "contextsPermission": [
+               {
+                  "writePermission": true,
+                  "readPermission": true
+               }
+            ],
+            "contextsAttributesPermission": [
+               {
+                  "writePermission": true,
+                  "readPermission": true
+               }
+            ],
+            "contextsRelationshipsPermission": [
+               {
+                  "writePermission": true,
+                  "readPermission": true
+               }
+            ]
+         }
+      },
+      {
+         "id": "location_authorizationModel_admin",
+         "name": "location_authorizationModel_admin",
+         "type": "authorizationModel",
+         "properties": {
+            "readPermission": true,
+            "writePermission": true,
+            "deletePermission": true,
+            "attributesPermission": [
+               {
+                  "writePermission": true,
+                  "readPermission": true
+               }
+            ],
+            "relationshipsPermission": [
+               {
+                  "writePermission": true,
+                  "readPermission": true
+               }
+            ],
+            "contextsPermission": [
+               {
+                  "writePermission": true,
+                  "readPermission": true
+               }
+            ],
+            "contextsAttributesPermission": [
+               {
+                  "writePermission": true,
+                  "readPermission": true
+               }
+            ],
+            "contextsRelationshipsPermission": [
+               {
+                  "writePermission": true,
+                  "readPermission": true
+               }
+            ]
+         }
+      },
+      {
+         "id": "party_authorizationModel_dataReader",
+         "name": "party_authorizationModel_dataReader",
+         "type": "authorizationModel",
+         "properties": {
+            "readPermission": true,
+            "writePermission": false,
+            "attributesPermission": [
+               {
+                  "writePermission": false,
+                  "readPermission": true
+               }
+            ],
+            "relationshipsPermission": [
+               {
+                  "writePermission": false,
+                  "readPermission": true
+               }
+            ],
+            "contextsPermission": [
+               {
+                  "writePermission": false,
+                  "readPermission": true
+               }
+            ],
+            "contextsAttributesPermission": [
+               {
+                  "writePermission": false,
+                  "readPermission": true
+               }
+            ],
+            "contextsRelationshipsPermission": [
+               {
+                  "writePermission": false,
+                  "readPermission": true
+               }
+            ]
+         }
+      },
+      {
+         "id": "location_authorizationModel_dataReader",
+         "name": "location_authorizationModel_dataReader",
+         "type": "authorizationModel",
+         "properties": {
+            "readPermission": true,
+            "writePermission": false,
+            "attributesPermission": [
+               {
+                  "writePermission": false,
+                  "readPermission": true
+               }
+            ],
+            "relationshipsPermission": [
+               {
+                  "writePermission": false,
+                  "readPermission": true
+               }
+            ],
+            "contextsPermission": [
+               {
+                  "writePermission": false,
+                  "readPermission": true
+               }
+            ],
+            "contextsAttributesPermission": [
+               {
+                  "writePermission": false,
+                  "readPermission": true
+               }
+            ],
+            "contextsRelationshipsPermission": [
+               {
+                  "writePermission": false,
+                  "readPermission": true
+               }
+            ]
+         }
+      },
+      {
+         "id": "referenceData_authorizationModel_dataReader",
+         "name": "referenceData_authorizationModel_dataReader",
+         "type": "authorizationModel",
+         "properties": {
+            "readPermission": true,
+            "writePermission": false,
+            "attributesPermission": [
+               {
+                  "writePermission": false,
+                  "readPermission": true
+               }
+            ],
+            "relationshipsPermission": [
+               {
+                  "writePermission": false,
+                  "readPermission": true
+               }
+            ],
+            "contextsPermission": [
+               {
+                  "writePermission": false,
+                  "readPermission": true
+               }
+            ],
+            "contextsAttributesPermission": [
+               {
+                  "writePermission": false,
+                  "readPermission": true
+               }
+            ],
+            "contextsRelationshipsPermission": [
+               {
+                  "writePermission": false,
+                  "readPermission": true
+               }
+            ]
+         }
+      },
+      {
+         "id": "digitalAsset_authorizationModel_dataReader",
+         "name": "digitalAsset_authorizationModel_dataReader",
+         "type": "authorizationModel",
+         "properties": {
+            "writePermission": false,
+            "readPermission": true,
+            "attributesPermission": [
+               {
+                  "writePermission": false,
+                  "readPermission": true
+               }
+            ],
+            "relationshipsPermission": [
+               {
+                  "writePermission": false,
+                  "readPermission": true
+               }
+            ]
+         }
+      },
+      {
+         "id": "generic_authorizationModel_dataReader",
+         "name": "generic_authorizationModel_dataReader",
+         "type": "authorizationModel",
+         "properties": {
+            "readPermission": true,
+            "writePermission": false,
+            "attributesPermission": [
+               {
+                  "writePermission": false,
+                  "readPermission": true
+               }
+            ],
+            "relationshipsPermission": [
+               {
+                  "writePermission": false,
+                  "readPermission": true
+               }
+            ],
+            "contextsPermission": [
+               {
+                  "writePermission": false,
+                  "readPermission": true
+               }
+            ],
+            "contextsAttributesPermission": [
+               {
+                  "writePermission": false,
+                  "readPermission": true
+               }
+            ],
+            "contextsRelationshipsPermission": [
+               {
+                  "writePermission": false,
+                  "readPermission": true
+               }
+            ]
+         }
+      },
+      {
+         "id": "thing_authorizationModel_dataReader",
+         "name": "thing_authorizationModel_dataReader",
+         "type": "authorizationModel",
+         "properties": {
+            "readPermission": true,
+            "writePermission": false,
+            "attributesPermission": [
+               {
+                  "writePermission": false,
+                  "readPermission": true
+               }
+            ],
+            "relationshipsPermission": [
+               {
+                  "writePermission": false,
+                  "readPermission": true
+               }
+            ],
+            "contextsPermission": [
+               {
+                  "writePermission": false,
+                  "readPermission": true
+               }
+            ],
+            "contextsAttributesPermission": [
+               {
+                  "writePermission": false,
+                  "readPermission": true
+               }
+            ],
+            "contextsRelationshipsPermission": [
+               {
+                  "writePermission": false,
+                  "readPermission": true
+               }
+            ]
+         }
+      }
+   ]
+}

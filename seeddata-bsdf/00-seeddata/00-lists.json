@@ -1,0 +1,51 @@
+{
+    "metaInfo": {
+        "dataIndex": "entityModel",
+        "collectionName": "entityModels",
+        "responseObjectName": "response"
+    },
+    "entityModels": [
+        {
+            "id": "corp_list",
+            "name": "corp",
+            "domain": "generic",
+            "type": "list"
+        },
+        {
+            "id": "domains_list",
+            "name": "domains",
+            "domain": "generic",
+            "type": "list"
+        },
+        {
+            "id": "entityTypes_list",
+            "name": "entityTypes",
+            "domain": "generic",
+            "type": "list"
+        },
+        {
+            "id": "sources_list",
+            "name": "sources",
+            "domain": "generic",
+            "type": "list"
+        },
+        {
+            "id": "users_list",
+            "name": "users",
+            "domain": "generic",
+            "type": "list"
+        },
+        {
+            "id": "roles_list",
+            "name": "roles",
+            "domain": "generic",
+            "type": "list"
+        },
+        {
+            "id": "locales_list",
+            "name": "locales",
+            "domain": "generic",
+            "type": "list"
+        }
+    ]
+}

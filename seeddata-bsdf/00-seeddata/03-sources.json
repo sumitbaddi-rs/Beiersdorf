@@ -1,0 +1,19 @@
+{
+   "metaInfo": {
+      "dataIndex": "entityModel",
+      "collectionName": "entityModels",
+      "responseObjectName": "entityModelOperationResponse"
+   },
+   "entityModels": [
+      {
+         "id": "internal_source",
+         "name": "internal",
+         "domain": "generic",
+         "type": "source",
+         "properties": {
+            "externalName": "Internal source",
+            "description": "Internal source"
+         }
+      }
+   ]
+}

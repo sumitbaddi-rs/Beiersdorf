@@ -1,0 +1,575 @@
+{
+    "metaInfo": {
+        "dataIndex": "entityModel",
+        "collectionName": "entityModels",
+        "responseObjectName": "response"
+    },
+    "entityModels": [
+        {
+            "id": "enart_ruleContextMappings",
+            "type": "ruleContextMappings",
+            "data": {
+                "relationships": {
+                    "hasBusinessRules": [
+                        {
+                            "direction": "both",
+                            "relationshipType": "association",
+                            "id": "hasBusinessRules_invokeNewProductSetupWFRule_businessRule",
+                            "relTo": {
+                                "id": "invokeNewProductSetupWFRule_businessRule",
+                                "type": "businessRule"
+                            },
+                            "attributes": {
+                                "ignoreChangeContext": {
+                                    "values": [
+                                        {
+                                            "value": "true"
+                                        }
+                                    ]
+                                },
+                                "isDraft": {
+                                    "values": [
+                                        {
+                                            "value": "false"
+                                        }
+                                    ]
+                                },
+                                "isDeleted": {
+                                    "values": [
+                                        {
+                                            "value": "false"
+                                        }
+                                    ]
+                                },
+                                "executionMode": {
+                                    "values": [
+                                        {
+                                            "value": "any"
+                                        }
+                                    ]
+                                },
+                                "enabled": {
+                                    "values": [
+                                        {
+                                            "value": "true"
+                                        }
+                                    ]
+                                },
+                                "executionOrder": {
+                                    "values": [
+                                        {
+                                            "value": "100"
+                                        }
+                                    ]
+                                },
+                                "triggerActions": {
+                                    "values": [
+                                        {
+                                            "value": "create"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "direction": "both",
+                            "relationshipType": "association",
+                            "id": "hasBusinessRules_SendNartForAssetLinking_businessRule",
+                            "relTo": {
+                                "id": "SendNartForAssetLinking_businessRule",
+                                "type": "businessRule"
+                            },
+                            "attributes": {
+                                "ignoreChangeContext": {
+                                    "values": [
+                                        {
+                                            "value": "true"
+                                        }
+                                    ]
+                                },
+                                "isDraft": {
+                                    "values": [
+                                        {
+                                            "value": "false"
+                                        }
+                                    ]
+                                },
+                                "isDeleted": {
+                                    "values": [
+                                        {
+                                            "value": "false"
+                                        }
+                                    ]
+                                },
+                                "executionMode": {
+                                    "values": [
+                                        {
+                                            "value": "asynconly"
+                                        }
+                                    ]
+                                },
+                                "enabled": {
+                                    "values": [
+                                        {
+                                            "value": "true"
+                                        }
+                                    ]
+                                },
+                                "executionOrder": {
+                                    "values": [
+                                        {
+                                            "value": "1"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ],
+                    "hasBusinessConditions": [
+                        {
+                            "direction": "both",
+                            "relationshipType": "association",
+                            "id": "hasBusinessConditions_validateRequiredAttributes_businessCondition",
+                            "relTo": {
+                                "id": "validateRequiredAttributes_businessCondition",
+                                "type": "businessCondition"
+                            },
+                            "attributes": {
+                                "ignoreChangeContext": {
+                                    "values": [
+                                        {
+                                            "value": "true"
+                                        }
+                                    ]
+                                },
+                                "isDraft": {
+                                    "values": [
+                                        {
+                                            "value": "false"
+                                        }
+                                    ]
+                                },
+                                "isDeleted": {
+                                    "values": [
+                                        {
+                                            "value": "false"
+                                        }
+                                    ]
+                                },
+                                "executionMode": {
+                                    "values": [
+                                        {
+                                            "value": "any"
+                                        }
+                                    ]
+                                },
+                                "enabled": {
+                                    "values": [
+                                        {
+                                            "value": "true"
+                                        }
+                                    ]
+                                },
+                                "executionOrder": {
+                                    "values": [
+                                        {
+                                            "value": "8"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "direction": "both",
+                            "relationshipType": "association",
+                            "id": "hasBusinessConditions_validateEnityPresentInCreateWorkflow_businessCondition",
+                            "relTo": {
+                                "id": "validateEnityPresentInCreateWorkflow_businessCondition",
+                                "type": "businessCondition"
+                            },
+                            "attributes": {
+                                "ignoreChangeContext": {
+                                    "values": [
+                                        {
+                                            "value": "true"
+                                        }
+                                    ]
+                                },
+                                "isDraft": {
+                                    "values": [
+                                        {
+                                            "value": "false"
+                                        }
+                                    ]
+                                },
+                                "isDeleted": {
+                                    "values": [
+                                        {
+                                            "value": "false"
+                                        }
+                                    ]
+                                },
+                                "executionMode": {
+                                    "values": [
+                                        {
+                                            "value": "any"
+                                        }
+                                    ]
+                                },
+                                "enabled": {
+                                    "values": [
+                                        {
+                                            "value": "true"
+                                        }
+                                    ]
+                                },
+                                "executionOrder": {
+                                    "values": [
+                                        {
+                                            "value": "8"
+                                        }
+                                    ]
+                                },
+                                "triggerActions": {
+                                    "values": [
+                                        {
+                                            "value": "async"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                "contexts": [
+                    {
+                        "context": {
+                            "self": "self/article_ruleContextMappings",
+                            "workflow": "newNartSetup"
+                        },
+                        "relationships": {
+                            "hasBusinessRules": [],
+                            "hasBusinessConditions": [
+                                {
+                                    "direction": "both",
+                                    "relationshipType": "association",
+                                    "id": "hasBusinessConditions_validateRequiredAttributes_businessCondition",
+                                    "relTo": {
+                                        "id": "validateRequiredAttributes_businessCondition",
+                                        "type": "businessCondition"
+                                    },
+                                    "attributes": {
+                                        "ignoreChangeContext": {
+                                            "values": [
+                                                {
+                                                    "value": "true"
+                                                }
+                                            ]
+                                        },
+                                        "isDraft": {
+                                            "values": [
+                                                {
+                                                    "value": "false"
+                                                }
+                                            ]
+                                        },
+                                        "isDeleted": {
+                                            "values": [
+                                                {
+                                                    "value": "false"
+                                                }
+                                            ]
+                                        },
+                                        "executionMode": {
+                                            "values": [
+                                                {
+                                                    "value": "any"
+                                                }
+                                            ]
+                                        },
+                                        "enabled": {
+                                            "values": [
+                                                {
+                                                    "value": "true"
+                                                }
+                                            ]
+                                        },
+                                        "executionOrder": {
+                                            "values": [
+                                                {
+                                                    "value": "8"
+                                                }
+                                            ]
+                                        },
+                                        "stepName": {
+                                            "values": [
+                                                {
+                                                    "value": "gbuApproval"
+                                                }
+                                            ]
+                                        },
+                                        "defaultAction": {
+                                            "values": [
+                                                {
+                                                    "value": "Done"
+                                                }
+                                            ]
+                                        },
+                                        "actions": {
+                                            "values": [
+                                                {
+                                                    "value": "Done"
+                                                }
+                                            ]
+                                        },
+                                        "activityCriteria": {
+                                            "values": [
+                                                {
+                                                    "value": "exitCriteria"
+                                                },
+                                                {
+                                                    "value": "skipCriteria"
+                                                },
+                                                {
+                                                    "value": "async"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                },
+                                {
+                                    "direction": "both",
+                                    "relationshipType": "association",
+                                    "id": "hasBusinessConditions_validateEnityPresentInCreateWorkflow_businessCondition",
+                                    "relTo": {
+                                        "id": "validateEnityPresentInCreateWorkflow_businessCondition",
+                                        "type": "businessCondition"
+                                    },
+                                    "attributes": {
+                                        "ignoreChangeContext": {
+                                            "values": [
+                                                {
+                                                    "value": "true"
+                                                }
+                                            ]
+                                        },
+                                        "isDraft": {
+                                            "values": [
+                                                {
+                                                    "value": "false"
+                                                }
+                                            ]
+                                        },
+                                        "isDeleted": {
+                                            "values": [
+                                                {
+                                                    "value": "false"
+                                                }
+                                            ]
+                                        },
+                                        "executionMode": {
+                                            "values": [
+                                                {
+                                                    "value": "any"
+                                                }
+                                            ]
+                                        },
+                                        "enabled": {
+                                            "values": [
+                                                {
+                                                    "value": "true"
+                                                }
+                                            ]
+                                        },
+                                        "executionOrder": {
+                                            "values": [
+                                                {
+                                                    "value": "2"
+                                                }
+                                            ]
+                                        },
+                                        "triggerActions": {
+                                            "values": [
+                                                {
+                                                    "value": "async"
+                                                }
+                                            ]
+                                        },
+                                        "stepName": {
+                                            "values": [
+                                                {
+                                                    "value": "publish"
+                                                }
+                                            ]
+                                        },
+                                        "defaultAction": {
+                                            "values": [
+                                                {
+                                                    "value": "Done"
+                                                }
+                                            ]
+                                        },
+                                        "actions": {
+                                            "values": [
+                                                {
+                                                    "value": ""
+                                                }
+                                            ]
+                                        },
+                                        "activityCriteria": {
+                                            "values": [
+                                                {
+                                                    "value": "skipCriteria"
+                                                },
+                                                {
+                                                    "value": "async"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "id": "image_ruleContextMappings",
+            "type": "ruleContextMappings",
+            "data": {
+                "relationships": {
+                    "hasBusinessRules": [
+                    ],
+                    "hasBusinessConditions": [
+                        {
+                            "direction": "both",
+                            "relationshipType": "association",
+                            "id": "hasBusinessConditions_validateAssets_businessCondition",
+                            "relTo": {
+                                "id": "validateAssets_businessCondition",
+                                "type": "businessCondition"
+                            },
+                            "attributes": {
+                                "ignoreChangeContext": {
+                                    "values": [
+                                        {
+                                            "value": "true"
+                                        }
+                                    ]
+                                },
+                                "isDraft": {
+                                    "values": [
+                                        {
+                                            "value": "false"
+                                        }
+                                    ]
+                                },
+                                "isDeleted": {
+                                    "values": [
+                                        {
+                                            "value": "false"
+                                        }
+                                    ]
+                                },
+                                "executionMode": {
+                                    "values": [
+                                        {
+                                            "value": "any"
+                                        }
+                                    ]
+                                },
+                                "enabled": {
+                                    "values": [
+                                        {
+                                            "value": "true"
+                                        }
+                                    ]
+                                },
+                                "executionOrder": {
+                                    "values": [
+                                        {
+                                            "value": "1"
+                                        }
+                                    ]
+                                },
+                                "triggerActions": {
+                                    "values": [
+                                        {
+                                            "value": "async"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                "contexts": [
+                ]
+            }
+        },
+        {
+            "id": "eproductversion_ruleContextMappings",
+            "type": "ruleContextMappings",
+            "data": {
+                "relationships": {
+                    "hasBusinessRules": [
+                        {
+                            "direction": "both",
+                            "relationshipType": "association",
+                            "id": "hasBusinessRules_sendPVEntityForGraphProcessing_businessRule",
+                            "relTo": {
+                                "id": "sendPVEntityForGraphProcessing_businessRule",
+                                "type": "businessRule"
+                            },
+                            "attributes": {
+                                "ignoreChangeContext": {
+                                    "values": [
+                                        {
+                                            "value": "true"
+                                        }
+                                    ]
+                                },
+                                "isDraft": {
+                                    "values": [
+                                        {
+                                            "value": "false"
+                                        }
+                                    ]
+                                },
+                                "isDeleted": {
+                                    "values": [
+                                        {
+                                            "value": "false"
+                                        }
+                                    ]
+                                },
+                                "executionMode": {
+                                    "values": [
+                                        {
+                                            "value": "asynconly"
+                                        }
+                                    ]
+                                },
+                                "enabled": {
+                                    "values": [
+                                        {
+                                            "value": "true"
+                                        }
+                                    ]
+                                },
+                                "executionOrder": {
+                                    "values": [
+                                        {
+                                            "value": "1"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}
