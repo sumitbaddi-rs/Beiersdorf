@@ -1,1 +1,0 @@
-Mon Sep 11 2017 14:43:51 GMT-0500 (CDT):ERROR:{"dataObjectOperationResponse":{"status":"error","statusDetail":{"code":"RSC1003","message":"The file process failed with error: configuration service did not return any profile with profile name = refData_JSON_Import_Process.","messageType":"Error"},"totalRecords":0}}
