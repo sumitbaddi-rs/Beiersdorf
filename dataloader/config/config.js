@@ -45,8 +45,8 @@ var toolConfig = {
 
 var quiteLoadConfig = {
 	"enabled": true,
-	"sourcePath": "/Users/nikhilbhatia/github/customer-seed-presales/ikea/",
-	"tenantId": "ikea",
+	"sourcePath": "C:/a/git/Beiersdorf/seeddata-bsdf/",
+	"tenantId": "bsdf",
 	"loadOptions": {
 		"foldersToRun": ["uiconfig"],
 		"fileNamesToRun": [
