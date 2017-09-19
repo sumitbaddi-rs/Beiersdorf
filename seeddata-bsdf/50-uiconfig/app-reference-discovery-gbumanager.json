@@ -1,0 +1,435 @@
+{
+	"metaInfo": {
+		"dataIndex": "config",
+		"collectionName": "configObjects",
+		"responseObjectName": "response"
+	},
+	"configObjects": [{
+			"id": "app-reference-discovery_components-list_gbumanager_uiConfig",
+			"name": "app-reference-discovery_components-list",
+			"version": "1.0",
+			"type": "uiConfig",
+			"properties": {
+				"createdByService": "entityservice",
+				"createdBy": "user"
+			},
+			"data": {
+				"contexts": [
+					{
+						"context": {
+							"app": "app-reference-discovery",
+							"service": "_ALL",
+							"component": "components-list",
+							"subComponent": "_ALL",
+							"role": "gbumanager"
+						},
+						"jsonData": {
+							"config": {
+								"components": [
+									"rock-dimension-selector",
+									"rock-search-filter",
+									"rock-entity-search-grid",
+									"rock-entity-quick-manage"
+								]
+							}
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": "app-reference-discovery_rock-entity-search-grid_gbumanager_uiConfig",
+			"name": "app-reference-discovery_rock-entity-search-grid",
+			"version": "1.0",
+			"type": "uiConfig",
+			"properties": {
+				"createdByService": "entityservice",
+				"createdBy": "user"
+			},
+			"data": {
+				"contexts": [{
+						"context": {
+							"app": "app-reference-discovery",
+							"service": "_ALL",
+							"component": "rock-entity-search-grid",
+							"subComponent": "_ALL",
+							"role": "gbumanager"
+						},
+						"jsonData": {
+							"config": {
+								"viewMode": "Tabular",
+								"title": "Search Results",
+								"mode": "Read",
+								"readOnly": true,
+								"schemaType": "attribute",
+								"titleTemplates": {
+									"contextTemplate": "for the channel: {channel} ",
+									"workflowTemplate": "in workflow: {workflow}, workflow Status: {workflowStatus}"
+								},
+								"dataRequest": {
+									"typesCriterion": ["lifecyclestage"],
+									"attributes": ["_ALL"]
+								},
+								"tabular": {
+									"settings": {
+										"isMultiSelect": true
+									},
+									"columns": []
+								},
+								"list": {
+									"settings": {
+										"isMultiSelect": true,
+										"actions": [
+											{
+												"name": "delete",
+												"icon": "pebble-icons:Delete",
+												"eventName": "delete-item"
+											},
+											{
+												"name": "edit",
+												"icon": "pebble-md-icons:Edit",
+												"eventName": "edit-item"
+											}
+										]
+									},
+									"listItems": {
+										"image": "productImageUrl",
+										"title": "displayName",
+										"id": "id",
+										"fields": []
+									}
+								},
+								"tile": {
+									"settings": {
+										"isMultiSelect": true,
+										"actions": [
+											{
+												"name": "delete",
+												"icon": "pebble-icons:Delete",
+												"eventName": "delete-item"
+											},
+											{
+												"name": "edit",
+												"icon": "pebble-md-icons:Edit",
+												"eventName": "edit-item"
+											}
+										]
+									},
+									"tileItems": {
+										"image": "productImageUrl",
+										"title": "Code",
+										"id": "id",
+										"fields": []
+									}
+								},
+								"toolbarConfig": {
+									"buttonItems": [
+										{
+											"buttons": [
+												{
+													"name": "pageRange",
+													"icon": "",
+													"text": "0 - 0 / 0",
+													"visible": true,
+													"tooltip": "Page Range"
+												},
+												{
+													"name": "refresh",
+													"icon": "pebble-md-icons:ToolbarRefresh",
+													"text": "",
+													"visible": true,
+													"tooltip": "Refresh"
+												},
+												{
+													"name": "download",
+													"icon": "pebble-md-icons:Import",
+													"text": "",
+													"visible": false,
+													"tooltip": "Download"
+												},
+												{
+													"name": "upload",
+													"icon": "pebble-md-icons:Upload",
+													"text": "",
+													"visible": false,
+													"tooltip": "Upload"
+												}
+											]
+										}
+									]
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": "app-reference-discovery_rock-dimension-selector_gbumanager_uiConfig",
+			"name": "app-reference-discovery_rock-dimension-selector",
+			"version": "1.0",
+			"type": "uiConfig",
+			"properties": {
+				"createdByService": "entityservice",
+				"createdBy": "user"
+			},
+			"data": {
+				"contexts": [
+					{
+						"context": {
+							"app": "app-reference-discovery",
+							"service": "_ALL",
+							"component": "rock-dimension-selector",
+							"subComponent": "_ALL",
+							"role": "gbumanager"
+						},
+						"jsonData": {
+							"config": [
+								{
+									"id": "country",
+									"title": "Country",
+									"icon": "pebble-lg-icons:Master",
+									"visible": true,
+									"dataRequestType": "entity",
+									"dataRequest": {
+										"params": {
+											"query": {
+												"filters": {
+													"typesCriterion": [
+														"dcountry"
+													]
+												}
+											}
+										}
+									},
+									"dataMappings": {
+										"id": "name",
+										"title": "name",
+										"subtitle": "",
+										"image": "",
+										"icon": "",
+										"type": [
+											"dcountry"
+										]
+									},
+									"selectedItem": {},
+									"default": ""
+								},
+								{
+									"id": "channel",
+									"title": "Channel",
+									"icon": "pebble-lg-icons:Master",
+									"visible": true,
+									"dataRequestType": "entity",
+									"dataRequest": {
+										"params": {
+											"query": {
+												"filters": {
+													"typesCriterion": [
+														"dchannel"
+													]
+												}
+											}
+										}
+									},
+									"dataMappings": {
+										"id": "name",
+										"title": "name",
+										"subtitle": "",
+										"image": "",
+										"icon": "",
+										"type": [
+											"dchannel"
+										]
+									},
+									"selectedItem": {},
+									"default": ""
+								},
+								{
+									"id": "source",
+									"title": "Source",
+									"icon": "pebble-lg-icons:Source",
+									"visible": false,
+									"dataRequestType": "entity-model",
+									"dataRequest": {
+										"params": {
+											"query": {
+												"filters": {
+													"typesCriterion": [
+														"source"
+													]
+												}
+											}
+										}
+									},
+									"dataMappings": {
+										"id": "name",
+										"title": "name",
+										"subtitle": "",
+										"image": "",
+										"icon": "",
+										"type": [
+											"source"
+										]
+									},
+									"selectedItem": {
+										"id": "internal",
+										"type": "source"
+									},
+									"default": ""
+								},
+								{
+									"id": "locale",
+									"title": "Locale",
+									"icon": "pebble-lg-icons:Language",
+									"visible": true,
+									"dataRequestType": "entity-model",
+									"dataRequest": {
+										"params": {
+											"query": {
+												"filters": {
+													"typesCriterion": [
+														"locale"
+													]
+												}
+											}
+										}
+									},
+									"dataMappings": {
+										"id": "name",
+										"title": "name",
+										"subtitle": "",
+										"image": "",
+										"icon": "",
+										"type": [
+											"locale"
+										]
+									},
+									"selectedItem": {
+										"id": "en-US",
+										"type": "locale"
+									},
+									"default": ""
+								}
+							]
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": "app-reference-discovery_rock-search-filter_gbumanager_uiConfig",
+			"name": "app-reference-discovery_rock-search-filter",
+			"version": "1.0",
+			"type": "uiConfig",
+			"properties": {
+				"createdByService": "entityservice",
+				"createdBy": "user"
+			},
+			"data": {
+				"contexts": [
+					{
+						"context": {
+							"app": "app-reference-discovery",
+							"service": "_ALL",
+							"component": "rock-search-filter",
+							"subComponent": "_ALL",
+							"role": "gbumanager"
+						},
+						"jsonData": {
+							"config": [
+								{
+									"name": "code",
+									"longName": "Code",
+									"displayType": "textBox"
+								},
+								{
+									"name": "value",
+									"longName": "Value",
+									"value": "",
+									"displayType": "textBox"
+								}
+							]
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": "app-reference-discovery_rock-entity-quick-manage_gbumanager_uiConfig",
+			"name": "app-reference-discovery_rock-entity-quick-manage",
+			"version": "1.0",
+			"type": "uiConfig",
+			"properties": {
+				"createdByService": "entityservice",
+				"createdBy": "user"
+			},
+			"data": {
+				"contexts": [
+					{
+						"context": {
+							"app": "app-reference-discovery",
+							"service": "_ALL",
+							"component": "rock-entity-quick-manage",
+							"subComponent": "_ALL",
+							"role": "gbumanager"
+						},
+						"jsonData": {
+							"config": {
+								"rock-tabs": {
+									"scrollable": true,
+									"fitContainer": false,
+									"tabItems": [
+										{
+											"name": "attributes",
+											"title": "Attributes",
+											"enableDropdownMenu": false,
+											"selected": true,
+											"component": {
+												"name": "rock-attribute-manage",
+												"path": "/src/elements/rock-attribute-manage/rock-attribute-manage.html",
+												"properties": {
+													"success-message": "Reference record save request submitted successfully",
+													"allow-save-on-error": true,
+													"do-sync-validation": true,
+													"functional-mode": "quickManage",
+													"message-code-mapping": {
+														"Req001": "Required",
+														"MinLen001": "MIN_LENGTH",
+														"MaxLen001": "MAX_LENGTH",
+														"AlVal001": "ALLOWED_VALUES",
+														"Prec001": "Precision",
+														"Range001": "RANGE_FROM_INCLUSIVE",
+														"Range002": "RANGE_TO_INCLUSIVE",
+														"Range003": "RANGE_FROM_EXCLUSIVE",
+														"Range004": "RANGE_TO_EXCLUSIVE",
+														"Range005": "RANGE_TO_INCLUSIVE_FROM_EXCLUSIVE",
+														"Range006": "RANGE_TO_INCLUSIVE_FROM_INCLUSIVE",
+														"Range007": "RANGE_TO_EXCLUSIVE_FROM_EXCLUSIVE",
+														"Range008": "RANGE_TO_EXCLUSIVE_FROM_INCLUSIVE",
+														"133311": "Length should be greater than Width",
+														"133312": "Width should be less than Length"
+													},
+													"config-context": {
+													"attributeNames": [
+														"_ALL"
+														]
+													}
+												}
+											}
+										}
+									]
+								},
+								"rock-entity-tofix": {
+									"completionPercentage": "",
+									"tofixes": [
+									]
+								}
+							}
+						}
+					}
+				]
+			}
+		}
+	]
+}

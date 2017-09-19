@@ -45,12 +45,16 @@ var toolConfig = {
 
 var quiteLoadConfig = {
 	"enabled": true,
+<<<<<<< Updated upstream
 	"sourcePath": "C:/a/git/Beiersdorf/seeddata-bsdf/",
+=======
+	"sourcePath": "/Users/nikhilbhatia/github/Beiersdorf/seeddata-bsdf/",
+>>>>>>> Stashed changes
 	"tenantId": "bsdf",
 	"loadOptions": {
-		"foldersToRun": ["uiconfig"],
+		"foldersToRun": ["foundation"],
 		"fileNamesToRun": [
-			"main-app-admin.json"
+			
 		],
 		"fileNamesToExclude": [
 		]

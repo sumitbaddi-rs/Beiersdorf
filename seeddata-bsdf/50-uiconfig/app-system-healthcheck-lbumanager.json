@@ -1,0 +1,86 @@
+{
+  "metaInfo": {
+    "dataIndex": "config",
+    "collectionName": "configObjects",
+    "responseObjectName": "response"
+  },
+  "configObjects": [
+    {
+      "id": "app-system-healthcheck_components-list_lbumanager_uiConfig",
+      "name": "app-system-healthcheck_components-list",
+      "version": "1.0",
+      "type": "uiConfig",
+      "properties": {
+        "createdByService": "entityservice",
+        "createdBy": "user"
+      },
+      "data": {
+        "contexts": [
+          {
+            "context": {
+              "app": "app-system-healthcheck",
+              "service": "_ALL",
+              "component": "components-list",
+              "subComponent": "_ALL",
+              "role": "lbumanager"
+            },
+            "jsonData": {
+              "config": {
+                "components": [
+                  "rock-api-healthcheck-status-list"
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "app-system-healthcheck_rock-api-healthcheck-status-list_lbumanager_uiConfig",
+      "name": "app-system-healthcheck_rock-api-healthcheck-status-list",
+      "version": "1.0",
+      "type": "uiConfig",
+      "properties": {
+        "createdByService": "entityservice",
+        "createdBy": "user"
+      },
+      "data": {
+        "contexts": [
+          {
+            "context": {
+              "app": "app-system-healthcheck",
+              "service": "_ALL",
+              "component": "rock-api-healthcheck-status-list",
+              "subComponent": "_ALL",
+              "role": "lbumanager"
+            },
+            "jsonData": {
+              "config": [
+                {
+                  "name": "Get configuration",
+                  "url": "/bsdf/data/healthcheck/configurationservice/get"
+                },
+                {
+                  "name": "Get entity",
+                  "url": "/bsdf/data/healthcheck/entityappservice/get"
+                },
+                {
+                  "name": "Get entity model",
+                  "url": "/bsdf/data/healthcheck/entityappmodelservice/get"
+                },
+                {
+                  "name": "Update entity",
+                  "url": "/bsdf/data/healthcheck/entityappservice/update"
+                },
+                {
+                  "name": "Create entity",
+                  "url": "/bsdf/data/healthcheck/entityappservice/create"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

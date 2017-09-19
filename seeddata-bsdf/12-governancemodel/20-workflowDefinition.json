@@ -38,7 +38,7 @@
                                 "activityGuid": {
                                     "values": [
                                         {
-                                            "value": "239136b4-b1ef-4ea2-a4f5-a90328ed972c"
+                                            "value": "e4245242-cbf7-4d3f-b233-b827c74ef49a"
                                         }
                                     ]
                                 },
@@ -74,6 +74,9 @@
                                     "values": [
                                         {
                                             "value": "admin"
+                                        },
+                                        {
+                                            "value": "gbumanager"
                                         }
                                     ]
                                 },
@@ -115,6 +118,36 @@
                                                     }
                                                 ]
                                             }
+                                        },
+                                        {
+                                            "actionName": {
+                                                "values": [
+                                                    {
+                                                        "value": "Reject"
+                                                    }
+                                                ]
+                                            },
+                                            "actionText": {
+                                                "values": [
+                                                    {
+                                                        "value": "Reject"
+                                                    }
+                                                ]
+                                            },
+                                            "actionIcon": {
+                                                "values": [
+                                                    {
+                                                        "value": "Reject.png"
+                                                    }
+                                                ]
+                                            },
+                                            "commentsMode": {
+                                                "values": [
+                                                    {
+                                                        "value": "Optional"
+                                                    }
+                                                ]
+                                            }
                                         }
                                     ]
                                 }
@@ -123,7 +156,7 @@
                                 "activityGuid": {
                                     "values": [
                                         {
-                                            "value": "cd685d18-c7cf-41ad-9f3d-436362dd6357"
+                                            "value": "5fb96a38-ab96-4d46-b56c-2966a3f5ad5d"
                                         }
                                     ]
                                 },
@@ -159,6 +192,9 @@
                                     "values": [
                                         {
                                             "value": "admin"
+                                        },
+                                        {
+                                            "value": "gbumanager"
                                         }
                                     ]
                                 },
@@ -208,7 +244,7 @@
                                 "activityGuid": {
                                     "values": [
                                         {
-                                            "value": "1c7687e7-35ac-4ec4-916e-ae8c9c0098ec"
+                                            "value": "fa95f948-e556-4e98-b6f4-f68d3d785f0b"
                                         }
                                     ]
                                 },
@@ -244,6 +280,9 @@
                                     "values": [
                                         {
                                             "value": "admin"
+                                        },
+                                        {
+                                            "value": "lbumanager"
                                         }
                                     ]
                                 },
@@ -285,6 +324,36 @@
                                                     }
                                                 ]
                                             }
+                                        },
+                                        {
+                                            "actionName": {
+                                                "values": [
+                                                    {
+                                                        "value": "Reject"
+                                                    }
+                                                ]
+                                            },
+                                            "actionText": {
+                                                "values": [
+                                                    {
+                                                        "value": "Reject"
+                                                    }
+                                                ]
+                                            },
+                                            "actionIcon": {
+                                                "values": [
+                                                    {
+                                                        "value": "Reject.png"
+                                                    }
+                                                ]
+                                            },
+                                            "commentsMode": {
+                                                "values": [
+                                                    {
+                                                        "value": "Optional"
+                                                    }
+                                                ]
+                                            }
                                         }
                                     ]
                                 }
@@ -293,7 +362,7 @@
                                 "activityGuid": {
                                     "values": [
                                         {
-                                            "value": "c22aae27-2c3a-4479-bce3-7c6763638360"
+                                            "value": "903448b1-8528-45ad-9f7a-2765c7ee22c5"
                                         }
                                     ]
                                 },
@@ -329,6 +398,9 @@
                                     "values": [
                                         {
                                             "value": "admin"
+                                        },
+                                        {
+                                            "value": "lbumanager"
                                         }
                                     ]
                                 },
@@ -378,7 +450,7 @@
                                 "activityGuid": {
                                     "values": [
                                         {
-                                            "value": "f85bac31-d464-45ae-98fc-7ac02fd799b8"
+                                            "value": "d754bbaa-91ea-4677-abd2-2c7610174b89"
                                         }
                                     ]
                                 },

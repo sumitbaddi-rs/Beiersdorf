@@ -395,6 +395,160 @@
                     }
                 }
             }
-        }
+        },
+        {
+            "id": "enart_ischildof_eproductversion_graphProcessModel",
+            "name": "enart_ischildof_eproductversion",
+            "type": "graphProcessModel",
+            "domain": "generic",
+            "properties": {
+              "defaultValueSource": "internal",
+              "defaultValueLocale": "en-US",
+              "graphProcessPath": "enart_ischildof_eproductversion",
+              "matchRulesOperator": "or",
+              "matchRules": [
+                {
+                  "seq": 1,
+                  "matchType": "attributeBased",
+                  "attributeMaps": [
+                    {
+                      "eproductversiongroup": "spgrkey"
+                    }
+                  ],
+                  "noMatchResult": [
+                    {
+                      "actions": [
+                        {
+                          "actionName": "Create"
+                        },
+                        {
+                          "actionName": "AddSourceRelationship"
+                        },
+                        {
+                          "actionName": "CopyData"
+                        }
+                      ]
+                    }
+                  ],
+                  "singleMatchResult": [
+                    {
+                      "actions": [
+                        {
+                          "actionName": "AddSourceRelationship"
+                        },
+                        {
+                          "actionName": "CopyData"
+                        }
+                      ]
+                    }
+                  ],
+                  "multiMatchResult": [
+                    {
+                      "actions": [
+                        {
+                          "actionName": "Error"
+                        }
+                      ]
+                    }
+                  ],
+                  "smartIdAttributes": [
+                    {
+                      "attributeNames": "spgrkey",
+                      "concatDelimiter": ""
+                    }
+                  ]
+                }
+              ],
+              "relExists": [
+                {
+                  "actions": [
+                    {
+                      "actionName": "CopyData"
+                    }
+                  ]
+                }
+              ]
+            },
+            "data": {
+              "attributes": {
+                "ainci": {
+                  "properties": {
+                    "strategy": "copyWhenEmpty"
+                  }
+                },
+                "alastmodifieddate": {
+                  "properties": {
+                    "strategy": "max"
+                  }
+                },
+                "alternateimages": {
+                  "properties": {
+                    "strategy": "aggregate"
+                  }
+                },
+                "primaryimage": {
+                  "properties": {
+                    "strategy": "copyWhenEmpty"
+                  }
+                },
+                "scritical": {
+                  "properties": {
+                    "strategy": "copyWhenEmpty"
+                  }
+                },
+                "spgrdescription": {
+                  "properties": {
+                    "strategy": "copyWhenEmpty"
+                  }
+                },
+                "spgrkey": {
+                  "properties": {
+                    "strategy": "copyWhenEmpty"
+                  }
+                }
+              },
+              "relationships": {
+                "hasimages": [
+                  {
+                    "properties": {
+                      "externalName": "Images",
+                      "strategy": "copyWhenEmpty",
+                      "relationshipType": "association",
+                      "relatedEntityInfo": [
+                        {
+                          "relEntityType": "image"
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "hasvideos": [
+                  {
+                    "properties": {
+                      "externalName": "videos",
+                      "strategy": "copyWhenEmpty",
+                      "relationshipType": "association",
+                      "relatedEntityInfo": [
+                        {
+                          "relEntityType": "video"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              "contexts": [
+                {
+                  "context": {
+                    "taxonomy": "Beiersdorf Taxonomy",
+                    "classification": "_ALL"
+                  },
+                  "properties": {
+                    "includeAllAttributes": true
+                  }
+                }
+              ]
+            }
+          }
     ]
 }

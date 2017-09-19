@@ -1,0 +1,468 @@
+{
+    "metaInfo": {
+        "dataIndex": "entityModel",
+        "collectionName": "entityModels",
+        "responseObjectName": "response"
+    },
+    "entityModels": [
+        {
+            "id": "party_authorizationModel_lbumanager",
+            "name": "party_authorizationModel_lbumanager",
+            "type": "authorizationModel",
+            "properties": {
+                "readPermission": true,
+                "writePermission": true,
+                "deletePermission": false,
+                "attributesPermission": [
+                    {
+                        "readPermission": true,
+                        "writePermission": true,
+                        "deletePermission": false
+                    }
+                ],
+                "relationshipsPermission": [
+                    {
+                        "readPermission": true,
+                        "writePermission": true,
+                        "deletePermission": false
+                    }
+                ],
+                "contextsPermission": [
+                    {
+                        "readPermission": true,
+                        "writePermission": true,
+                        "deletePermission": false
+                    }
+                ],
+                "contextsAttributesPermission": [
+                    {
+                        "readPermission": true,
+                        "writePermission": true,
+                        "deletePermission": false
+                    }
+                ],
+                "contextsRelationshipPermission": [
+                    {
+                        "readPermission": true,
+                        "writePermission": true,
+                        "deletePermission": false
+                    }
+                ]
+            }
+        },
+        {
+            "id": "location_authorizationModel_lbumanager",
+            "name": "location_authorizationModel_lbumanager",
+            "type": "authorizationModel",
+            "properties": {
+                "readPermission": true,
+                "writePermission": true,
+                "deletePermission": false,
+                "attributesPermission": [
+                    {
+                        "readPermission": true,
+                        "writePermission": true,
+                        "deletePermission": false
+                    }
+                ],
+                "relationshipsPermission": [
+                    {
+                        "readPermission": true,
+                        "writePermission": true,
+                        "deletePermission": false
+                    }
+                ],
+                "contextsPermission": [
+                    {
+                        "readPermission": true,
+                        "writePermission": true,
+                        "deletePermission": false
+                    }
+                ],
+                "contextsAttributesPermission": [
+                    {
+                        "readPermission": true,
+                        "writePermission": true,
+                        "deletePermission": false
+                    }
+                ],
+                "contextsRelationshipPermission": [
+                    {
+                        "readPermission": true,
+                        "writePermission": true,
+                        "deletePermission": false
+                    }
+                ]
+            }
+        },
+        {
+            "id": "referenceData_authorizationModel_lbumanager",
+            "name": "referenceData_authorizationModel_lbumanager",
+            "type": "authorizationModel",
+            "properties": {
+                "readPermission": true,
+                "writePermission": true,
+                "deletePermission": false,
+                "attributesPermission": [
+                    {
+                        "readPermission": true,
+                        "writePermission": true,
+                        "deletePermission": false
+                    }
+                ],
+                "relationshipsPermission": [
+                    {
+                        "readPermission": true,
+                        "writePermission": true,
+                        "deletePermission": false
+                    }
+                ],
+                "contextsPermission": [
+                    {
+                        "readPermission": true,
+                        "writePermission": true,
+                        "deletePermission": false
+                    }
+                ],
+                "contextsAttributesPermission": [
+                    {
+                        "readPermission": true,
+                        "writePermission": true,
+                        "deletePermission": false
+                    }
+                ],
+                "contextsRelationshipPermission": [
+                    {
+                        "readPermission": true,
+                        "writePermission": true,
+                        "deletePermission": false
+                    }
+                ]
+            }
+        },
+        {
+            "id": "thing_authorizationModel_lbumanager",
+            "name": "thing_authorizationModel_lbumanager",
+            "type": "authorizationModel",
+            "properties": {
+                "readPermission": true,
+                "writePermission": true,
+                "deletePermission": false,
+                "attributesPermission": [
+                    {
+                        "readPermission": true,
+                        "writePermission": true,
+                        "deletePermission": false
+                    }
+                ],
+                "relationshipsPermission": [
+                    {
+                        "readPermission": true,
+                        "writePermission": true,
+                        "deletePermission": false
+                    }
+                ],
+                "contextsPermission": [
+                    {
+                        "readPermission": true,
+                        "writePermission": true,
+                        "deletePermission": false
+                    }
+                ],
+                "contextsAttributesPermission": [
+                    {
+                        "readPermission": true,
+                        "writePermission": true,
+                        "deletePermission": false
+                    }
+                ],
+                "contextsRelationshipPermission": [
+                    {
+                        "readPermission": true,
+                        "writePermission": true,
+                        "deletePermission": false
+                    }
+                ]
+            }
+        },
+        {
+            "id": "generic_authorizationModel_lbumanager",
+            "name": "generic_authorizationModel_lbumanager",
+            "type": "authorizationModel",
+            "properties": {
+                "readPermission": true,
+                "writePermission": true,
+                "deletePermission": false,
+                "attributesPermission": [
+                    {
+                        "readPermission": true,
+                        "writePermission": true,
+                        "deletePermission": false
+                    }
+                ],
+                "relationshipsPermission": [
+                    {
+                        "readPermission": true,
+                        "writePermission": true,
+                        "deletePermission": false
+                    }
+                ],
+                "contextsPermission": [
+                    {
+                        "readPermission": true,
+                        "writePermission": true,
+                        "deletePermission": false
+                    }
+                ],
+                "contextsAttributesPermission": [
+                    {
+                        "readPermission": true,
+                        "writePermission": true,
+                        "deletePermission": false
+                    }
+                ],
+                "contextsRelationshipPermission": [
+                    {
+                        "readPermission": true,
+                        "writePermission": true,
+                        "deletePermission": false
+                    }
+                ]
+            }
+        },
+        {
+            "id": "digitalAsset_authorizationModel_lbumanager",
+            "name": "digitalAsset_authorizationModel_lbumanager",
+            "type": "authorizationModel",
+            "properties": {
+                "readPermission": true,
+                "writePermission": true,
+                "deletePermission": false,
+                "attributesPermission": [
+                    {
+                        "readPermission": true,
+                        "writePermission": true,
+                        "deletePermission": false
+                    }
+                ],
+                "relationshipsPermission": [
+                    {
+                        "readPermission": true,
+                        "writePermission": true,
+                        "deletePermission": false
+                    }
+                ],
+                "contextsPermission": [
+                    {
+                        "readPermission": true,
+                        "writePermission": true,
+                        "deletePermission": false
+                    }
+                ],
+                "contextsAttributesPermission": [
+                    {
+                        "readPermission": true,
+                        "writePermission": true,
+                        "deletePermission": false
+                    }
+                ],
+                "contextsRelationshipPermission": [
+                    {
+                        "readPermission": true,
+                        "writePermission": true,
+                        "deletePermission": false
+                    }
+                ]
+            }
+        },
+        {
+            "id": "enart_authorizationModel_lbumanager",
+            "name": "enart_authorizationModel_lbumanager",
+            "type": "authorizationModel",
+            "properties": {
+                "readPermission": true,
+                "writePermission": true,
+                "deletePermission": false,
+                "attributesPermission": [
+                    {
+                        "readPermission": true,
+                        "writePermission": true,
+                        "deletePermission": false
+                    }
+                ],
+                "relationshipsPermission": [
+                    {
+                        "readPermission": true,
+                        "writePermission": true,
+                        "deletePermission": false
+                    }
+                ],
+                "contextsPermission": [
+                    {
+                        "readPermission": true,
+                        "writePermission": true,
+                        "deletePermission": false
+                    }
+                ],
+                "contextsAttributesPermission": [
+                    {
+                        "readPermission": true,
+                        "writePermission": true,
+                        "deletePermission": false
+                    }
+                ],
+                "contextsRelationshipPermission": [
+                    {
+                        "readPermission": true,
+                        "writePermission": true,
+                        "deletePermission": false
+                    }
+                ]
+            },
+            "data": {
+                "attributes": {
+                    "smaterialstatusglobalkey": {
+                        "properties": {
+                            "readPermission": true,
+                            "writePermission": false,
+                            "ownerPermission": false
+                        }
+                    },
+                    "smaximumstorageinmonth": {
+                        "properties": {
+                            "readPermission": true,
+                            "writePermission": false,
+                            "ownerPermission": false
+                        }
+                    },
+                    "smaximumstoragekey": {
+                        "properties": {
+                            "readPermission": true,
+                            "writePermission": false,
+                            "ownerPermission": false
+                        }
+                    },
+                    "smaximumstorageunit": {
+                        "properties": {
+                            "readPermission": true,
+                            "writePermission": false,
+                            "ownerPermission": false
+                        }
+                    },
+                    "snartdescription": {
+                        "properties": {
+                            "readPermission": true,
+                            "writePermission": false,
+                            "ownerPermission": false
+                        }
+                    },
+                    "snartkey": {
+                        "properties": {
+                            "readPermission": true,
+                            "writePermission": false,
+                            "ownerPermission": false
+                        }
+                    },
+                    "snominalnetcontentkey": {
+                        "properties": {
+                            "readPermission": true,
+                            "writePermission": false,
+                            "ownerPermission": false
+                        }
+                    },
+                    "snominalnetcontentunit": {
+                        "properties": {
+                            "readPermission": true,
+                            "writePermission": false,
+                            "ownerPermission": false
+                        }
+                    },
+                    "spgrdescription": {
+                        "properties": {
+                            "readPermission": true,
+                            "writePermission": false,
+                            "ownerPermission": false
+                        }
+                    },
+                    "spgrkey": {
+                        "properties": {
+                            "readPermission": true,
+                            "writePermission": false,
+                            "ownerPermission": false
+                        }
+                    },
+                    "sproductcodekey": {
+                        "properties": {
+                            "readPermission": true,
+                            "writePermission": false,
+                            "ownerPermission": false
+                        }
+                    },
+                    "sproductversionid": {
+                        "properties": {
+                            "readPermission": true,
+                            "writePermission": false,
+                            "ownerPermission": false
+                        }
+                    },
+                    "spvkey": {
+                        "properties": {
+                            "readPermission": true,
+                            "writePermission": false,
+                            "ownerPermission": false
+                        }
+                    },
+                    "ssequencenumberkey": {
+                        "properties": {
+                            "readPermission": true,
+                            "writePermission": false,
+                            "ownerPermission": false
+                        }
+                    },
+                    "sspgrdescription": {
+                        "properties": {
+                            "readPermission": true,
+                            "writePermission": false,
+                            "ownerPermission": false
+                        }
+                    },
+                    "sspgrkey": {
+                        "properties": {
+                            "readPermission": true,
+                            "writePermission": false,
+                            "ownerPermission": false
+                        }
+                    },
+                    "sstorageinstructiondescription": {
+                        "properties": {
+                            "readPermission": true,
+                            "writePermission": false,
+                            "ownerPermission": false
+                        }
+                    },
+                    "sstorageinstructionkey": {
+                        "properties": {
+                            "readPermission": true,
+                            "writePermission": false,
+                            "ownerPermission": false
+                        }
+                    },
+                    "ssubprocessclusterdescription": {
+                        "properties": {
+                            "readPermission": true,
+                            "writePermission": false,
+                            "ownerPermission": false
+                        }
+                    },
+                    "ssubprocessclusterkey": {
+                        "properties": {
+                            "readPermission": true,
+                            "writePermission": false,
+                            "ownerPermission": false
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}
