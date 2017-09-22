@@ -188,6 +188,12 @@
 												"sortable": true,
 												"filterable": false,
 												"linkTemplate": "entity-manage?id={id}&type={type}"
+											},
+											{
+												"header": "GTIN",
+												"name": "aidentifier",
+												"sortable": true,
+												"filterable": false
 											}
 										]
 									},
