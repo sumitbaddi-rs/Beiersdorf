@@ -1,0 +1,722 @@
+{
+	"metaInfo": {
+		"dataIndex": "config",
+		"collectionName": "configObjects",
+		"responseObjectName": "response"
+	},
+	"configObjects": [
+		{
+			"id": "app-dashboard_components-list_gbumanager_uiConfig",
+			"name": "app-dashboard_components-list",
+			"version": "1.0",
+			"type": "uiConfig",
+			"properties": {
+				"createdByService": "entityservice",
+				"createdBy": "user"
+			},
+			"data": {
+				"contexts": [
+					{
+						"context": {
+							"app": "app-dashboard",
+							"service": "_ALL",
+							"component": "components-list",
+							"subComponent": "_ALL",
+							"role": "gbumanager"
+						},
+						"jsonData": {
+							"config": {
+								"components": [
+									"rock-saved-searches",
+									"rock-widget-panel",
+									"my-todo-summary-list",
+									"my-todo-detail-view-list",
+									"rock-saved-searches-tags",
+									"rock-task-list"
+								]
+							}
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": "app-dashboard_rock-saved-searches_gbumanager_uiConfig",
+			"name": "app-dashboard_rock-saved-searches",
+			"version": "1.0",
+			"type": "uiConfig",
+			"properties": {
+				"createdByService": "entityservice",
+				"createdBy": "user"
+			},
+			"data": {
+				"contexts": [
+					{
+						"context": {
+							"app": "app-dashboard",
+							"service": "_ALL",
+							"component": "rock-saved-searches",
+							"subComponent": "_ALL",
+							"role": "gbumanager"
+						},
+						"jsonData": {
+							"config": {
+								"favourites": [
+								],
+								"my-searches": [
+								],
+								"shared-searches": [
+								]
+							}
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": "app-dashboard_rock-widget-panel_gbumanager_uiConfig",
+			"name": "app-dashboard_rock-widget-panel",
+			"version": "1.0",
+			"type": "uiConfig",
+			"properties": {
+				"createdByService": "entityservice",
+				"createdBy": "user"
+			},
+			"data": {
+				"contexts": [
+					{
+						"context": {
+							"app": "app-dashboard",
+							"service": "_ALL",
+							"component": "rock-widget-panel",
+							"subComponent": "_ALL",
+							"role": "gbumanager"
+						},
+						"jsonData": {
+							"config": {
+								"widgets": [
+									{
+										"name": "rock-my-todos",
+										"nonClosable": true,
+										"nonMaximizable": false,
+										"nonDraggable": false,
+										"config": {
+											"heading": "My To Do's",
+											"headerIcon": "pebble-lg-icons:MyToDoIcon",
+											"position-x":0,
+											"position-y":0,
+											"width":6,
+											"height":10,
+											"iconButtons": [{
+												"name": "refreshIcon",
+												"label": "Refresh",
+												"icon": "pebble-md-icons:ToolbarRefresh",
+												"showInMoreActions": false
+											}],
+											"component": {
+												"name": "rock-my-todos",
+												"path": "/src/elements/rock-my-todos/rock-my-todos.html"
+											}
+										}
+									},
+									{
+										"name": "rock-saved-searches",
+										"nonClosable": true,
+										"nonMaximizable": false,
+										"nonDraggable": false,
+										"config": {
+											"heading": "Saved Searches",
+											"headerIcon": "pebble-lg-icons:SavedSearchmain",
+											"position-x":6,
+											"position-y":0,
+											"width":6,
+											"height":4,
+											"iconButtons": [{
+												"name": "refreshIcon",
+												"label": "Refresh",
+												"icon": "pebble-md-icons:ToolbarRefresh",
+												"showInMoreActions": false
+											}],
+											"component": {
+												"name": "rock-saved-searches",
+												"path": "/src/elements/rock-saved-searches/rock-saved-searches.html",
+												"properties": {
+													"view-mode": true
+												}
+											}
+										}
+									},
+									{
+										"name": "rock-task-list",
+										"nonClosable": true,
+										"nonMaximizable": false,
+										"nonDraggable": false,
+										"config": {
+											"heading": "Batch Jobs",
+											"headerIcon": "pebble-lg-icons:InegrationDb",
+											"position-x":6,
+											"position-y":4,
+											"width":6,
+											"height":6,
+											"iconButtons": [{
+												"name": "refreshIcon",
+												"label": "Refresh",
+												"icon": "pebble-md-icons:ToolbarRefresh",
+												"showInMoreActions": false
+											}],
+											"component": {
+												"name": "rock-task-list",
+												"path": "/src/elements/rock-task-list/rock-task-list.html"
+											}
+										}
+									}
+								]
+							}
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": "app-dashboard_my-todo-summary-list_gbumanager_uiConfig",
+			"name": "app-dashboard_my-todo-summary-list",
+			"version": "1.0",
+			"type": "uiConfig",
+			"properties": {
+				"createdByService": "entityservice",
+				"createdBy": "user"
+			},
+			"data": {
+				"contexts": [
+					{
+						"context": {
+							"app": "app-dashboard",
+							"service": "_ALL",
+							"component": "my-todo-summary-list",
+							"subComponent": "_ALL",
+							"role": "gbumanager"
+						},
+						"jsonData": {
+							"config": [
+								{
+									"id": 1,
+									"savedSearchId": 1,
+									"name": "New SKUs to Submit",
+									"numberOfTasks": "TBD",
+									"workflow": "New Product Setup",
+									"unAssigned": "TBD",
+									"assignedToMe": "TBD",
+									"status": "red",
+									"products": [
+										{
+											"name": "Complexion Rescue Tinted Hydrating Gel Cream Broad Spectrum SPF 30",
+											"id": 2283289,
+											"gbumanagerName": "Aquaphor",
+											"categoryPath": "/Skin Care/Moisturizers",
+											"imageUrl": "../../../../bower_components/iron-image/demo/polymer.svg"
+										},
+										{
+											"name": "Complexion Rescue Tinted Hydrating Gel Cream Broad Spectrum SPF 30",
+											"id": 2283289,
+											"gbumanagerName": "Aquaphor",
+											"categoryPath": "/Skin Care/Moisturizers",
+											"imageUrl": "../../../../bower_components/iron-image/demo/polymer.svg"
+										},
+										{
+											"name": "Complexion Rescue Tinted Hydrating Gel Cream Broad Spectrum SPF 30",
+											"id": 2283289,
+											"gbumanagerName": "Aquaphor",
+											"categoryPath": "/Skin Care/Moisturizers",
+											"imageUrl": "../../../../bower_components/iron-image/demo/polymer.svg"
+										},
+										{
+											"name": "Complexion Rescue Tinted Hydrating Gel Cream Broad Spectrum SPF 30",
+											"id": 2283289,
+											"gbumanagerName": "Aquaphor",
+											"categoryPath": "/Skin Care/Moisturizers",
+											"imageUrl": "../../../../bower_components/iron-image/demo/polymer.svg"
+										},
+										{
+											"name": "Complexion Rescue Tinted Hydrating Gel Cream Broad Spectrum SPF 30",
+											"id": 2283289,
+											"gbumanagerName": "Aquaphor",
+											"categoryPath": "/Skin Care/Moisturizers",
+											"imageUrl": "../../../../bower_components/iron-image/demo/polymer.svg"
+										},
+										{
+											"name": "Complexion Rescue Tinted Hydrating Gel Cream Broad Spectrum SPF 30",
+											"id": 2283289,
+											"gbumanagerName": "Aquaphor",
+											"categoryPath": "/Skin Care/Moisturizers",
+											"imageUrl": "../../../../bower_components/iron-image/demo/polymer.svg"
+										}
+									]
+								},
+								{
+									"id": 2,
+									"savedSearchId": 2,
+									"name": "Provide Additional Information",
+									"numberOfTasks": "TBD",
+									"workflow": "New Product Setup",
+									"unAssigned": "TBD",
+									"assignedToMe": "TBD",
+									"status": "red",
+									"products": [
+										{
+											"name": "Complexion Rescue Tinted Hydrating Gel Cream Broad Spectrum SPF 30",
+											"id": 2283289,
+											"gbumanagerName": "Aquaphor",
+											"categoryPath": "/Skin Care/Moisturizers",
+											"imageUrl": "../../../../bower_components/iron-image/demo/polymer.svg"
+										},
+										{
+											"name": "Complexion Rescue Tinted Hydrating Gel Cream Broad Spectrum SPF 30",
+											"id": 2283289,
+											"gbumanagerName": "Aquaphor",
+											"categoryPath": "/Skin Care/Moisturizers",
+											"imageUrl": "../../../../bower_components/iron-image/demo/polymer.svg"
+										},
+										{
+											"name": "Complexion Rescue Tinted Hydrating Gel Cream Broad Spectrum SPF 30",
+											"id": 2283289,
+											"gbumanagerName": "Aquaphor",
+											"categoryPath": "/Skin Care/Moisturizers",
+											"imageUrl": "../../../../bower_components/iron-image/demo/polymer.svg"
+										},
+										{
+											"name": "Complexion Rescue Tinted Hydrating Gel Cream Broad Spectrum SPF 30",
+											"id": 2283289,
+											"gbumanagerName": "Aquaphor",
+											"categoryPath": "/Skin Care/Moisturizers",
+											"imageUrl": "../../../../bower_components/iron-image/demo/polymer.svg"
+										},
+										{
+											"name": "Complexion Rescue Tinted Hydrating Gel Cream Broad Spectrum SPF 30",
+											"id": 2283289,
+											"gbumanagerName": "Aquaphor",
+											"categoryPath": "/Skin Care/Moisturizers",
+											"imageUrl": "../../../../bower_components/iron-image/demo/polymer.svg"
+										},
+										{
+											"name": "Complexion Rescue Tinted Hydrating Gel Cream Broad Spectrum SPF 30",
+											"id": 2283289,
+											"gbumanagerName": "Aquaphor",
+											"categoryPath": "/Skin Care/Moisturizers",
+											"imageUrl": "../../../../bower_components/iron-image/demo/polymer.svg"
+										}
+									]
+								},
+								{
+									"id": 3,
+									"savedSearchId": 3,
+									"name": "Rejected SKUs",
+									"numberOfTasks": "TBD",
+									"workflow": "New Product Setup",
+									"unAssigned": "TBD",
+									"assignedToMe": "TBD",
+									"status": "red",
+									"products": [
+										{
+											"name": "Complexion Rescue Tinted Hydrating Gel Cream Broad Spectrum SPF 30",
+											"id": 2283289,
+											"gbumanagerName": "Aquaphor",
+											"categoryPath": "/Skin Care/Moisturizers",
+											"imageUrl": "../../../../bower_components/iron-image/demo/polymer.svg"
+										},
+										{
+											"name": "Complexion Rescue Tinted Hydrating Gel Cream Broad Spectrum SPF 30",
+											"id": 2283289,
+											"gbumanagerName": "Aquaphor",
+											"categoryPath": "/Skin Care/Moisturizers",
+											"imageUrl": "../../../../bower_components/iron-image/demo/polymer.svg"
+										}
+									]
+								},
+								{
+									"id": 4,
+									"savedSearchId": 4,
+									"name": "Review Assortment",
+									"numberOfTasks": "TBD",
+									"workflow": "New Product Setup",
+									"unAssigned": "TBD",
+									"assignedToMe": "TBD",
+									"status": "orange",
+									"products": [
+										{
+											"name": "Complexion Rescue Tinted Hydrating Gel Cream Broad Spectrum SPF 30",
+											"id": 2283289,
+											"gbumanagerName": "Aquaphor",
+											"categoryPath": "/Skin Care/Moisturizers",
+											"imageUrl": "../../../../bower_components/iron-image/demo/polymer.svg"
+										},
+										{
+											"name": "Complexion Rescue Tinted Hydrating Gel Cream Broad Spectrum SPF 30",
+											"id": 2283289,
+											"gbumanagerName": "Aquaphor",
+											"categoryPath": "/Skin Care/Moisturizers",
+											"imageUrl": "../../../../bower_components/iron-image/demo/polymer.svg"
+										}
+									]
+								},
+								{
+									"id": 5,
+									"savedSearchId": 5,
+									"name": "Assign Internal Information",
+									"numberOfTasks": "TBD",
+									"workflow": "New Product Setup",
+									"unAssigned": "TBD",
+									"assignedToMe": "TBD",
+									"status": "orange",
+									"products": [
+										{
+											"name": "Complexion Rescue Tinted Hydrating Gel Cream Broad Spectrum SPF 30",
+											"id": 2283289,
+											"gbumanagerName": "Aquaphor",
+											"categoryPath": "/Skin Care/Moisturizers",
+											"imageUrl": "../../../../bower_components/iron-image/demo/polymer.svg"
+										},
+										{
+											"name": "Complexion Rescue Tinted Hydrating Gel Cream Broad Spectrum SPF 30",
+											"id": 2283289,
+											"gbumanagerName": "Aquaphor",
+											"categoryPath": "/Skin Care/Moisturizers",
+											"imageUrl": "../../../../bower_components/iron-image/demo/polymer.svg"
+										},
+										{
+											"name": "Complexion Rescue Tinted Hydrating Gel Cream Broad Spectrum SPF 30",
+											"id": 2283289,
+											"gbumanagerName": "Aquaphor",
+											"categoryPath": "/Skin Care/Moisturizers",
+											"imageUrl": "../../../../bower_components/iron-image/demo/polymer.svg"
+										},
+										{
+											"name": "Complexion Rescue Tinted Hydrating Gel Cream Broad Spectrum SPF 30",
+											"id": 2283289,
+											"gbumanagerName": "Aquaphor",
+											"categoryPath": "/Skin Care/Moisturizers",
+											"imageUrl": "../../../../bower_components/iron-image/demo/polymer.svg"
+										},
+										{
+											"name": "Complexion Rescue Tinted Hydrating Gel Cream Broad Spectrum SPF 30",
+											"id": 2283289,
+											"gbumanagerName": "Aquaphor",
+											"categoryPath": "/Skin Care/Moisturizers",
+											"imageUrl": "../../../../bower_components/iron-image/demo/polymer.svg"
+										},
+										{
+											"name": "Complexion Rescue Tinted Hydrating Gel Cream Broad Spectrum SPF 30",
+											"id": 2283289,
+											"gbumanagerName": "Aquaphor",
+											"categoryPath": "/Skin Care/Moisturizers",
+											"imageUrl": "../../../../bower_components/iron-image/demo/polymer.svg"
+										}
+									]
+								},
+								{
+									"id": 6,
+									"savedSearchId": 6,
+									"name": "Enrich Copy",
+									"numberOfTasks": "TBD",
+									"workflow": "New Product Setup",
+									"unAssigned": "TBD",
+									"assignedToMe": "TBD",
+									"status": "green",
+									"products": [
+										{
+											"name": "Complexion Rescue Tinted Hydrating Gel Cream Broad Spectrum SPF 30",
+											"id": 2283289,
+											"gbumanagerName": "Aquaphor",
+											"categoryPath": "/Skin Care/Moisturizers",
+											"imageUrl": "../../../../bower_components/iron-image/demo/polymer.svg"
+										},
+										{
+											"name": "Complexion Rescue Tinted Hydrating Gel Cream Broad Spectrum SPF 30",
+											"id": 2283289,
+											"gbumanagerName": "Aquaphor",
+											"categoryPath": "/Skin Care/Moisturizers",
+											"imageUrl": "../../../../bower_components/iron-image/demo/polymer.svg"
+										},
+										{
+											"name": "Complexion Rescue Tinted Hydrating Gel Cream Broad Spectrum SPF 30",
+											"id": 2283289,
+											"gbumanagerName": "Aquaphor",
+											"categoryPath": "/Skin Care/Moisturizers",
+											"imageUrl": "../../../../bower_components/iron-image/demo/polymer.svg"
+										},
+										{
+											"name": "Complexion Rescue Tinted Hydrating Gel Cream Broad Spectrum SPF 30",
+											"id": 2283289,
+											"gbumanagerName": "Aquaphor",
+											"categoryPath": "/Skin Care/Moisturizers",
+											"imageUrl": "../../../../bower_components/iron-image/demo/polymer.svg"
+										},
+										{
+											"name": "Complexion Rescue Tinted Hydrating Gel Cream Broad Spectrum SPF 30",
+											"id": 2283289,
+											"gbumanagerName": "Aquaphor",
+											"categoryPath": "/Skin Care/Moisturizers",
+											"imageUrl": "../../../../bower_components/iron-image/demo/polymer.svg"
+										},
+										{
+											"name": "Complexion Rescue Tinted Hydrating Gel Cream Broad Spectrum SPF 30",
+											"id": 2283289,
+											"gbumanagerName": "Aquaphor",
+											"categoryPath": "/Skin Care/Moisturizers",
+											"imageUrl": "../../../../bower_components/iron-image/demo/polymer.svg"
+										}
+									]
+								},
+								{
+									"id": 7,
+									"savedSearchId": 7,
+									"name": "Enrich with Digital Assets",
+									"numberOfTasks": "TBD",
+									"workflow": "New Product Setup",
+									"unAssigned": "TBD",
+									"assignedToMe": "TBD",
+									"status": "green",
+									"products": [
+										{
+											"name": "Complexion Rescue Tinted Hydrating Gel Cream Broad Spectrum SPF 30",
+											"id": 2283289,
+											"gbumanagerName": "Aquaphor",
+											"categoryPath": "/Skin Care/Moisturizers",
+											"imageUrl": "../../../../bower_components/iron-image/demo/polymer.svg"
+										},
+										{
+											"name": "Complexion Rescue Tinted Hydrating Gel Cream Broad Spectrum SPF 30",
+											"id": 2283289,
+											"gbumanagerName": "Aquaphor",
+											"categoryPath": "/Skin Care/Moisturizers",
+											"imageUrl": "../../../../bower_components/iron-image/demo/polymer.svg"
+										},
+										{
+											"name": "Complexion Rescue Tinted Hydrating Gel Cream Broad Spectrum SPF 30",
+											"id": 2283289,
+											"gbumanagerName": "Aquaphor",
+											"categoryPath": "/Skin Care/Moisturizers",
+											"imageUrl": "../../../../bower_components/iron-image/demo/polymer.svg"
+										},
+										{
+											"name": "Complexion Rescue Tinted Hydrating Gel Cream Broad Spectrum SPF 30",
+											"id": 2283289,
+											"gbumanagerName": "Aquaphor",
+											"categoryPath": "/Skin Care/Moisturizers",
+											"imageUrl": "../../../../bower_components/iron-image/demo/polymer.svg"
+										},
+										{
+											"name": "Complexion Rescue Tinted Hydrating Gel Cream Broad Spectrum SPF 30",
+											"id": 2283289,
+											"gbumanagerName": "Aquaphor",
+											"categoryPath": "/Skin Care/Moisturizers",
+											"imageUrl": "../../../../bower_components/iron-image/demo/polymer.svg"
+										},
+										{
+											"name": "Complexion Rescue Tinted Hydrating Gel Cream Broad Spectrum SPF 30",
+											"id": 2283289,
+											"gbumanagerName": "Aquaphor",
+											"categoryPath": "/Skin Care/Moisturizers",
+											"imageUrl": "../../../../bower_components/iron-image/demo/polymer.svg"
+										}
+									]
+								}
+							]
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": "app-dashboard_my-todo-detail-view-list_gbumanager_uiConfig",
+			"name": "app-dashboard_my-todo-detail-view-list",
+			"version": "1.0",
+			"type": "uiConfig",
+			"properties": {
+				"createdByService": "entityservice",
+				"createdBy": "user"
+			},
+			"data": {
+				"contexts": [
+					{
+						"context": {
+							"app": "app-dashboard",
+							"service": "_ALL",
+							"component": "my-todo-detail-view-list",
+							"subComponent": "_ALL",
+							"role": "gbumanager"
+						},
+						"jsonData": {
+							"config": []
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": "app-dashboard_rock-saved-searches-tags_gbumanager_uiConfig",
+			"name": "app-dashboard_rock-saved-searches-tags",
+			"version": "1.0",
+			"type": "uiConfig",
+			"properties": {
+				"createdByService": "entityservice",
+				"createdBy": "user"
+			},
+			"data": {
+				"contexts": [
+					{
+						"context": {
+							"app": "app-dashboard",
+							"service": "_ALL",
+							"component": "rock-saved-searches-tags",
+							"subComponent": "_ALL",
+							"role": "gbumanager"
+						},
+						"jsonData": {
+							"config": {
+								"favourites": [
+									{
+										"name": "favourites",
+										"icon": "pebble-icons:Star",
+										"text": "",
+										"visible": true,
+										"eventName": "favourite-saved-search"
+									},
+									{
+										"name": "delete",
+										"icon": "pebble-icons:Delete",
+										"text": "",
+										"visible": true,
+										"eventName": "delete-saved-search"
+									}
+								],
+								"my-searches": [
+									{
+										"name": "favourites",
+										"icon": "pebble-icons:Star",
+										"text": "",
+										"visible": true,
+										"eventName": "favourite-saved-search"
+									},
+									{
+										"name": "delete",
+										"icon": "pebble-icons:Delete",
+										"text": "",
+										"visible": true,
+										"eventName": "delete-saved-search"
+									}
+								],
+								"shared-searches": [
+									{
+										"name": "favourites",
+										"icon": "pebble-icons:Star",
+										"text": "",
+										"visible": true,
+										"eventName": "favourite-saved-search"
+									},
+									{
+										"name": "delete",
+										"icon": "pebble-icons:Delete",
+										"text": "",
+										"visible": true,
+										"eventName": "delete-saved-search"
+									}
+								]
+							}
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": "app-dashboard_rock-task-list_gbumanager_uiConfig",
+			"name": "app-dashboard_rock-task-list",
+			"version": "1.0",
+			"type": "uiConfig",
+			"properties": {
+				"createdByService": "entityservice",
+				"createdBy": "user"
+			},
+			"data": {
+				"contexts": [
+					{
+						"context": {
+							"app": "app-dashboard",
+							"service": "_ALL",
+							"component": "rock-task-list",
+							"subComponent": "_ALL",
+							"role": "gbumanager"
+						},
+						"jsonData": {
+							"config":{
+								"defaultJobStatus":"Completed",
+								"userToggleAllowed":true,
+								"viewMode": "List",
+								"title": "Simple Data Table",
+								"mode": "read",
+								"header" : {
+									"displayTitle" : false,
+									"defaultValue" :  "Simple Data Table"
+								},
+								"dataRequest": {
+									"attributes": [
+										"fileName",
+										"fileType",
+										"formatter",
+										"taskId",
+										"taskName",
+										"eventType",
+										"eventSubType",
+										"recordCount",
+										"createdOn",
+										"userId",
+										"profileName"
+									]
+								},
+								"list": {
+									"settings": {
+										"isMultiSelect": false
+									},
+									"listItems": {
+										"image": "fileTypeImage",
+										"title": "fileName",
+										"subtitle": "formatter",
+										"id": "taskId",
+										"fields": [
+											{
+												"name": "eventSubType"
+											},
+											{
+												"name": "createdOn",
+												"noTrim": true
+											},
+											{
+												"name": "recordCount",
+												"noTrim": true
+											},
+											{
+												"name": "userId",
+												"noTrim": true
+											},
+											{
+												"name": "taskName",
+												"noTrim": true
+											},
+											{
+												"name": "profileName",
+												"noTrim": true
+											},
+											{
+												"name":"viewDetails",
+												"linkTemplate": "task-detail?id={taskId}"
+											}
+										]
+									}
+								}
+							}
+						}
+					}
+				]
+            }
+		}
+	]
+}

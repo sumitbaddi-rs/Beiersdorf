@@ -1,0 +1,655 @@
+{
+	"metaInfo": {
+		"dataIndex": "config",
+		"collectionName": "configObjects",
+		"responseObjectName": "response"
+	},
+	"configObjects": [
+		{
+			"id": "main-app_components-list_gbumanager_uiConfig",
+			"name": "main-app_components-list_gbumanager",
+			"version": "1.0",
+			"type": "uiConfig",
+			"properties": {
+				"createdByService": "entityservice",
+				"createdBy": "user"
+			},
+			"data": {
+				"contexts": [
+					{
+						"context": {
+							"app": "main-app",
+							"service": "_ALL",
+							"component": "components-list",
+							"subComponent": "_ALL",
+							"role": "gbumanager"
+						},
+						"jsonData": {
+							"config": {
+								"components": [
+									"app-repository",
+									"pebble-actions",
+									"rock-navmenu",
+									"tenant-config",
+									"global-settings",
+									"dataobject-preload",
+									"header-search",
+                                    "hotline-settings"
+								]
+							}
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": "main-app_app-repository_gbumanager_uiConfig",
+			"name": "main-app_app-repository",
+			"version": "1.0",
+			"type": "uiConfig",
+			"properties": {
+				"createdByService": "entityservice",
+				"createdBy": "user"
+			},
+			"data": {
+				"contexts": [
+					{
+						"context": {
+							"app": "main-app",
+							"service": "_ALL",
+							"component": "app-repository",
+							"subComponent": "_ALL",
+							"role": "gbumanager"
+						},
+						"jsonData": {
+							"config": {
+								"dashboard": {
+									"title": "Dashboard",
+									"data_route": "dashboard",
+									"icon": "pebble-icons:Dashboard",
+									"nonClosable": true,
+									"nonMinimizable": true,
+									"component": {
+										"name": "app-dashboard",
+										"path": "../../src/elements/app-dashboard/app-dashboard.html",
+										"properties": {
+											"mode": "edit"
+										}
+									}
+								},
+								"asset-discovery": {
+									"title": "Assets Search & Refine",
+									"data_route": "asset-discovery",
+									"icon": "pebble-icons:Search",
+									"nonClosable": true,
+									"nonMinimizable": true,
+									"component": {
+										"name": "app-assets-discovery",
+										"path": "../../src/elements/app-assets-discovery/app-assets-discovery.html",
+										"properties": {}
+									}
+								},
+								"entity-discovery": {
+									"title": "Entity Search & Refine",
+									"data_route": "entity-discovery",
+									"icon": "pebble-icons:Search",
+									"nonClosable": true,
+									"nonMinimizable": true,
+									"component": {
+										"name": "app-entity-discovery",
+										"path": "../../src/elements/app-entity-discovery/app-entity-discovery.html",
+										"properties": {}
+									}
+								},
+								"reference-discovery": {
+									"title": "Reference Search & Discovery",
+									"data_route": "reference-discovery",
+									"icon": "pebble-icons:referenceDataSearch",
+									"nonClosable": true,
+									"nonMinimizable": true,
+									"component": {
+										"name": "app-reference-discovery",
+										"path": "../../src/elements/app-reference-discovery/app-reference-discovery.html",
+										"properties": {}
+									}
+								},
+								"entity-manage": {
+									"title": "Entity Manage",
+									"data_route": "entity-manage",
+									"icon": "pebble-icons:Entities",
+									"component": {
+										"name": "app-entity-manage",
+										"path": "../../src/elements/app-entity-manage/app-entity-manage.html",
+										"properties": {}
+									}
+								},
+								"entity-create": {
+									"title": "Create Entity",
+									"data_route": "entity-create",
+									"icon": "pebble-icons:Entities",
+									"component": {
+										"name": "app-business-function",
+										"path": "../../src/elements/app-business-function/app-business-function.html",
+										"properties": {
+											"name": "create-entity",
+											"context": {
+												"entityType": "enart"
+											}
+										}
+									}
+								},
+								"manage-model": {
+									"title": "Manage Model",
+									"data_route": "manage-model",
+									"icon": "pebble-icons:DataModelDb",
+									"nonClosable": true,
+									"nonMinimizable": true,
+									"component": {
+										"name": "",
+										"path": ""
+									}
+								},
+								"manage-integration": {
+									"title": "Manage Integration",
+									"data_route": "manage-integration",
+									"icon": "pebble-icons:IntegrationsDb",
+									"nonClosable": true,
+									"nonMinimizable": true,
+									"component": {
+										"name": "",
+										"path": ""
+									}
+								},
+								"app-store": {
+									"title": "App Store",
+									"data_route": "app-store",
+									"icon": "pebble-icons:AppsDb",
+									"nonClosable": true,
+									"nonMinimizable": true,
+									"component": {
+										"name": "",
+										"path": ""
+									}
+								},
+								"upload-model": {
+									"title": "Upload Data Model",
+									"data_route": "upload-model",
+									"icon": "pebble-icons:Entities",
+									"component": {
+										"name": "app-business-function",
+										"path": "../../src/elements/app-business-function/app-business-function.html",
+										"properties": {
+											"name": "upload-model"
+										}
+									}
+								},
+								"task-detail": {
+									"title": "App Job Details",
+									"data_route": "task-detail",
+									"icon": "",
+									"nonClosable": true,
+									"nonMinimizable": true,
+									"component": {
+										"name": "app-task-detail",
+										"path": "../../src/elements/app-task-detail/app-task-detail.html"
+									}
+								},
+								"system-healthcheck": {
+									"title": "System healthcheck",
+									"data_route": "system-healthcheck",
+									"icon": "",
+									"component": {
+										"name": "app-system-healthcheck",
+										"path": "../../src/elements/app-system-healthcheck/app-system-healthcheck.html",
+										"properties": {
+											"name": "system-healthcheck",
+											"shared-data": {
+											}
+										}
+									}
+								},
+								"upload-assets": {
+									"title": "Upload Assets",
+									"data_route": "upload-assets",
+									"icon": "",
+									"component": {
+										"name": "app-business-function",
+										"path": "../../src/elements/app-business-function/app-business-function.html",
+										"properties": {
+											"name": "upload-assets",
+											"context": {
+												"entityType": "image"
+											}
+										}
+									}
+								},
+								"upload-excel": {
+									"title": "Upload Entities",
+									"data_route": "upload-excel",
+									"icon": "",
+									"component": {
+										"name": "app-business-function",
+										"path": "../../src/elements/app-business-function/app-business-function.html",
+										"properties": {
+											"name": "upload-excel",
+											"shared-data": {
+												"context-data": {
+													"ItemContexts": [
+														{
+															"type": "enart"
+														}
+													]
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": "main-app_pebble-actions_gbumanager_uiConfig",
+			"name": "main-app_pebble-actions",
+			"version": "1.0",
+			"type": "uiConfig",
+			"properties": {
+				"createdByService": "entityservice",
+				"createdBy": "user"
+			},
+			"data": {
+				"contexts": [
+					{
+						"context": {
+							"app": "main-app",
+							"service": "_ALL",
+							"component": "pebble-actions",
+							"subComponent": "_ALL",
+							"role": "gbumanager"
+						},
+						"jsonData": {
+							"config": [
+								{
+									"title": "Create",
+									"actions": [
+										{
+											"name": "createSKU",
+											"icon": "pebble-xl-icons:Product",
+											"text": "NART",
+											"visible": true,
+											"dataRoute": "entity-create",
+											"contextData": {
+												"itemContext": {
+													"type": "enart"
+												},
+												"valueContext": {
+													"source": "internal",
+													"locale": "en-US"
+												},
+												"context": {
+												}
+											}
+										},
+										{
+											"name": "createeproductversion",
+											"icon": "pebble-xl-icons:Kit",
+											"text": "Product Version",
+											"visible": true,
+											"dataRoute": "entity-create",
+											"contextData": {
+												"itemContext": {
+													"type": "eproductversion"
+												},
+												"valueContext": {
+													"source": "internal",
+													"locale": "en-US"
+												},
+												"context": {
+												}
+											}
+										},
+										{
+											"name": "createemasterproduct",
+											"icon": "pebble-xl-icons:Kit",
+											"text": "Master Product",
+											"visible": true,
+											"dataRoute": "entity-create",
+											"contextData": {
+												"itemContext": {
+													"type": "emasterproduct"
+												},
+												"valueContext": {
+													"source": "internal",
+													"locale": "en-US"
+												},
+												"context": {
+												}
+											}
+										}
+									]
+								},
+								{
+									"title": "Upload",
+									"actions": [
+										{
+											"name": "dataModelImport",
+											"icon": "pebble-xl-icons:uploaddatamodel",
+											"text": "Upload Data Model",
+											"visible": true,
+											"dataRoute": "upload-model",
+											"contextData": {
+												"itemContext": {},
+												"valueContext": {
+													"source": "internal",
+													"locale": "en-US"
+												},
+												"context": {}
+											}
+										},
+										{
+											"name": "uploadAssets",
+											"icon": "pebble-xl-icons:uploadassets",
+											"text": "Upload Assets",
+											"visible": true,
+											"dataRoute": "upload-assets",
+											"contextData": {
+												"itemContext": {
+													"type": "image"
+												},
+												"valueContext": {
+													"source": "internal",
+													"locale": "en-US"
+												},
+												"context": {}
+											}
+										},
+										{
+											"name": "uploadEntities",
+											"icon": "pebble-xl-icons:uploadassets",
+											"text": "Upload Entities",
+											"visible": true,
+											"dataRoute": "upload-excel",
+											"contextData": {
+												"itemContext": {
+													"type": "enart"
+												},
+												"valueContext": {
+													"source": "internal",
+													"locale": "en-US"
+												},
+												"context": {}
+											}
+										}
+									]
+								}
+							]
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": "main-app_rock-navmenu_gbumanager_uiConfig",
+			"name": "main-app_rock-navmenu",
+			"version": "1.0",
+			"type": "uiConfig",
+			"properties": {
+				"createdByService": "entityservice",
+				"createdBy": "user"
+			},
+			"data": {
+				"contexts": [
+					{
+						"context": {
+							"app": "main-app",
+							"service": "_ALL",
+							"component": "rock-navmenu",
+							"subComponent": "_ALL",
+							"role": "gbumanager"
+						},
+						"jsonData": {
+							"config": [
+								{
+									"name": "dashboard",
+									"title": "User Dashboard",
+									"data_route": "dashboard",
+									"icon": "pebble-lg-icons:Userdashboard",
+									"isLandingPage": true
+								},
+								{
+									"name": "entity-discovery",
+									"title": "Entity Search & Refine",
+									"data_route": "entity-discovery",
+									"icon": "pebble-lg-icons:SearchDb"
+								},
+								{
+									"name": "asset-discovery",
+									"title": "Asset Search & Refine",
+									"data_route": "asset-discovery",
+									"icon": "pebble-md-icons:Advancesearch"
+								},
+								{
+									"name": "reference-discovery",
+									"title": "Reference Search & Refine",
+									"data_route": "reference-discovery",
+									"icon": "pebble-lg-icons:referenceDataSearch"
+								},
+								{
+									"name": "system-healthcheck",
+									"title": "System healthcheck",
+									"data_route": "system-healthcheck",
+									"icon": "pebble-lg-icons:Health"
+
+								},
+								{
+									"name": "divider"
+								},
+								{
+									"name": "appStore",
+									"title": "App Store",
+									"data_route": "app-store",
+									"icon": "pebble-lg-icons:AppDb"
+								}
+							]
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": "main-app_tenant-config_gbumanager_uiConfig",
+			"name": "main-app_tenant-config",
+			"version": "1.0",
+			"type": "uiConfig",
+			"properties": {
+				"createdByService": "entityservice",
+				"createdBy": "user"
+			},
+			"data": {
+				"contexts": [
+					{
+						"context": {
+							"app": "main-app",
+							"service": "_ALL",
+							"component": "tenant-config",
+							"subComponent": "_ALL",
+							"role": "gbumanager"
+						},
+						"jsonData": {
+							"config": {
+								"logoUrl": "../src/images/Beiersdorf-logo.svg",
+                            	"tenantName": "Beiersdorf PIM",
+                            	"primaryColor": "#036BC3",
+								"primaryLightColor": "#0bb2e8",
+								"secondaryColor": "#364653"
+							}
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": "main-app_global-settings_gbumanager_uiConfig",
+			"name": "main-app_global-settings",
+			"version": "1.0",
+			"type": "uiConfig",
+			"properties": {
+				"createdByService": "entityservice",
+				"createdBy": "user"
+			},
+			"data": {
+				"contexts": [
+					{
+						"context": {
+							"app": "main-app",
+							"service": "_ALL",
+							"component": "global-settings",
+							"subComponent": "_ALL",
+							"role": "gbumanager"
+						},
+						"jsonData": {
+							"config": {
+								"allowedEntityTypes": [
+									"image",
+									"video",
+									"audio",
+									"document",
+									"enart",
+									"eproductversion",
+									"emasterproduct"
+								],
+								"categoryPathSeparator": ">>"
+							}
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": "main-app_dataobject-preload_gbumanager_uiConfig",
+			"name": "main-app_dataobject-preload",
+			"version": "1.0",
+			"type": "uiConfig",
+			"properties": {
+				"createdByService": "entityservice",
+				"createdBy": "user"
+			},
+			"data": {
+				"contexts": [
+					{
+						"context": {
+							"app": "main-app",
+							"service": "_ALL",
+							"component": "dataobject-preload",
+							"subComponent": "_ALL",
+							"role": "gbumanager"
+						},
+						"jsonData": {
+							"config": {
+								"preLoadConfig": {
+                                    "aggregateConfig": {
+                                        "byContext": [
+                                            {"appName": "main-app", "contextData": {"ItemContexts": []}},
+											{"appName": "app-dashboard", "contextData": {"ItemContexts": [{"type": "enart"}]}},
+											{"appName": "app-dashboard", "contextData": {"ItemContexts": [{"type": "eproductversion"}]}},
+											{"appName": "app-dashboard", "contextData": {"ItemContexts": [{"type": "emasterproduct"}]}},
+											{"appName": "app-entity-discovery", "contextData": {"ItemContexts": [{"type": "enart"}]}},
+											{"appName": "app-entity-discovery", "contextData": {"ItemContexts": [{"type": "eproductversion"}]}},
+											{"appName": "app-entity-discovery", "contextData": {"ItemContexts": [{"type": "emasterproduct"}]}},
+											{"appName": "app-entity-manage", "contextData": {"ItemContexts": [{"type": "enart"}]}},
+											{"appName": "app-entity-manage", "contextData": {"ItemContexts": [{"type": "eproductversion"}]}},
+											{"appName": "app-entity-manage", "contextData": {"ItemContexts": [{"type": "emasterproduct"}]}},
+											{"appName": "app-business-function", "contextData": {"ItemContexts": [{"type": "enart"}]}},
+											{"appName": "app-business-function", "contextData": {"ItemContexts": [{"type": "eproductversion"}]}},
+											{"appName": "app-business-function", "contextData": {"ItemContexts": [{"type": "emasterproduct"}]}},
+                                            {"appName": "app-task-detail", "contextData": {"ItemContexts": []}},
+                                            {"appName": "app-assets-discovery", "contextData": {"ItemContexts": [{"type": "image"}]}}
+                                        ]
+                                    },
+                                    "entityCompositeModel": {
+                                         "byNames": ["image", "document","enart","eproductversion","emasterproduct"]
+                                    },
+                                    "entityModel": {
+                                        "bySearch": ["source", "locale"]
+                                    }
+                                }
+							}
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": "main-app_header-search_gbumanager_uiConfig",
+			"name": "main-app_header-search",
+			"version": "1.0",
+			"type": "uiConfig",
+			"properties": {
+				"createdByService": "entityservice",
+				"createdBy": "user"
+			},
+			"data": {
+				"contexts": [
+					{
+						"context": {
+							"app": "main-app",
+							"service": "_ALL",
+							"component": "header-search",
+							"subComponent": "_ALL",
+							"role": "gbumanager"
+						},
+						"jsonData": {
+							"config": {
+								"searchOptions": [
+									{
+										"id": "asset",
+										"text": "in Assets",
+										"route": "asset-discovery",
+										"isDefault": false
+									},
+									{
+										"id": "entity",
+										"text": "in Entities",
+										"route": "entity-discovery",
+										"isDefault": true
+									}
+								]
+							}
+						}
+					}
+				]
+			}
+		},
+        {
+			"id": "main-app_hotline-settings_gbumanager_uiConfig",
+			"name": "main-app_hotline-settings",
+			"version": "1.0",
+			"type": "uiConfig",
+			"properties": {
+				"createdByService": "entityservice",
+				"createdBy": "user"
+			},
+			"data": {
+				"contexts": [
+					{
+						"context": {
+							"app": "main-app",
+							"service": "_ALL",
+							"component": "hotline-settings",
+							"subComponent": "_ALL",
+							"role": "gbumanager"
+						},
+						"jsonData": {
+							"config": {
+								"timer": 1800000,
+                                "isAllowed": true
+							}
+						}
+					}
+				]
+			}
+		}
+	]
+}
