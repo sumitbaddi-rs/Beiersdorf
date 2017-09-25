@@ -1,0 +1,85 @@
+<Activity
+	xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities"
+	xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:mbw="clr-namespace:MDM.BusinessObjects.Workflow;assembly=RS.MDM.BusinessObjects"
+	xmlns:mc="clr-namespace:MDM.Core;assembly=RS.MDM.Core"
+	xmlns:mc1="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:mi="clr-namespace:MDM.Interfaces;assembly=RS.MDM.Core"
+	xmlns:mi1="clr-namespace:MDM.Interfaces;assembly=RS.MDM.BusinessObjects"
+	xmlns:mv="clr-namespace:Microsoft.VisualBasic;assembly=System"
+	xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities"
+	xmlns:mwac="clr-namespace:MDM.Workflow.Activities.Core;assembly=RS.MDM.Workflow.Activities.Core"
+	xmlns:s="clr-namespace:System;assembly=mscorlib"
+	xmlns:s1="clr-namespace:System;assembly=System"
+	xmlns:s2="clr-namespace:System;assembly=System.Xml"
+	xmlns:s3="clr-namespace:System;assembly=System.Core"
+	xmlns:s4="clr-namespace:System;assembly=System.ServiceModel"
+	xmlns:s5="clr-namespace:System;assembly=System.Configuration"
+	xmlns:sa="clr-namespace:System.Activities;assembly=System.Activities"
+	xmlns:sad="clr-namespace:System.Activities.Debugger;assembly=System.Activities"
+	xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger"
+	xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation"
+	xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System"
+	xmlns:scg1="clr-namespace:System.Collections.Generic;assembly=System.ServiceModel"
+	xmlns:scg2="clr-namespace:System.Collections.Generic;assembly=System.Core"
+	xmlns:scg3="clr-namespace:System.Collections.Generic;assembly=mscorlib"
+	xmlns:sd="clr-namespace:System.Data;assembly=System.Data"
+	xmlns:sl="clr-namespace:System.Linq;assembly=System.Core"
+	xmlns:st="clr-namespace:System.Text;assembly=mscorlib"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" mc1:Ignorable="sap sads" x:Class="{x:Null}">
+	<x:Members>
+		<x:Property Name="MDMDataContext" Type="InArgument(mbw:WorkflowDataContext)" />
+	</x:Members>
+	<sap:VirtualizedContainerService.HintSize>654,676</sap:VirtualizedContainerService.HintSize>
+	<mva:VisualBasic.Settings>Assembly references and imported namespaces for internal implementation</mva:VisualBasic.Settings>
+	<Flowchart sap:VirtualizedContainerService.HintSize="614,636">
+		<Flowchart.Variables>
+			<Variable x:TypeArguments="mbw:WorkflowActionContext" Name="MDMActionContext" />
+		</Flowchart.Variables>
+		<sap:WorkflowViewStateService.ViewState>
+			<scg3:Dictionary x:TypeArguments="x:String, x:Object">
+				<x:Boolean x:Key="IsExpanded">False</x:Boolean>
+				<av:Point x:Key="ShapeLocation">270,2.5</av:Point>
+				<av:Size x:Key="ShapeSize">60,75</av:Size>
+				<av:PointCollection x:Key="ConnectorLocation">300,77.5 300,119</av:PointCollection>
+			</scg3:Dictionary>
+		</sap:WorkflowViewStateService.ViewState>
+		<Flowchart.StartNode>
+			<FlowStep x:Name="__ReferenceID0">
+				<sap:WorkflowViewStateService.ViewState>
+					<scg3:Dictionary x:TypeArguments="x:String, x:Object">
+						<av:Point x:Key="ShapeLocation">200,119</av:Point>
+						<av:Size x:Key="ShapeSize">200,22</av:Size>
+						<av:PointCollection x:Key="ConnectorLocation">300,141 300,179</av:PointCollection>
+					</scg3:Dictionary>
+				</sap:WorkflowViewStateService.ViewState>
+				<mwac:HumanApproval AlertUserAfter="{x:Null}" AllowedRoles="{x:Null}" AssignedUser="{x:Null}" AssignmentBusinessRuleAssemblyName="{x:Null}" AssignmentBusinessRuleTypeName="{x:Null}" Description="{x:Null}" EscalateToManagerAfter="{x:Null}" EscalationDuration="{x:Null}" MessageTemplate="{x:Null}" MoveToUnassignedPoolAfter="{x:Null}" Actions="Approve,Optional,;Reject,Mandatory," AllowedUsers="cfadmin" AssignToPreviousActorOnRerun="True" AssignmentType="RoundRobin" Assignment_Type="RoundRobin" DefaultActionForSkipCriteria="Approve" DelegationAllowed="True" DisplayName="gbuApproval" DisplayOrder="0" DisplayOtherUsersEntities="False" DisplayUnassignedEntities="True" EnableEscalation="False" sap:VirtualizedContainerService.HintSize="200,22" IsHumanActivity="True" MDMActionContext="[MDMActionContext]" MDMDataContext="[MDMDataContext]" Name="a703162a-29c5-471c-8234-519bf22a14da" NotifyAllAssignedUsers="False" NotifyUser="False">
+					<sap:WorkflowViewStateService.ViewState>
+						<scg3:Dictionary x:TypeArguments="x:String, x:Object">
+							<x:Boolean x:Key="IsExpanded">True</x:Boolean>
+						</scg3:Dictionary>
+					</sap:WorkflowViewStateService.ViewState>
+				</mwac:HumanApproval>
+				<FlowStep.Next>
+					<FlowStep x:Name="__ReferenceID1">
+						<sap:WorkflowViewStateService.ViewState>
+							<scg3:Dictionary x:TypeArguments="x:String, x:Object">
+								<av:Point x:Key="ShapeLocation">200,179</av:Point>
+								<av:Size x:Key="ShapeSize">200,22</av:Size>
+							</scg3:Dictionary>
+						</sap:WorkflowViewStateService.ViewState>
+						<mwac:HumanApproval AlertUserAfter="{x:Null}" AllowedRoles="{x:Null}" AssignedUser="{x:Null}" AssignmentBusinessRuleAssemblyName="{x:Null}" AssignmentBusinessRuleTypeName="{x:Null}" Description="{x:Null}" EscalateToManagerAfter="{x:Null}" EscalationDuration="{x:Null}" MessageTemplate="{x:Null}" MoveToUnassignedPoolAfter="{x:Null}" Actions="Done,Optional," AllowedUsers="cfadmin" AssignToPreviousActorOnRerun="True" AssignmentType="RoundRobin" Assignment_Type="RoundRobin" DefaultActionForSkipCriteria="Done" DelegationAllowed="True" DisplayName="gbuMediaEnrichment" DisplayOrder="0" DisplayOtherUsersEntities="False" DisplayUnassignedEntities="True" EnableEscalation="False" sap:VirtualizedContainerService.HintSize="200,22" IsHumanActivity="True" MDMActionContext="[MDMActionContext]" MDMDataContext="[MDMDataContext]" Name="27127031-eb9b-4f5e-a4e3-fbd4af278438" NotifyAllAssignedUsers="False" NotifyUser="False">
+							<sap:WorkflowViewStateService.ViewState>
+								<scg3:Dictionary x:TypeArguments="x:String, x:Object">
+									<x:Boolean x:Key="IsExpanded">True</x:Boolean>
+								</scg3:Dictionary>
+							</sap:WorkflowViewStateService.ViewState>
+						</mwac:HumanApproval>
+					</FlowStep>
+				</FlowStep.Next>
+			</FlowStep>
+		</Flowchart.StartNode>
+		<x:Reference>__ReferenceID0</x:Reference>
+		<x:Reference>__ReferenceID1</x:Reference>
+	</Flowchart>
+</Activity>

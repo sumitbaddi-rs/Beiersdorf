@@ -137,6 +137,11 @@
       },
       "data": {
         "attributes": {
+          "productversionapproved": {
+            "properties": {
+                "strategy": "copy"
+            }
+        },
           "acritical": {
             "properties": {
               "strategy": "copy"
