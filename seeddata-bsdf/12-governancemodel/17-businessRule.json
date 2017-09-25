@@ -27,70 +27,6 @@
                     "executionMode": {
                         "values": [
                             {
-                                "value": "Any"
-                            }
-                        ]
-                    },
-                    "definition": {
-                        "values": [
-                            {
-                                "value": "IIF[ValidateEmptyAttributes[\"aid\"],AddAttributeError[\"Req001\", \"\", \"aid\"],AddAttributeInformation[\"SYS001\", \"\", \"aid\"]] AND IIF[ValidateEmptyAttributes[\"aidentifier\"],AddAttributeError[\"Req001\", \"\", \"aidentifier\"],AddAttributeInformation[\"SYS001\", \"\", \"aidentifier\"]] AND IIF[ValidateEmptyAttributes[\"adescription\"],AddAttributeError[\"Req001\", \"\", \"adescription\"],AddAttributeInformation[\"SYS001\", \"\", \"adescription\"]]"
-                            }
-                        ]
-                    },
-                    "enabled": {
-                        "values": [
-                            {
-                                "value": true
-                            }
-                        ]
-                    },
-                    "isDraft": {
-                        "values": [
-                            {
-                                "value": false
-                            }
-                        ]
-                    },
-                    "isDeleted": {
-                        "values": [
-                            {
-                                "value": false
-                            }
-                        ]
-                    }
-                }
-            }
-        },
-        {
-            "id": "validationRuleForAsset_businessRule",
-            "type": "businessRule",
-            "data": {
-                "attributes": {
-                    "name": {
-                        "values": [
-                            {
-                                "value": "Validation Rule for Asset"
-                            }
-                        ]
-                    },
-                    "description": {
-                        "values": [
-                            {
-                                "value": "Validation Rule for Asset"
-                            }
-                        ]
-                    },
-                    "ruleType": {
-                        "values": [
-                            {
-                                "value": "Validation"
-                            }
-                        ]
-                    },
-                    "executionMode": {
-                        "values": [
-                            {
                                 "value": "any"
                             }
                         ]
@@ -98,7 +34,7 @@
                     "definition": {
                         "values": [
                             {
-                                "value": "reqImageExtension:=\"jpg\";reqImageResolution:=300;reqImageWidthMin:=1000;reqImageWidthMax:=3000; reqImageHeightMin:=1000;reqImageHeightMax:=3000; regImageWidthHeightSwatch:=200; reqImageResolution:=300; varImageType:=lcase[GetAttributeValue[\"imagetype\"]]; varImageWidth:=GetAttributeValue[\"imagewidth\"]; varImageHeight:=GetAttributeValue[\"imageheight\"];varImageExtension:=GetAttributeValue[\"filetypeextension\"];varXResolution:=GetAttributeValue[\"xresolution\"];varYResolution:=GetAttributeValue[\"yresolution\"];varPixels:=varImageWidth*varImageHeight; varInchesResolution:=varXResolution*varYResolution;varDPIResolution:=varPixels/varInchesResolution;IIF[ValidateEmptyAttributes[\"imagetype\"],AddAttributeError[\"Req001\", \"\",\"imagetype\"],AddAttributeInformation[\"SYS001\",\"\",\"imagetype\"]] AND IIF[varImageExtension <> reqImageExtension, AddAttributeError[\"E0039\",\"filetypeextension||jpg\",\"filetypeextension\"],AddAttributeInformation[\"SYS001\", \"\", \"filetypeextension\"]] AND IIF[varImageWidth < reqImageWidthMin AND varImageType = \"m\", AddAttributeError[\"E0040\",\"imagewidth||1000\",\"imagewidth\"],AddAttributeInformation[\"SYS001\", \"\", \"imagewidth\"]] AND IIF[varImageHeight < reqImageHeightMin AND varImageType = \"m\", AddAttributeError[\"E0040\",\"imageheight||1000\",\"imageheight\"],AddAttributeInformation[\"SYS001\", \"\", \"imageheight\"]] AND IIF[varImageWidth > reqImageWidthMax AND varImageType = \"m\", AddAttributeError[\"E0041\",\"imagewidth||3000\",\"imagewidth\"],AddAttributeInformation[\"SYS001\", \"\", \"imagewidth\"]] AND IIF[varImageHeight > reqImageHeightMax AND varImageType = \"m\", AddAttributeError[\"E0041\",\"imageheight||3000\",\"imageheight\"],AddAttributeInformation[\"SYS001\", \"\", \"imageheight\"]] AND IIF[varImageWidth = regImageWidthHeightSwatch AND varImageType = \"s\", AddAttributeError[\"E0039\",\"imagewidth||200\",\"imagewidth\"],AddAttributeInformation[\"SYS001\", \"\", \"imagewidth\"]] AND IIF[varImageHeight = regImageWidthHeightSwatch AND varImageType = \"s\", AddAttributeError[\"E0039\",\"imageheight||200\",\"imageheight\"],AddAttributeInformation[\"SYS001\", \"\", \"imageheight\"]] AND IIF[varDPIResolution < reqImageResolution AND varImageType = \"m\", AddAttributeError[\"E0039\",\"imageresolution||300\",\"imageresolution\"],AddAttributeInformation[\"SYS001\", \"\", \"imageresolution\"]]"
+                                "value": "IIF[ValidateEmptyAttributes[\"_DEFAULT\", \"DEFAULT\",\"aid\"],AddAttributeError[\"_DEFAULT\", \"DEFAULT\",\"Req001\", \"\", \"aid\"],AddAttributeInformation[\"_DEFAULT\", \"DEFAULT\",\"SYS001\", \"\", \"aid\"]] AND IIF[ValidateEmptyAttributes[\"_DEFAULT\", \"DEFAULT\",\"aidentifier\"],AddAttributeError[\"_DEFAULT\", \"DEFAULT\",\"Req001\", \"\", \"aidentifier\"],AddAttributeInformation[\"_DEFAULT\", \"DEFAULT\",\"SYS001\", \"\", \"aidentifier\"]] AND IIF[ValidateEmptyAttributes[\"_DEFAULT\", \"DEFAULT\",\"adescription\"],AddAttributeError[\"_DEFAULT\", \"DEFAULT\",\"Req001\", \"\", \"adescription\"],AddAttributeInformation\"_DEFAULT\", \"DEFAULT\",[\"SYS001\", \"\", \"adescription\"]]"
                             }
                         ]
                     },
@@ -138,13 +74,6 @@
                             }
                         ]
                     },
-                    "description": {
-                        "values": [
-                            {
-                                "value": "Invokes the change assignment workflow when the data object is not in change assignment workflow"
-                            }
-                        ]
-                    },
                     "ruleType": {
                         "values": [
                             {
@@ -155,7 +84,7 @@
                     "executionMode": {
                         "values": [
                             {
-                                "value": "Any"
+                                "value": "any"
                             }
                         ]
                     },
@@ -169,7 +98,7 @@
                     "enabled": {
                         "values": [
                             {
-                                "value": "true"
+                                "value": "false"
                             }
                         ]
                     },
@@ -202,13 +131,6 @@
                             }
                         ]
                     },
-                    "description": {
-                        "values": [
-                            {
-                                "value": "Syncing of create and update workflow"
-                            }
-                        ]
-                    },
                     "ruleType": {
                         "values": [
                             {
@@ -219,14 +141,14 @@
                     "executionMode": {
                         "values": [
                             {
-                                "value": "Any"
+                                "value": "any"
                             }
                         ]
                     },
                     "definition": {
                         "values": [
                             {
-                                "value": "IIF[IsEntityInWorkflow[\"newNartSetup\"],AddAttributeInformation[\"SYS001\", \"\", \"unknown\"],AddAttributeError[\"Req001\", \"\", \"unknown\"]]"
+                                "value": "IIF[IsEntityInWorkflow[\"newNartSetup\"],AddAttributeInformation[\"_DEFAULT\", \"DEFAULT\",\"SYS001\", \"\", \"unknown\"],AddAttributeError[\"_DEFAULT\", \"DEFAULT\",\"Req001\", \"\", \"unknown\"]]"
                             }
                         ]
                     },
@@ -266,17 +188,10 @@
                             }
                         ]
                     },
-                    "description": {
-                        "values": [
-                            {
-                                "value": "Send Nart for asset linking"
-                            }
-                        ]
-                    },
                     "ruleType": {
                         "values": [
                             {
-                                "value": "computation"
+                                "value": "Computation"
                             }
                         ]
                     },
@@ -290,7 +205,7 @@
                     "definition": {
                         "values": [
                             {
-                                "value": "IIF[HaveAnyAttributesChanged[\"primaryimage\",\"alternateimages\"],SendEntityForGraphProcessing[\"enart_hasimages_image\"],false]"
+                                "value": "IIF[HaveAnyAttributesChanged[\"_DEFAULT\", \"DEFAULT\",\"primaryimage\",\"alternateimages\"],SendEntityForGraphProcessing[\"enart_hasimages_image\"],false]"
                             }
                         ]
                     },
@@ -309,13 +224,6 @@
                         ]
                     },
                     "isDeleted": {
-                        "values": [
-                            {
-                                "value": "false"
-                            }
-                        ]
-                    },
-                    "isSystemRule": {
                         "values": [
                             {
                                 "value": "false"
@@ -337,17 +245,10 @@
                             }
                         ]
                     },
-                    "description": {
-                        "values": [
-                            {
-                                "value": "Send PV For Entity For GraphProcessing"
-                            }
-                        ]
-                    },
                     "ruleType": {
                         "values": [
                             {
-                                "value": "computation"
+                                "value": "Computation"
                             }
                         ]
                     },
@@ -361,7 +262,7 @@
                     "definition": {
                         "values": [
                             {
-                                "value": "IIF[HaveAnyAttributesChanged[\"_ALL\"],SendEntityForGraphProcessing[\"eproductversion_ischildof_enart\"],false]"
+                                "value": "IIF[HaveAnyAttributesChanged[\"_DEFAULT\", \"DEFAULT\",\"_ALL\"],SendEntityForGraphProcessing[\"eproductversion_ischildof_enart\"],false]"
                             }
                         ]
                     },
@@ -385,8 +286,58 @@
                                 "value": "false"
                             }
                         ]
+                    }
+                }
+            }
+        },
+        {
+            "id": "invokeNewPVWorkflow_businessRule",
+            "type": "businessRule",
+            "data": {
+                "attributes": {
+                    "name": {
+                        "values": [
+                            {
+                                "value": "Invoke Product Version Workflow"
+                            }
+                        ]
                     },
-                    "isSystemRule": {
+                    "ruleType": {
+                        "values": [
+                            {
+                                "value": "Computation"
+                            }
+                        ]
+                    },
+                    "executionMode": {
+                        "values": [
+                            {
+                                "value": "any"
+                            }
+                        ]
+                    },
+                    "definition": {
+                        "values": [
+                            {
+                                "value": "IIF[IsEntityInWorkflow[\"newPVSetup\"] ,true,InvokeWorkflow[\"newPVSetup\"]]"
+                            }
+                        ]
+                    },
+                    "enabled": {
+                        "values": [
+                            {
+                                "value": "true"
+                            }
+                        ]
+                    },
+                    "isDraft": {
+                        "values": [
+                            {
+                                "value": "false"
+                            }
+                        ]
+                    },
+                    "isDeleted": {
                         "values": [
                             {
                                 "value": "false"
@@ -397,158 +348,125 @@
             }
         },
         {
-            "id": "enart_ischildof_eproductversion_graphProcessModel",
-            "name": "enart_ischildof_eproductversion",
-            "type": "graphProcessModel",
-            "domain": "generic",
-            "properties": {
-              "defaultValueSource": "internal",
-              "defaultValueLocale": "en-US",
-              "graphProcessPath": "enart_ischildof_eproductversion",
-              "matchRulesOperator": "or",
-              "matchRules": [
-                {
-                  "seq": 1,
-                  "matchType": "attributeBased",
-                  "attributeMaps": [
-                    {
-                      "eproductversiongroup": "spgrkey"
-                    }
-                  ],
-                  "noMatchResult": [
-                    {
-                      "actions": [
-                        {
-                          "actionName": "Create"
-                        },
-                        {
-                          "actionName": "AddSourceRelationship"
-                        },
-                        {
-                          "actionName": "CopyData"
-                        }
-                      ]
-                    }
-                  ],
-                  "singleMatchResult": [
-                    {
-                      "actions": [
-                        {
-                          "actionName": "AddSourceRelationship"
-                        },
-                        {
-                          "actionName": "CopyData"
-                        }
-                      ]
-                    }
-                  ],
-                  "multiMatchResult": [
-                    {
-                      "actions": [
-                        {
-                          "actionName": "Error"
-                        }
-                      ]
-                    }
-                  ],
-                  "smartIdAttributes": [
-                    {
-                      "attributeNames": "spgrkey",
-                      "concatDelimiter": ""
-                    }
-                  ]
-                }
-              ],
-              "relExists": [
-                {
-                  "actions": [
-                    {
-                      "actionName": "CopyData"
-                    }
-                  ]
-                }
-              ]
-            },
+            "id": "invokeNewNartWorkflowOnPVApproval_businessRule",
+            "type": "businessRule",
             "data": {
-              "attributes": {
-                "ainci": {
-                  "properties": {
-                    "strategy": "copyWhenEmpty"
-                  }
-                },
-                "alastmodifieddate": {
-                  "properties": {
-                    "strategy": "max"
-                  }
-                },
-                "alternateimages": {
-                  "properties": {
-                    "strategy": "aggregate"
-                  }
-                },
-                "primaryimage": {
-                  "properties": {
-                    "strategy": "copyWhenEmpty"
-                  }
-                },
-                "scritical": {
-                  "properties": {
-                    "strategy": "copyWhenEmpty"
-                  }
-                },
-                "spgrdescription": {
-                  "properties": {
-                    "strategy": "copyWhenEmpty"
-                  }
-                },
-                "spgrkey": {
-                  "properties": {
-                    "strategy": "copyWhenEmpty"
-                  }
-                }
-              },
-              "relationships": {
-                "hasimages": [
-                  {
-                    "properties": {
-                      "externalName": "Images",
-                      "strategy": "copyWhenEmpty",
-                      "relationshipType": "association",
-                      "relatedEntityInfo": [
-                        {
-                          "relEntityType": "image"
-                        }
-                      ]
+                "attributes": {
+                    "name": {
+                        "values": [
+                            {
+                                "value": "Invoke Nart Workflow on PV Approval"
+                            }
+                        ]
+                    },
+                    "description": {
+                        "values": [
+                            {
+                                "value": ""
+                            }
+                        ]
+                    },
+                    "ruleType": {
+                        "values": [
+                            {
+                                "value": "Computation"
+                            }
+                        ]
+                    },
+                    "executionMode": {
+                        "values": [
+                            {
+                                "value": "any"
+                            }
+                        ]
+                    },
+                    "definition": {
+                        "values": [
+                            {
+                                "value": "IIF[HaveAnyAttributesChanged[\"_DEFAULT\", \"DEFAULT\",\"productversionapproved\"] AND IsEntityInWorkflow[\"newLBUNartSetup\"]=false,InvokeWorkflow[\"newLBUNartSetup\"],false]"
+                            }
+                        ]
+                    },
+                    "enabled": {
+                        "values": [
+                            {
+                                "value": "true"
+                            }
+                        ]
+                    },
+                    "isDraft": {
+                        "values": [
+                            {
+                                "value": "false"
+                            }
+                        ]
+                    },
+                    "isDeleted": {
+                        "values": [
+                            {
+                                "value": "false"
+                            }
+                        ]
                     }
-                  }
-                ],
-                "hasvideos": [
-                  {
-                    "properties": {
-                      "externalName": "videos",
-                      "strategy": "copyWhenEmpty",
-                      "relationshipType": "association",
-                      "relatedEntityInfo": [
-                        {
-                          "relEntityType": "video"
-                        }
-                      ]
-                    }
-                  }
-                ]
-              },
-              "contexts": [
-                {
-                  "context": {
-                    "taxonomy": "Beiersdorf Taxonomy",
-                    "classification": "_ALL"
-                  },
-                  "properties": {
-                    "includeAllAttributes": true
-                  }
                 }
-              ]
             }
-          }
+        },
+        {
+            "id": "setApprovalFlagForNart_businessRule",
+            "type": "businessRule",
+            "data": {
+                "attributes": {
+                    "name": {
+                        "values": [
+                            {
+                                "value": "Set PV Approval Flag at PV Level"
+                            }
+                        ]
+                    },
+                    "ruleType": {
+                        "values": [
+                            {
+                                "value": "Computation"
+                            }
+                        ]
+                    },
+                    "executionMode": {
+                        "values": [
+                            {
+                                "value": "any"
+                            }
+                        ]
+                    },
+                    "definition": {
+                        "values": [
+                            {
+                                "value": "IIF[ValidateEmptyAttributes[\"_DEFAULT\", \"DEFAULT\",\"productversionapproved\"],SetAttributeValue[\"_DEFAULT\",\"_DEFAULT\",\"productversionapproved\",true] ,false]"
+                            }
+                        ]
+                    },
+                    "enabled": {
+                        "values": [
+                            {
+                                "value": "true"
+                            }
+                        ]
+                    },
+                    "isDraft": {
+                        "values": [
+                            {
+                                "value": "false"
+                            }
+                        ]
+                    },
+                    "isDeleted": {
+                        "values": [
+                            {
+                                "value": "false"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
     ]
 }
