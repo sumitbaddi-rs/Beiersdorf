@@ -56,6 +56,16 @@
          }
       },
       {
+         "id": "unknown_entityType",
+         "name": "unknown",
+         "type": "entityType",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Unknown Entity Type",
+            "description": "Default entity type for consumption of data if entity type is not specified in the imports"
+         }
+      },
+      {
          "id": "relationshipModel_entityType",
          "name": "relationshipModel",
          "type": "entityType",
