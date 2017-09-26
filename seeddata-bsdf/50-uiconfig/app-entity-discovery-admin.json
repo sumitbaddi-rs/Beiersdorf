@@ -177,10 +177,9 @@
 										"columns": [
 											{
 												"header": "Entity Type",
-												"name": "type",
+												"name": "aentitytype",
 												"sortable": false,
-												"filterable": false,
-												"isMetaDataColumn": true
+												"filterable": false
 											},
 											{
 												"header": "Identifier",
@@ -191,7 +190,7 @@
 											},
 											{
 												"header": "GTIN",
-												"name": "aidentifier",
+												"name": "sgtin",
 												"sortable": true,
 												"filterable": false
 											}
