@@ -167,7 +167,15 @@
 											"emasterproduct"
 										],
 										"attributes": [
-											"aidentifier"
+											"aid",
+											"aidentifier",
+											"aentitytype",
+											"sgtin",
+											"aproductname",
+											"snominalnetcontent",
+											"alocalrelaunchdate",
+											"acarecategory"
+
 										]
 									},
 									"tabular": {
@@ -176,18 +184,41 @@
 										},
 										"columns": [
 											{
-												"header": "Entity Type",
-												"name": "type",
-												"sortable": false,
-												"filterable": false,
-												"isMetaDataColumn": true
-											},
-											{
-												"header": "Identifier",
-												"name": "aidentifier",
+												"header": "Display Name",
+												"name": "aid",
 												"sortable": true,
 												"filterable": false,
 												"linkTemplate": "entity-manage?id={id}&type={type}"
+											},
+											{
+												"header": "Entity Type",
+												"name": "aentitytype",
+												"sortable": true,
+												"filterable": false
+											},
+											{
+												"header": "GTIN",
+												"name": "sgtin",
+												"sortable": false,
+												"filterable": false
+											},
+											{
+												"header": "Care Category",
+												"name": "acarecategory",
+												"sortable": false,
+												"filterable": false
+											},
+											{
+												"header": "Nominal Net Context With Unit",
+												"name": "snominalnetcontent",
+												"sortable": false,
+												"filterable": false
+											},
+											{
+												"header": "Local Relauch Date",
+												"name": "alocalrelaunchdate",
+												"sortable": false,
+												"filterable": false
 											}
 										]
 									},
