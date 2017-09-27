@@ -152,6 +152,52 @@
               "strategy": "copy"
             }
           }
+          ,
+          "abacksidetext": {
+            "properties": {
+              "strategy": "copy"
+            }
+          },
+          "afrontsidetext": {
+            "properties": {
+              "strategy": "copy"
+            }
+          },
+          "aglobalrelaunchdate": {
+            "properties": {
+              "strategy": "copy"
+            }
+          },
+          "aconsumerneed": {
+            "properties": {
+              "strategy": "copy"
+            }
+          },
+          "alongdescription": {
+            "properties": {
+              "strategy": "copy"
+            }
+          },
+          "aproductname": {
+            "properties": {
+              "strategy": "copy"
+            }
+          },
+          "ashortdescription": {
+            "properties": {
+              "strategy": "copy"
+            }
+          },
+          "aprojectname": {
+            "properties": {
+              "strategy": "copy"
+            }
+          },
+          "aprojectnumber": {
+            "properties": {
+              "strategy": "copy"
+            }
+          }
         }
       }
     }
