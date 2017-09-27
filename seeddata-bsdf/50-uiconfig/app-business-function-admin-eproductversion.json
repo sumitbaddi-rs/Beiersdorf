@@ -102,7 +102,7 @@
 													"actions": [{
 															"name": "createSingleProduct",
 															"icon": "pebble-xl-icons:SingleProduct",
-															"text": "Single NART",
+															"text": "Single Product Version",
 															"visible": true
 													}]
 												}],
