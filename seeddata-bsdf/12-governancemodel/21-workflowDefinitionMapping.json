@@ -1,1 +1,49 @@
-{"metaInfo":{"dataIndex":"entityModel","collectionName":"entityModels","responseObjectName":"response"},"entityModels":[{"id":"eproductversion_workflowDefinitionMapping","name":"eproductversion","type":"workflowDefinitionMapping","data":{"relationships":{"hasWorkflowsDefined":[{"id":"rel101","direction":"both","relationshipType":"association","relTo":{"id":"newPVSetup_workflowDefinition","type":"workflowDefinition"}}]}}},{"id":"enart_workflowDefinitionMapping","name":"enart","type":"workflowDefinitionMapping","data":{"relationships":{"hasWorkflowsDefined":[{"id":"rel101","direction":"both","relationshipType":"association","relTo":{"id":"newLBUNartSetup_workflowDefinition","type":"workflowDefinition"}}]}}}]}
+{
+    "metaInfo": {
+        "dataIndex": "entityModel",
+        "collectionName": "entityModels",
+        "responseObjectName": "response"
+    },
+    "entityModels": [
+        {
+            "id": "eproductversion_workflowDefinitionMapping",
+            "name": "eproductversion",
+            "type": "workflowDefinitionMapping",
+            "data": {
+                "relationships": {
+                    "hasWorkflowsDefined": [
+                        {
+                            "id": "rel101",
+                            "direction": "both",
+                            "relationshipType": "association",
+                            "relTo": {
+                                "id": "newPVSetup_workflowDefinition",
+                                "type": "workflowDefinition"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "enart_workflowDefinitionMapping",
+            "name": "enart",
+            "type": "workflowDefinitionMapping",
+            "data": {
+                "relationships": {
+                    "hasWorkflowsDefined": [
+                        {
+                            "id": "rel101",
+                            "direction": "both",
+                            "relationshipType": "association",
+                            "relTo": {
+                                "id": "newLBUNartSetup_workflowDefinition",
+                                "type": "workflowDefinition"
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

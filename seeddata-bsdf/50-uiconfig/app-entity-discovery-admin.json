@@ -167,6 +167,7 @@
 											"emasterproduct"
 										],
 										"attributes": [
+											"aid",
 											"aidentifier"
 										]
 									},
@@ -183,16 +184,18 @@
 											},
 											{
 												"header": "Identifier",
-												"name": "aidentifier",
+												"name": "aid",
 												"sortable": true,
 												"filterable": false,
 												"linkTemplate": "entity-manage?id={id}&type={type}"
 											},
 											{
-												"header": "GTIN",
-												"name": "sgtin",
+												"header": "Display Name",
+												"name": "aidentifier",
+
 												"sortable": true,
-												"filterable": false
+												"filterable": false,
+												"linkTemplate": "entity-manage?id={id}&type={type}"
 											}
 										]
 									},
