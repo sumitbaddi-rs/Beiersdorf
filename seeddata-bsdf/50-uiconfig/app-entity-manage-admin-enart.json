@@ -143,7 +143,7 @@
 									"id": "taxonomy",
 									"title": "Taxonomy",
 									"icon": "pebble-lg-icons:Master",
-									"visible": false,
+									"visible": true,
 									"dataRequestType": "entity-context",
 									"dataMappings": {
 										"id": "name",
@@ -165,7 +165,7 @@
 									"id": "classification",
 									"title": "Classification",
 									"icon": "pebble-lg-icons:Master",
-									"visible": false,
+									"visible": true,
 									"dataRequestType": "entity-context",
 									"dataMappings": {
 										"id": "name",
@@ -379,6 +379,21 @@
 									"buttonItems": [
 										{
 											"buttons": [
+												{
+													"name": "addContext",
+													"icon": "pebble-lg-icons:Master",
+													"text": "",
+													"tooltip": "Add Context",
+													"visible": true,
+													"buttons": [
+														{
+															"name": "tbeiersdorf",
+															"text": "Beiersdorf Taxonomy",
+															"visible": true,
+															"tooltip": "Beiersdorf Taxonomy"
+														}
+													]
+												},
 												{
 													"name": "refresh",
 													"icon": "pebble-md-icons:ToolbarRefresh",
