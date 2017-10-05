@@ -1,1 +1,1376 @@
-{"metaInfo":{"dataIndex":"entityData","collectionName":"entities","responseObjectName":"response"},"entities":[{"id":"_root","name":"RDP Root Class node","type":"classification","data":{"attributes":{"externalName":{"values":[{"value":"RDP Root Class node","locale":"en-US","source":"internal"}]}}}},{"id":"tbeiersdorf","name":"Beiersdorf Taxonomy","type":"taxonomy","domain":"thing","data":{"attributes":{"externalName":{"values":[{"locale":"en-US","source":"internal","value":"Beiersdorf Taxonomy"}]}}}},{"id":"gbeiersdorfhairgrechina","name":"Beiersdorf Hair Care China","type":"classification","data":{"attributes":{"externalName":{"values":[{"locale":"en-US","source":"internal","value":"Beiersdorf Hair Care China"}]}},"contexts":[{"context":{"taxonomy":"tbeiersdorf"},"properties":{"taxonomyIdPath":"tbeiersdorf"},"relationships":{"belongsto":[{"relTo":{"id":"_root","type":"classification"}}]}}]}},{"id":"gplasterbrands","name":"Plasterbrands","type":"classification","data":{"attributes":{"externalName":{"values":[{"locale":"en-US","source":"internal","value":"Plasterbrands"}]}},"contexts":[{"context":{"taxonomy":"tbeiersdorf"},"properties":{"taxonomyIdPath":"tbeiersdorf"},"relationships":{"belongsto":[{"relTo":{"id":"_root","type":"classification"}}]}}]}},{"id":"glaprairie","name":"la prairie","type":"classification","data":{"attributes":{"externalName":{"values":[{"locale":"en-US","source":"internal","value":"la prairie"}]}},"contexts":[{"context":{"taxonomy":"tbeiersdorf"},"properties":{"taxonomyIdPath":"tbeiersdorf"},"relationships":{"belongsto":[{"relTo":{"id":"_root","type":"classification"}}]}}]}},{"id":"gb10001","name":"NIVEA Deo","type":"classification","data":{"attributes":{"externalName":{"values":[{"locale":"en-US","source":"internal","value":"NIVEA Deo"}]}},"contexts":[{"context":{"taxonomy":"tbeiersdorf"},"properties":{"taxonomyIdPath":"tbeiersdorf"},"relationships":{"belongsto":[{"relTo":{"id":"ga00001","type":"classification"}}]}}]}},{"id":"gb10045","name":"NIVEA Share Care","type":"classification","data":{"attributes":{"externalName":{"values":[{"locale":"en-US","source":"internal","value":"NIVEA Share Care"}]}},"contexts":[{"context":{"taxonomy":"tbeiersdorf"},"properties":{"taxonomyIdPath":"tbeiersdorf"},"relationships":{"belongsto":[{"relTo":{"id":"ga00001","type":"classification"}}]}}]}},{"id":"gb10000","name":"NIVEA Universal Cremes","type":"classification","data":{"attributes":{"externalName":{"values":[{"locale":"en-US","source":"internal","value":"NIVEA Universal Cremes"}]}},"contexts":[{"context":{"taxonomy":"tbeiersdorf"},"properties":{"taxonomyIdPath":"tbeiersdorf"},"relationships":{"belongsto":[{"relTo":{"id":"ga00001","type":"classification"}}]}}]}},{"id":"ga00011","name":"Condoms","type":"classification","data":{"attributes":{"externalName":{"values":[{"locale":"en-US","source":"internal","value":"Condoms"}]}},"contexts":[{"context":{"taxonomy":"tbeiersdorf"},"properties":{"taxonomyIdPath":"tbeiersdorf"},"relationships":{"belongsto":[{"relTo":{"id":"_root","type":"classification"}}]}}]}},{"id":"ge1462","name":"NHAND P&N","type":"classification","data":{"attributes":{"externalName":{"values":[{"locale":"en-US","source":"internal","value":"NHAND P&N"}]}},"contexts":[{"context":{"taxonomy":"tbeiersdorf"},"properties":{"taxonomyIdPath":"tbeiersdorf"},"relationships":{"belongsto":[{"relTo":{"id":"gd1460","type":"classification"}}]}}]}},{"id":"ga00012","name":"Other Brands","type":"classification","data":{"attributes":{"externalName":{"values":[{"locale":"en-US","source":"internal","value":"Other Brands"}]}},"contexts":[{"context":{"taxonomy":"tbeiersdorf"},"properties":{"taxonomyIdPath":"tbeiersdorf"},"relationships":{"belongsto":[{"relTo":{"id":"_root","type":"classification"}}]}}]}},{"id":"ga00010","name":"Other Business","type":"classification","data":{"attributes":{"externalName":{"values":[{"locale":"en-US","source":"internal","value":"Other Business"}]}},"contexts":[{"context":{"taxonomy":"tbeiersdorf"},"properties":{"taxonomyIdPath":"tbeiersdorf"},"relationships":{"belongsto":[{"relTo":{"id":"_root","type":"classification"}}]}}]}},{"id":"gb10007","name":"NIVEA Lip Care","type":"classification","data":{"attributes":{"externalName":{"values":[{"locale":"en-US","source":"internal","value":"NIVEA Lip Care"}]}},"contexts":[{"context":{"taxonomy":"tbeiersdorf"},"properties":{"taxonomyIdPath":"tbeiersdorf"},"relationships":{"belongsto":[{"relTo":{"id":"ga00001","type":"classification"}}]}}]}},{"id":"gb10006","name":"NIVEA Hair Total","type":"classification","data":{"attributes":{"externalName":{"values":[{"locale":"en-US","source":"internal","value":"NIVEA Hair Total"}]}},"contexts":[{"context":{"taxonomy":"tbeiersdorf"},"properties":{"taxonomyIdPath":"tbeiersdorf"},"relationships":{"belongsto":[{"relTo":{"id":"ga00001","type":"classification"}}]}}]}},{"id":"gb10009","name":"NIVEA Sun","type":"classification","data":{"attributes":{"externalName":{"values":[{"locale":"en-US","source":"internal","value":"NIVEA Sun"}]}},"contexts":[{"context":{"taxonomy":"tbeiersdorf"},"properties":{"taxonomyIdPath":"tbeiersdorf"},"relationships":{"belongsto":[{"relTo":{"id":"ga00001","type":"classification"}}]}}]}},{"id":"gb10008","name":"NIVEA Baby","type":"classification","data":{"attributes":{"externalName":{"values":[{"locale":"en-US","source":"internal","value":"NIVEA Baby"}]}},"contexts":[{"context":{"taxonomy":"tbeiersdorf"},"properties":{"taxonomyIdPath":"tbeiersdorf"},"relationships":{"belongsto":[{"relTo":{"id":"ga00001","type":"classification"}}]}}]}},{"id":"ga00019","name":"Nobacter","type":"classification","data":{"attributes":{"externalName":{"values":[{"locale":"en-US","source":"internal","value":"Nobacter"}]}},"contexts":[{"context":{"taxonomy":"tbeiersdorf"},"properties":{"taxonomyIdPath":"tbeiersdorf"},"relationships":{"belongsto":[{"relTo":{"id":"_root","type":"classification"}}]}}]}},{"id":"gb10003","name":"NIVEA Face Total","type":"classification","data":{"attributes":{"externalName":{"values":[{"locale":"en-US","source":"internal","value":"NIVEA Face Total"}]}},"contexts":[{"context":{"taxonomy":"tbeiersdorf"},"properties":{"taxonomyIdPath":"tbeiersdorf"},"relationships":{"belongsto":[{"relTo":{"id":"ga00001","type":"classification"}}]}}]}},{"id":"gb10002","name":"NIVEA Body Care","type":"classification","data":{"attributes":{"externalName":{"values":[{"locale":"en-US","source":"internal","value":"NIVEA Body Care"}]}},"contexts":[{"context":{"taxonomy":"tbeiersdorf"},"properties":{"taxonomyIdPath":"tbeiersdorf"},"relationships":{"belongsto":[{"relTo":{"id":"ga00001","type":"classification"}}]}}]}},{"id":"gb10005","name":"NIVEA Shower&Soap","type":"classification","data":{"attributes":{"externalName":{"values":[{"locale":"en-US","source":"internal","value":"NIVEA Shower&Soap"}]}},"contexts":[{"context":{"taxonomy":"tbeiersdorf"},"properties":{"taxonomyIdPath":"tbeiersdorf"},"relationships":{"belongsto":[{"relTo":{"id":"ga00001","type":"classification"}}]}}]}},{"id":"ga00018","name":"D'Dusch Shower","type":"classification","data":{"attributes":{"externalName":{"values":[{"locale":"en-US","source":"internal","value":"D'Dusch Shower"}]}},"contexts":[{"context":{"taxonomy":"tbeiersdorf"},"properties":{"taxonomyIdPath":"tbeiersdorf"},"relationships":{"belongsto":[{"relTo":{"id":"_root","type":"classification"}}]}}]}},{"id":"gb10004","name":"NIVEA Men's Care","type":"classification","data":{"attributes":{"externalName":{"values":[{"locale":"en-US","source":"internal","value":"NIVEA Men's Care"}]}},"contexts":[{"context":{"taxonomy":"tbeiersdorf"},"properties":{"taxonomyIdPath":"tbeiersdorf"},"relationships":{"belongsto":[{"relTo":{"id":"ga00001","type":"classification"}}]}}]}},{"id":"gd1460","name":"NHAND","type":"classification","data":{"attributes":{"externalName":{"values":[{"locale":"en-US","source":"internal","value":"NHAND"}]}},"contexts":[{"context":{"taxonomy":"tbeiersdorf"},"properties":{"taxonomyIdPath":"tbeiersdorf"},"relationships":{"belongsto":[{"relTo":{"id":"gc01023","type":"classification"}}]}}]}},{"id":"ge1465","name":"NHAND EXPRESS HYDRATION","type":"classification","data":{"attributes":{"externalName":{"values":[{"locale":"en-US","source":"internal","value":"NHAND EXPRESS HYDRATION"}]}},"contexts":[{"context":{"taxonomy":"tbeiersdorf"},"properties":{"taxonomyIdPath":"tbeiersdorf"},"relationships":{"belongsto":[{"relTo":{"id":"gd1460","type":"classification"}}]}}]}},{"id":"ge1468","name":"NHAND NOURISHING","type":"classification","data":{"attributes":{"externalName":{"values":[{"locale":"en-US","source":"internal","value":"NHAND NOURISHING"}]}},"contexts":[{"context":{"taxonomy":"tbeiersdorf"},"properties":{"taxonomyIdPath":"tbeiersdorf"},"relationships":{"belongsto":[{"relTo":{"id":"gd1460","type":"classification"}}]}}]}},{"id":"gunassigned","name":"Unassigned","type":"classification","data":{"attributes":{"externalName":{"values":[{"locale":"en-US","source":"internal","value":"Unassigned"}]}},"contexts":[{"context":{"taxonomy":"tbeiersdorf"},"properties":{"taxonomyIdPath":"tbeiersdorf"},"relationships":{"belongsto":[{"relTo":{"id":"_root","type":"classification"}}]}}]}},{"id":"ga00001","name":"NIVEA","type":"classification","data":{"attributes":{"externalName":{"values":[{"locale":"en-US","source":"internal","value":"NIVEA"}]}},"contexts":[{"context":{"taxonomy":"tbeiersdorf"},"properties":{"taxonomyIdPath":"tbeiersdorf"},"relationships":{"belongsto":[{"relTo":{"id":"_root","type":"classification"}}]}}]}},{"id":"ga00023","name":"Aquaphor","type":"classification","data":{"attributes":{"externalName":{"values":[{"locale":"en-US","source":"internal","value":"Aquaphor"}]}},"contexts":[{"context":{"taxonomy":"tbeiersdorf"},"properties":{"taxonomyIdPath":"tbeiersdorf"},"relationships":{"belongsto":[{"relTo":{"id":"_root","type":"classification"}}]}}]}},{"id":"ga00020","name":"Bambino Baby","type":"classification","data":{"attributes":{"externalName":{"values":[{"locale":"en-US","source":"internal","value":"Bambino Baby"}]}},"contexts":[{"context":{"taxonomy":"tbeiersdorf"},"properties":{"taxonomyIdPath":"tbeiersdorf"},"relationships":{"belongsto":[{"relTo":{"id":"_root","type":"classification"}}]}}]}},{"id":"ga00004","name":"Hidrofugal","type":"classification","data":{"attributes":{"externalName":{"values":[{"locale":"en-US","source":"internal","value":"Hidrofugal"}]}},"contexts":[{"context":{"taxonomy":"tbeiersdorf"},"properties":{"taxonomyIdPath":"tbeiersdorf"},"relationships":{"belongsto":[{"relTo":{"id":"_root","type":"classification"}}]}}]}},{"id":"ga00005","name":"8x4","type":"classification","data":{"attributes":{"externalName":{"values":[{"locale":"en-US","source":"internal","value":"8x4"}]}},"contexts":[{"context":{"taxonomy":"tbeiersdorf"},"properties":{"taxonomyIdPath":"tbeiersdorf"},"relationships":{"belongsto":[{"relTo":{"id":"_root","type":"classification"}}]}}]}},{"id":"gc01023","name":"NIVEA Hand","type":"classification","data":{"attributes":{"externalName":{"values":[{"locale":"en-US","source":"internal","value":"NIVEA Hand"}]}},"contexts":[{"context":{"taxonomy":"tbeiersdorf"},"properties":{"taxonomyIdPath":"tbeiersdorf"},"relationships":{"belongsto":[{"relTo":{"id":"gb10002","type":"classification"}}]}}]}},{"id":"ga00003","name":"Eucerin","type":"classification","data":{"attributes":{"externalName":{"values":[{"locale":"en-US","source":"internal","value":"Eucerin"}]}},"contexts":[{"context":{"taxonomy":"tbeiersdorf"},"properties":{"taxonomyIdPath":"tbeiersdorf"},"relationships":{"belongsto":[{"relTo":{"id":"_root","type":"classification"}}]}}]}},{"id":"ga00008","name":"Florena","type":"classification","data":{"attributes":{"externalName":{"values":[{"locale":"en-US","source":"internal","value":"Florena"}]}},"contexts":[{"context":{"taxonomy":"tbeiersdorf"},"properties":{"taxonomyIdPath":"tbeiersdorf"},"relationships":{"belongsto":[{"relTo":{"id":"_root","type":"classification"}}]}}]}},{"id":"ga00009","name":"atrix","type":"classification","data":{"attributes":{"externalName":{"values":[{"locale":"en-US","source":"internal","value":"atrix"}]}},"contexts":[{"context":{"taxonomy":"tbeiersdorf"},"properties":{"taxonomyIdPath":"tbeiersdorf"},"relationships":{"belongsto":[{"relTo":{"id":"_root","type":"classification"}}]}}]}},{"id":"ga00006","name":"Labello","type":"classification","data":{"attributes":{"externalName":{"values":[{"locale":"en-US","source":"internal","value":"Labello"}]}},"contexts":[{"context":{"taxonomy":"tbeiersdorf"},"properties":{"taxonomyIdPath":"tbeiersdorf"},"relationships":{"belongsto":[{"relTo":{"id":"_root","type":"classification"}}]}}]}},{"id":"gc01021","name":"NIVEA Body","type":"classification","data":{"attributes":{"externalName":{"values":[{"locale":"en-US","source":"internal","value":"NIVEA Body"}]}},"contexts":[{"context":{"taxonomy":"tbeiersdorf"},"properties":{"taxonomyIdPath":"tbeiersdorf"},"relationships":{"belongsto":[{"relTo":{"id":"gb10002","type":"classification"}}]}}]}}]}
+{
+    "metaInfo": {
+        "dataIndex": "entityData",
+        "collectionName": "entities",
+        "responseObjectName": "response"
+    },
+    "entities": [
+        {
+            "id": "_root",
+            "name": "RDP Root Class node",
+            "type": "classification",
+            "data": {
+                "attributes": {
+                    "externalName": {
+                        "values": [
+                            {
+                                "value": "RDP Root Class node",
+                                "locale": "en-US",
+                                "source": "internal"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "id": "tbeiersdorf",
+            "name": "Beiersdorf Taxonomy",
+            "type": "taxonomy",
+            "domain": "thing",
+            "data": {
+                "attributes": {
+                    "externalName": {
+                        "values": [
+                            {
+                                "locale": "en-US",
+                                "source": "internal",
+                                "value": "Beiersdorf Taxonomy"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "id": "gbeiersdorfhairgrechina",
+            "name": "Beiersdorf Hair Care China",
+            "type": "classification",
+            "data": {
+                "attributes": {
+                    "externalName": {
+                        "values": [
+                            {
+                                "locale": "en-US",
+                                "source": "internal",
+                                "value": "Beiersdorf Hair Care China"
+                            }
+                        ]
+                    }
+                },
+                "contexts": [
+                    {
+                        "context": {
+                            "taxonomy": "Beiersdorf Taxonomy"
+                        },
+                        "properties": {
+                            "taxonomyIdPath": "tbeiersdorf"
+                        },
+                        "relationships": {
+                            "belongsto": [
+                                {
+                                    "relTo": {
+                                        "id": "_root",
+                                        "type": "classification"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "id": "gplasterbrands",
+            "name": "Plasterbrands",
+            "type": "classification",
+            "data": {
+                "attributes": {
+                    "externalName": {
+                        "values": [
+                            {
+                                "locale": "en-US",
+                                "source": "internal",
+                                "value": "Plasterbrands"
+                            }
+                        ]
+                    }
+                },
+                "contexts": [
+                    {
+                        "context": {
+                            "taxonomy": "Beiersdorf Taxonomy"
+                        },
+                        "properties": {
+                            "taxonomyIdPath": "tbeiersdorf"
+                        },
+                        "relationships": {
+                            "belongsto": [
+                                {
+                                    "relTo": {
+                                        "id": "_root",
+                                        "type": "classification"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "id": "glaprairie",
+            "name": "la prairie",
+            "type": "classification",
+            "data": {
+                "attributes": {
+                    "externalName": {
+                        "values": [
+                            {
+                                "locale": "en-US",
+                                "source": "internal",
+                                "value": "la prairie"
+                            }
+                        ]
+                    }
+                },
+                "contexts": [
+                    {
+                        "context": {
+                            "taxonomy": "Beiersdorf Taxonomy"
+                        },
+                        "properties": {
+                            "taxonomyIdPath": "tbeiersdorf"
+                        },
+                        "relationships": {
+                            "belongsto": [
+                                {
+                                    "relTo": {
+                                        "id": "_root",
+                                        "type": "classification"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "id": "gb10001",
+            "name": "NIVEA Deo",
+            "type": "classification",
+            "data": {
+                "attributes": {
+                    "externalName": {
+                        "values": [
+                            {
+                                "locale": "en-US",
+                                "source": "internal",
+                                "value": "NIVEA Deo"
+                            }
+                        ]
+                    }
+                },
+                "contexts": [
+                    {
+                        "context": {
+                            "taxonomy": "Beiersdorf Taxonomy"
+                        },
+                        "properties": {
+                            "taxonomyIdPath": "tbeiersdorf"
+                        },
+                        "relationships": {
+                            "belongsto": [
+                                {
+                                    "relTo": {
+                                        "id": "ga00001",
+                                        "type": "classification"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "id": "gb10045",
+            "name": "NIVEA Share Care",
+            "type": "classification",
+            "data": {
+                "attributes": {
+                    "externalName": {
+                        "values": [
+                            {
+                                "locale": "en-US",
+                                "source": "internal",
+                                "value": "NIVEA Share Care"
+                            }
+                        ]
+                    }
+                },
+                "contexts": [
+                    {
+                        "context": {
+                            "taxonomy": "Beiersdorf Taxonomy"
+                        },
+                        "properties": {
+                            "taxonomyIdPath": "tbeiersdorf"
+                        },
+                        "relationships": {
+                            "belongsto": [
+                                {
+                                    "relTo": {
+                                        "id": "ga00001",
+                                        "type": "classification"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "id": "gb10000",
+            "name": "NIVEA Universal Cremes",
+            "type": "classification",
+            "data": {
+                "attributes": {
+                    "externalName": {
+                        "values": [
+                            {
+                                "locale": "en-US",
+                                "source": "internal",
+                                "value": "NIVEA Universal Cremes"
+                            }
+                        ]
+                    }
+                },
+                "contexts": [
+                    {
+                        "context": {
+                            "taxonomy": "Beiersdorf Taxonomy"
+                        },
+                        "properties": {
+                            "taxonomyIdPath": "tbeiersdorf"
+                        },
+                        "relationships": {
+                            "belongsto": [
+                                {
+                                    "relTo": {
+                                        "id": "ga00001",
+                                        "type": "classification"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "id": "ga00011",
+            "name": "Condoms",
+            "type": "classification",
+            "data": {
+                "attributes": {
+                    "externalName": {
+                        "values": [
+                            {
+                                "locale": "en-US",
+                                "source": "internal",
+                                "value": "Condoms"
+                            }
+                        ]
+                    }
+                },
+                "contexts": [
+                    {
+                        "context": {
+                            "taxonomy": "Beiersdorf Taxonomy"
+                        },
+                        "properties": {
+                            "taxonomyIdPath": "tbeiersdorf"
+                        },
+                        "relationships": {
+                            "belongsto": [
+                                {
+                                    "relTo": {
+                                        "id": "_root",
+                                        "type": "classification"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "id": "ge1462",
+            "name": "NHAND P&N",
+            "type": "classification",
+            "data": {
+                "attributes": {
+                    "externalName": {
+                        "values": [
+                            {
+                                "locale": "en-US",
+                                "source": "internal",
+                                "value": "NHAND P&N"
+                            }
+                        ]
+                    }
+                },
+                "contexts": [
+                    {
+                        "context": {
+                            "taxonomy": "Beiersdorf Taxonomy"
+                        },
+                        "properties": {
+                            "taxonomyIdPath": "tbeiersdorf"
+                        },
+                        "relationships": {
+                            "belongsto": [
+                                {
+                                    "relTo": {
+                                        "id": "gd1460",
+                                        "type": "classification"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "id": "ga00012",
+            "name": "Other Brands",
+            "type": "classification",
+            "data": {
+                "attributes": {
+                    "externalName": {
+                        "values": [
+                            {
+                                "locale": "en-US",
+                                "source": "internal",
+                                "value": "Other Brands"
+                            }
+                        ]
+                    }
+                },
+                "contexts": [
+                    {
+                        "context": {
+                            "taxonomy": "Beiersdorf Taxonomy"
+                        },
+                        "properties": {
+                            "taxonomyIdPath": "tbeiersdorf"
+                        },
+                        "relationships": {
+                            "belongsto": [
+                                {
+                                    "relTo": {
+                                        "id": "_root",
+                                        "type": "classification"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "id": "ga00010",
+            "name": "Other Business",
+            "type": "classification",
+            "data": {
+                "attributes": {
+                    "externalName": {
+                        "values": [
+                            {
+                                "locale": "en-US",
+                                "source": "internal",
+                                "value": "Other Business"
+                            }
+                        ]
+                    }
+                },
+                "contexts": [
+                    {
+                        "context": {
+                            "taxonomy": "Beiersdorf Taxonomy"
+                        },
+                        "properties": {
+                            "taxonomyIdPath": "tbeiersdorf"
+                        },
+                        "relationships": {
+                            "belongsto": [
+                                {
+                                    "relTo": {
+                                        "id": "_root",
+                                        "type": "classification"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "id": "gb10007",
+            "name": "NIVEA Lip Care",
+            "type": "classification",
+            "data": {
+                "attributes": {
+                    "externalName": {
+                        "values": [
+                            {
+                                "locale": "en-US",
+                                "source": "internal",
+                                "value": "NIVEA Lip Care"
+                            }
+                        ]
+                    }
+                },
+                "contexts": [
+                    {
+                        "context": {
+                            "taxonomy": "Beiersdorf Taxonomy"
+                        },
+                        "properties": {
+                            "taxonomyIdPath": "tbeiersdorf"
+                        },
+                        "relationships": {
+                            "belongsto": [
+                                {
+                                    "relTo": {
+                                        "id": "ga00001",
+                                        "type": "classification"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "id": "gb10006",
+            "name": "NIVEA Hair Total",
+            "type": "classification",
+            "data": {
+                "attributes": {
+                    "externalName": {
+                        "values": [
+                            {
+                                "locale": "en-US",
+                                "source": "internal",
+                                "value": "NIVEA Hair Total"
+                            }
+                        ]
+                    }
+                },
+                "contexts": [
+                    {
+                        "context": {
+                            "taxonomy": "Beiersdorf Taxonomy"
+                        },
+                        "properties": {
+                            "taxonomyIdPath": "tbeiersdorf"
+                        },
+                        "relationships": {
+                            "belongsto": [
+                                {
+                                    "relTo": {
+                                        "id": "ga00001",
+                                        "type": "classification"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "id": "gb10009",
+            "name": "NIVEA Sun",
+            "type": "classification",
+            "data": {
+                "attributes": {
+                    "externalName": {
+                        "values": [
+                            {
+                                "locale": "en-US",
+                                "source": "internal",
+                                "value": "NIVEA Sun"
+                            }
+                        ]
+                    }
+                },
+                "contexts": [
+                    {
+                        "context": {
+                            "taxonomy": "Beiersdorf Taxonomy"
+                        },
+                        "properties": {
+                            "taxonomyIdPath": "tbeiersdorf"
+                        },
+                        "relationships": {
+                            "belongsto": [
+                                {
+                                    "relTo": {
+                                        "id": "ga00001",
+                                        "type": "classification"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "id": "gb10008",
+            "name": "NIVEA Baby",
+            "type": "classification",
+            "data": {
+                "attributes": {
+                    "externalName": {
+                        "values": [
+                            {
+                                "locale": "en-US",
+                                "source": "internal",
+                                "value": "NIVEA Baby"
+                            }
+                        ]
+                    }
+                },
+                "contexts": [
+                    {
+                        "context": {
+                            "taxonomy": "Beiersdorf Taxonomy"
+                        },
+                        "properties": {
+                            "taxonomyIdPath": "tbeiersdorf"
+                        },
+                        "relationships": {
+                            "belongsto": [
+                                {
+                                    "relTo": {
+                                        "id": "ga00001",
+                                        "type": "classification"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "id": "ga00019",
+            "name": "Nobacter",
+            "type": "classification",
+            "data": {
+                "attributes": {
+                    "externalName": {
+                        "values": [
+                            {
+                                "locale": "en-US",
+                                "source": "internal",
+                                "value": "Nobacter"
+                            }
+                        ]
+                    }
+                },
+                "contexts": [
+                    {
+                        "context": {
+                            "taxonomy": "Beiersdorf Taxonomy"
+                        },
+                        "properties": {
+                            "taxonomyIdPath": "tbeiersdorf"
+                        },
+                        "relationships": {
+                            "belongsto": [
+                                {
+                                    "relTo": {
+                                        "id": "_root",
+                                        "type": "classification"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "id": "gb10003",
+            "name": "NIVEA Face Total",
+            "type": "classification",
+            "data": {
+                "attributes": {
+                    "externalName": {
+                        "values": [
+                            {
+                                "locale": "en-US",
+                                "source": "internal",
+                                "value": "NIVEA Face Total"
+                            }
+                        ]
+                    }
+                },
+                "contexts": [
+                    {
+                        "context": {
+                            "taxonomy": "Beiersdorf Taxonomy"
+                        },
+                        "properties": {
+                            "taxonomyIdPath": "tbeiersdorf"
+                        },
+                        "relationships": {
+                            "belongsto": [
+                                {
+                                    "relTo": {
+                                        "id": "ga00001",
+                                        "type": "classification"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "id": "gb10002",
+            "name": "NIVEA Body Care",
+            "type": "classification",
+            "data": {
+                "attributes": {
+                    "externalName": {
+                        "values": [
+                            {
+                                "locale": "en-US",
+                                "source": "internal",
+                                "value": "NIVEA Body Care"
+                            }
+                        ]
+                    }
+                },
+                "contexts": [
+                    {
+                        "context": {
+                            "taxonomy": "Beiersdorf Taxonomy"
+                        },
+                        "properties": {
+                            "taxonomyIdPath": "tbeiersdorf"
+                        },
+                        "relationships": {
+                            "belongsto": [
+                                {
+                                    "relTo": {
+                                        "id": "ga00001",
+                                        "type": "classification"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "id": "gb10005",
+            "name": "NIVEA Shower&Soap",
+            "type": "classification",
+            "data": {
+                "attributes": {
+                    "externalName": {
+                        "values": [
+                            {
+                                "locale": "en-US",
+                                "source": "internal",
+                                "value": "NIVEA Shower&Soap"
+                            }
+                        ]
+                    }
+                },
+                "contexts": [
+                    {
+                        "context": {
+                            "taxonomy": "Beiersdorf Taxonomy"
+                        },
+                        "properties": {
+                            "taxonomyIdPath": "tbeiersdorf"
+                        },
+                        "relationships": {
+                            "belongsto": [
+                                {
+                                    "relTo": {
+                                        "id": "ga00001",
+                                        "type": "classification"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "id": "ga00018",
+            "name": "D'Dusch Shower",
+            "type": "classification",
+            "data": {
+                "attributes": {
+                    "externalName": {
+                        "values": [
+                            {
+                                "locale": "en-US",
+                                "source": "internal",
+                                "value": "D'Dusch Shower"
+                            }
+                        ]
+                    }
+                },
+                "contexts": [
+                    {
+                        "context": {
+                            "taxonomy": "Beiersdorf Taxonomy"
+                        },
+                        "properties": {
+                            "taxonomyIdPath": "tbeiersdorf"
+                        },
+                        "relationships": {
+                            "belongsto": [
+                                {
+                                    "relTo": {
+                                        "id": "_root",
+                                        "type": "classification"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "id": "gb10004",
+            "name": "NIVEA Men's Care",
+            "type": "classification",
+            "data": {
+                "attributes": {
+                    "externalName": {
+                        "values": [
+                            {
+                                "locale": "en-US",
+                                "source": "internal",
+                                "value": "NIVEA Men's Care"
+                            }
+                        ]
+                    }
+                },
+                "contexts": [
+                    {
+                        "context": {
+                            "taxonomy": "Beiersdorf Taxonomy"
+                        },
+                        "properties": {
+                            "taxonomyIdPath": "tbeiersdorf"
+                        },
+                        "relationships": {
+                            "belongsto": [
+                                {
+                                    "relTo": {
+                                        "id": "ga00001",
+                                        "type": "classification"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "id": "gd1460",
+            "name": "NHAND",
+            "type": "classification",
+            "data": {
+                "attributes": {
+                    "externalName": {
+                        "values": [
+                            {
+                                "locale": "en-US",
+                                "source": "internal",
+                                "value": "NHAND"
+                            }
+                        ]
+                    }
+                },
+                "contexts": [
+                    {
+                        "context": {
+                            "taxonomy": "Beiersdorf Taxonomy"
+                        },
+                        "properties": {
+                            "taxonomyIdPath": "tbeiersdorf"
+                        },
+                        "relationships": {
+                            "belongsto": [
+                                {
+                                    "relTo": {
+                                        "id": "gc01023",
+                                        "type": "classification"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "id": "ge1465",
+            "name": "NHAND EXPRESS HYDRATION",
+            "type": "classification",
+            "data": {
+                "attributes": {
+                    "externalName": {
+                        "values": [
+                            {
+                                "locale": "en-US",
+                                "source": "internal",
+                                "value": "NHAND EXPRESS HYDRATION"
+                            }
+                        ]
+                    }
+                },
+                "contexts": [
+                    {
+                        "context": {
+                            "taxonomy": "Beiersdorf Taxonomy"
+                        },
+                        "properties": {
+                            "taxonomyIdPath": "tbeiersdorf"
+                        },
+                        "relationships": {
+                            "belongsto": [
+                                {
+                                    "relTo": {
+                                        "id": "gd1460",
+                                        "type": "classification"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "id": "ge1468",
+            "name": "NHAND NOURISHING",
+            "type": "classification",
+            "data": {
+                "attributes": {
+                    "externalName": {
+                        "values": [
+                            {
+                                "locale": "en-US",
+                                "source": "internal",
+                                "value": "NHAND NOURISHING"
+                            }
+                        ]
+                    }
+                },
+                "contexts": [
+                    {
+                        "context": {
+                            "taxonomy": "Beiersdorf Taxonomy"
+                        },
+                        "properties": {
+                            "taxonomyIdPath": "tbeiersdorf"
+                        },
+                        "relationships": {
+                            "belongsto": [
+                                {
+                                    "relTo": {
+                                        "id": "gd1460",
+                                        "type": "classification"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "id": "gunassigned",
+            "name": "Unassigned",
+            "type": "classification",
+            "data": {
+                "attributes": {
+                    "externalName": {
+                        "values": [
+                            {
+                                "locale": "en-US",
+                                "source": "internal",
+                                "value": "Unassigned"
+                            }
+                        ]
+                    }
+                },
+                "contexts": [
+                    {
+                        "context": {
+                            "taxonomy": "Beiersdorf Taxonomy"
+                        },
+                        "properties": {
+                            "taxonomyIdPath": "tbeiersdorf"
+                        },
+                        "relationships": {
+                            "belongsto": [
+                                {
+                                    "relTo": {
+                                        "id": "_root",
+                                        "type": "classification"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "id": "ga00001",
+            "name": "NIVEA",
+            "type": "classification",
+            "data": {
+                "attributes": {
+                    "externalName": {
+                        "values": [
+                            {
+                                "locale": "en-US",
+                                "source": "internal",
+                                "value": "NIVEA"
+                            }
+                        ]
+                    }
+                },
+                "contexts": [
+                    {
+                        "context": {
+                            "taxonomy": "Beiersdorf Taxonomy"
+                        },
+                        "properties": {
+                            "taxonomyIdPath": "tbeiersdorf"
+                        },
+                        "relationships": {
+                            "belongsto": [
+                                {
+                                    "relTo": {
+                                        "id": "_root",
+                                        "type": "classification"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "id": "ga00023",
+            "name": "Aquaphor",
+            "type": "classification",
+            "data": {
+                "attributes": {
+                    "externalName": {
+                        "values": [
+                            {
+                                "locale": "en-US",
+                                "source": "internal",
+                                "value": "Aquaphor"
+                            }
+                        ]
+                    }
+                },
+                "contexts": [
+                    {
+                        "context": {
+                            "taxonomy": "Beiersdorf Taxonomy"
+                        },
+                        "properties": {
+                            "taxonomyIdPath": "tbeiersdorf"
+                        },
+                        "relationships": {
+                            "belongsto": [
+                                {
+                                    "relTo": {
+                                        "id": "_root",
+                                        "type": "classification"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "id": "ga00020",
+            "name": "Bambino Baby",
+            "type": "classification",
+            "data": {
+                "attributes": {
+                    "externalName": {
+                        "values": [
+                            {
+                                "locale": "en-US",
+                                "source": "internal",
+                                "value": "Bambino Baby"
+                            }
+                        ]
+                    }
+                },
+                "contexts": [
+                    {
+                        "context": {
+                            "taxonomy": "Beiersdorf Taxonomy"
+                        },
+                        "properties": {
+                            "taxonomyIdPath": "tbeiersdorf"
+                        },
+                        "relationships": {
+                            "belongsto": [
+                                {
+                                    "relTo": {
+                                        "id": "_root",
+                                        "type": "classification"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "id": "ga00004",
+            "name": "Hidrofugal",
+            "type": "classification",
+            "data": {
+                "attributes": {
+                    "externalName": {
+                        "values": [
+                            {
+                                "locale": "en-US",
+                                "source": "internal",
+                                "value": "Hidrofugal"
+                            }
+                        ]
+                    }
+                },
+                "contexts": [
+                    {
+                        "context": {
+                            "taxonomy": "Beiersdorf Taxonomy"
+                        },
+                        "properties": {
+                            "taxonomyIdPath": "tbeiersdorf"
+                        },
+                        "relationships": {
+                            "belongsto": [
+                                {
+                                    "relTo": {
+                                        "id": "_root",
+                                        "type": "classification"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "id": "ga00005",
+            "name": "8x4",
+            "type": "classification",
+            "data": {
+                "attributes": {
+                    "externalName": {
+                        "values": [
+                            {
+                                "locale": "en-US",
+                                "source": "internal",
+                                "value": "8x4"
+                            }
+                        ]
+                    }
+                },
+                "contexts": [
+                    {
+                        "context": {
+                            "taxonomy": "Beiersdorf Taxonomy"
+                        },
+                        "properties": {
+                            "taxonomyIdPath": "tbeiersdorf"
+                        },
+                        "relationships": {
+                            "belongsto": [
+                                {
+                                    "relTo": {
+                                        "id": "_root",
+                                        "type": "classification"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "id": "gc01023",
+            "name": "NIVEA Hand",
+            "type": "classification",
+            "data": {
+                "attributes": {
+                    "externalName": {
+                        "values": [
+                            {
+                                "locale": "en-US",
+                                "source": "internal",
+                                "value": "NIVEA Hand"
+                            }
+                        ]
+                    }
+                },
+                "contexts": [
+                    {
+                        "context": {
+                            "taxonomy": "Beiersdorf Taxonomy"
+                        },
+                        "properties": {
+                            "taxonomyIdPath": "tbeiersdorf"
+                        },
+                        "relationships": {
+                            "belongsto": [
+                                {
+                                    "relTo": {
+                                        "id": "gb10002",
+                                        "type": "classification"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "id": "ga00003",
+            "name": "Eucerin",
+            "type": "classification",
+            "data": {
+                "attributes": {
+                    "externalName": {
+                        "values": [
+                            {
+                                "locale": "en-US",
+                                "source": "internal",
+                                "value": "Eucerin"
+                            }
+                        ]
+                    }
+                },
+                "contexts": [
+                    {
+                        "context": {
+                            "taxonomy": "Beiersdorf Taxonomy"
+                        },
+                        "properties": {
+                            "taxonomyIdPath": "tbeiersdorf"
+                        },
+                        "relationships": {
+                            "belongsto": [
+                                {
+                                    "relTo": {
+                                        "id": "_root",
+                                        "type": "classification"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "id": "ga00008",
+            "name": "Florena",
+            "type": "classification",
+            "data": {
+                "attributes": {
+                    "externalName": {
+                        "values": [
+                            {
+                                "locale": "en-US",
+                                "source": "internal",
+                                "value": "Florena"
+                            }
+                        ]
+                    }
+                },
+                "contexts": [
+                    {
+                        "context": {
+                            "taxonomy": "Beiersdorf Taxonomy"
+                        },
+                        "properties": {
+                            "taxonomyIdPath": "tbeiersdorf"
+                        },
+                        "relationships": {
+                            "belongsto": [
+                                {
+                                    "relTo": {
+                                        "id": "_root",
+                                        "type": "classification"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "id": "ga00009",
+            "name": "atrix",
+            "type": "classification",
+            "data": {
+                "attributes": {
+                    "externalName": {
+                        "values": [
+                            {
+                                "locale": "en-US",
+                                "source": "internal",
+                                "value": "atrix"
+                            }
+                        ]
+                    }
+                },
+                "contexts": [
+                    {
+                        "context": {
+                            "taxonomy": "Beiersdorf Taxonomy"
+                        },
+                        "properties": {
+                            "taxonomyIdPath": "tbeiersdorf"
+                        },
+                        "relationships": {
+                            "belongsto": [
+                                {
+                                    "relTo": {
+                                        "id": "_root",
+                                        "type": "classification"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "id": "ga00006",
+            "name": "Labello",
+            "type": "classification",
+            "data": {
+                "attributes": {
+                    "externalName": {
+                        "values": [
+                            {
+                                "locale": "en-US",
+                                "source": "internal",
+                                "value": "Labello"
+                            }
+                        ]
+                    }
+                },
+                "contexts": [
+                    {
+                        "context": {
+                            "taxonomy": "Beiersdorf Taxonomy"
+                        },
+                        "properties": {
+                            "taxonomyIdPath": "tbeiersdorf"
+                        },
+                        "relationships": {
+                            "belongsto": [
+                                {
+                                    "relTo": {
+                                        "id": "_root",
+                                        "type": "classification"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "id": "gc01021",
+            "name": "NIVEA Body",
+            "type": "classification",
+            "data": {
+                "attributes": {
+                    "externalName": {
+                        "values": [
+                            {
+                                "locale": "en-US",
+                                "source": "internal",
+                                "value": "NIVEA Body"
+                            }
+                        ]
+                    }
+                },
+                "contexts": [
+                    {
+                        "context": {
+                            "taxonomy": "Beiersdorf Taxonomy"
+                        },
+                        "properties": {
+                            "taxonomyIdPath": "tbeiersdorf"
+                        },
+                        "relationships": {
+                            "belongsto": [
+                                {
+                                    "relTo": {
+                                        "id": "gb10002",
+                                        "type": "classification"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

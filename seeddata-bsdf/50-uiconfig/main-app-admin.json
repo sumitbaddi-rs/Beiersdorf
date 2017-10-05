@@ -481,9 +481,9 @@
 							"config": {
 								"logoUrl": "../src/images/Beiersdorf-logo.svg",
                             	"tenantName": "Beiersdorf PIM",
-                            	"primaryColor": "#036BC3",
-								"primaryLightColor": "#0bb2e8",
-								"secondaryColor": "#364653"
+                            	"primaryColor": "#001074",
+								"primaryLightColor": "#FFFFFF",
+								"secondaryColor": "#001074"
 							}
 						}
 					}

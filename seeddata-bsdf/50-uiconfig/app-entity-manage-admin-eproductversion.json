@@ -356,7 +356,7 @@
 								"headerConfig": [
 									{
 										"attributeName": "aid",
-										"label": "NART ID",
+										"label": "PV ID",
 										"noTrim": false
 									},
 									{
